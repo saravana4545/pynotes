@@ -4,8 +4,18 @@
   
   <url>
     <loc>https://tactlabs.github.io/hugobase-new/</loc>
-    <lastmod>2019-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/hugobase-new/python-note/</loc>
+    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/hugobase-new/python-note/test/</loc>
+    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -15,11 +25,6 @@
   
   <url>
     <loc>https://tactlabs.github.io/hugobase-new/python-note/python-division/</loc>
-    <lastmod>2019-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tactlabs.github.io/hugobase-new/python-note/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
   </url>
   

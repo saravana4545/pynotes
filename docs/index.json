@@ -7,6 +7,20 @@
 	"content": "TACTLABS "
 },
 {
+	"uri": "https://tactlabs.github.io/hugobase-new/python-note/",
+	"title": "Python-notes",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://tactlabs.github.io/hugobase-new/python-note/test/",
+	"title": "Test Python",
+	"tags": [],
+	"description": "-",
+	"content": "(\u0026#34;SARAVANA\u0026#34;) 'SARAVANA'  "
+},
+{
 	"uri": "https://tactlabs.github.io/hugobase-new/python-note/python-addition/",
 	"title": "Python Addition",
 	"tags": [],
@@ -19,13 +33,6 @@
 	"tags": [],
 	"description": "-",
 	"content": "a = 30 b = 6 c = a / b print(c) 5.0  "
-},
-{
-	"uri": "https://tactlabs.github.io/hugobase-new/python-note/",
-	"title": "Python-notes",
-	"tags": [],
-	"description": "",
-	"content": ""
 },
 {
 	"uri": "https://tactlabs.github.io/hugobase-new/python-note/simple-python/",

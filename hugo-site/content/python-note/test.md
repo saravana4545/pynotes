@@ -1,8 +1,25 @@
 ---
-title: "Simple Python"
+title: "Test Python"
 author: "TACT"
-date: 2019-04-20
+date: 2024-11-15
 description: "-"
 type: technical_note
 draft: false
 ---
+
+
+```python
+("SARAVANA")
+```
+
+
+
+
+    'SARAVANA'
+
+
+
+
+```python
+
+```
