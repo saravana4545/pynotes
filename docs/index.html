@@ -236,6 +236,50 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/basic-json.html"><h3 class="article-title">Basic-Json</h3></a>
+<h6 class="subheader" title="2024-11-19T00:00:00-05:00">Tue 19 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">City</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">toJSON</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="k">lambda</span> <span class="n">o</span><span class="p">:</span> <span class="n">o</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">me</span> <span class="o">=</span> <span class="n">City</span><span class="p">()</span>
+<span class="n">me</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Onur&quot;</span>
+<span class="n">me</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">me</span><span class="o">.</span><span class="n">toJSON</span><span class="p">())</span> 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Onur&quot;
+}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/basic-json.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/class-work.html"><h3 class="article-title">Class-Work</h3></a>
 <h6 class="subheader" title="2024-11-19T00:00:00-05:00">Tue 19 November 2024
 </h6>
