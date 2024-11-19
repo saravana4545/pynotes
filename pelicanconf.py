@@ -1,8 +1,8 @@
 
 
-AUTHOR          = '<your name>'  # use your name
-SITENAME        = 'title' # use title
-GITHUB_USERNAME = 'tactlabs' # use your username
+AUTHOR          = 'Saravanakumar'  # use your name
+SITENAME        = 'Py Notes' # use title
+GITHUB_USERNAME = 'saravana4545' # use your username
 
 
 # Blogroll
