@@ -1,6 +1,6 @@
 ---
 title: Age-Calculator
-date: 2024-11-19
+date: 2024-11-20
 author: Your Name
 cell_count: 5
 score: 5
@@ -22,8 +22,20 @@ def get_age(d):
 
 
 ```python
-age = get_age(datetime(1991, 1, 1))
+age = get_age(datetime(2003))
 ```
+
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[6], line 1
+    ----> 1 age = get_age(datetime(2003))
+
+
+    NameError: name 'get_age' is not defined
+
 
 
 ```python
@@ -31,10 +43,15 @@ age
 ```
 
 
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[5], line 1
+    ----> 1 age
 
 
-    33
-
+    NameError: name 'age' is not defined
 
 
 

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Py Notes</title>
+
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://saravana4545.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://saravana4545.github.io/pynotes">Py Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+        
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/file-handling.html"><h3 class="article-title">File-Handling</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;example.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;example.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Hello, World!
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/file-handling.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/for-loop.html"><h3 class="article-title">For-Loop</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nv">Cell</span><span class="w"> </span><span class="nv">In</span>[<span class="mi">10</span>],<span class="w"> </span><span class="nv">line</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">range</span><span class="ss">(</span><span class="mi">5</span><span class="ss">)</span>:
+<span class="w">                      </span><span class="o">^</span>
+<span class="nv">SyntaxError</span>:<span class="w"> </span><span class="nv">incomplete</span><span class="w"> </span><span class="nv">input</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>apple
+banana
+cherry
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/for-loop.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/func.html"><h3 class="article-title">Func</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello,&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">greet</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Hello, Alice
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">greet</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Hello, Bob
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/func.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/if-cond.html"><h3 class="article-title">If-Cond</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is greater than 5&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is 5 or less&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>x is greater than 5
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/if-cond.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/list.html"><h3 class="article-title">List</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">get</span> <span class="o">=</span> <span class="nb">list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">get</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">4</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/list.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/random.html"><h3 class="article-title">Random</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">5</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">colors</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>blue
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>[&#39;red&#39;, &#39;green&#39;, &#39;blue&#39;]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/random.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/set.html"><h3 class="article-title">Set</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_set</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
+<span class="mf">2</span>
+<span class="mf">3</span>
+<span class="mf">4</span>
+<span class="mf">5</span>
+<span class="mf">6</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{1, 2, 3, 4, 5, 6}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/set.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/time-module.html"><h3 class="article-title">Time-Module</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">ctime</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Tue Nov 19 23:11:15 2024
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Waited 2 seconds&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Waited 2 seconds
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/time-module.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/tuple.html"><h3 class="article-title">Tuple</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_tuple</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_tuple</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
+<span class="mf">2</span>
+<span class="mf">3</span>
+<span class="mf">4</span>
+<span class="mf">5</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_tuple</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>(1, 2, 3, 4, 5)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/tuple.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+            <!-- /#posts-list -->
+<div class="pagination-centered">
+<h6 class="subheader">Page 2 of 2</h6>
+
+<p>
+            <a href="https://saravana4545.github.io/pynotes/index.html">&laquo; Prev</a>
+
+</p>
+</div>
+
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://saravana4545.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/<yourusername>/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>Py Notes by Saravanakumar</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

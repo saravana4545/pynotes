@@ -1,9 +1,9 @@
 ---
 title: Basic-Json
-date: 2024-11-19
+date: 2024-11-20
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 5
+score: 5
 ---
 
 ```python
@@ -38,5 +38,10 @@ print(me.toJSON())
 ```
 
 
+```python
+
+```
+
+
 ---
-**Score: 0**
+**Score: 5**

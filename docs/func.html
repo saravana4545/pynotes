@@ -4,7 +4,7 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>Basic-Json</title>
+    <title>Func</title>
 
     <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/normalize.css" />
     <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/foundation.min.css" />
@@ -44,43 +44,35 @@
     <div class="large-9 columns">
 <article>
     <header>
-        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/basic-json.html" rel="bookmark"
-        title="Permalink to Basic-Json">Basic-Json</a></h3>
+        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/func.html" rel="bookmark"
+        title="Permalink to Func">Func</a></h3>
     </header>
 
 <h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+    <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello,&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">City</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">toJSON</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="k">lambda</span> <span class="n">o</span><span class="p">:</span> <span class="n">o</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">greet</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">me</span> <span class="o">=</span> <span class="n">City</span><span class="p">()</span>
-<span class="n">me</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Onur&quot;</span>
-<span class="n">me</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">me</span><span class="o">.</span><span class="n">toJSON</span><span class="p">())</span> 
+<div class="highlight"><pre><span></span><code>Hello, Alice
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>{
-    &quot;id&quot;: 1,
-    &quot;name&quot;: &quot;Onur&quot;
-}
+<div class="highlight"><pre><span></span><code><span class="n">greet</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code>Hello, Bob
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 5</strong></p>
+<p><strong>Score: 0</strong></p>
 <p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
 
 </p>
