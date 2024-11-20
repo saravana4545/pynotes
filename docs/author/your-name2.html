@@ -259,6 +259,47 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/assign7-calculate.html"><h3 class="article-title">Assign7-Calculate</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Calculates the sum of its digits.Prints the result.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">sum_of_digits</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="n">digit_sum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">digit_sum</span> <span class="o">+=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">10</span>
+        <span class="n">num</span> <span class="o">//=</span> <span class="mi">10</span>
+    <span class="k">return</span> <span class="n">digit_sum</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">list</span> <span class="o">=</span> <span class="mi">4545</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sum_of_digits</span><span class="p">(</span><span class="nb">list</span><span class="p">))</span> 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">18</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign7-calculate.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/assign8-small-largenum.html"><h3 class="article-title">Assign8-Small-Largenum</h3></a>
 <h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
 </h6>
@@ -291,6 +332,45 @@
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign8-small-largenum.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/assign9-swap-var.html"><h3 class="article-title">Assign9-Swap-Var</h3></a>
+<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Swaps their values without using a third variable.Prints the swapped values.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">swap</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">-</span><span class="n">b</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span><span class="o">-</span><span class="n">b</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;After swap a=</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">,b=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">swap</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">45</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>After swap a=45,b=25
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign9-swap-var.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -338,81 +418,6 @@
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/basic-json.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/class.html"><h3 class="article-title">Class</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
-    <span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello, my name is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> and I am </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old.&quot;</span><span class="p">)</span>
-
-<span class="n">p1</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;saravana&quot;</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span>
-<span class="n">p1</span><span class="o">.</span><span class="n">greet</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Hello, my name is saravana and I am 21 years old.
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0 …</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/class.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/class-work.html"><h3 class="article-title">Class-Work</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>  
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    revisit the Person class to validate argument</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">job</span><span class="p">,</span> <span class="n">pay</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">job</span>  <span class="o">=</span> <span class="n">job</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">pay</span>  <span class="o">=</span> <span class="n">pay</span>
-                                          <span class="c1"># arg 0 is the self instance here</span>
-                                          <span class="c1"># giveRaise = rangetest(..)(giveRaise)</span>
-    <span class="k">def</span> <span class="nf">giveRaise</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">percent</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">pay</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pay</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">percent</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">sue</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s1">&#39;Sue Jones&#39;</span><span class="p">,</span> <span class="s1">&#39;dev&#39;</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">sue</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>&lt;__main__ …</code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/class-work.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
