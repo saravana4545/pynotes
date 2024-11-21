@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Pypika-Lib</title>
+
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://saravana4545.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://saravana4545.github.io/pynotes">Py Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/pypika-lib.html" rel="bookmark"
+        title="Permalink to Pypika-Lib">Pypika-Lib</a></h3>
+    </header>
+
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pypika</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Table</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_table</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">query</span>
+<span class="k">def</span> <span class="nf">add_where_class</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;SARAVANA&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">query</span>
+<span class="k">def</span> <span class="nf">insert_data</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">into</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;SARAVANA&quot;</span><span class="p">,</span> <span class="s2">&quot;saro@example.com&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">query</span>
+<span class="k">def</span> <span class="nf">update_data</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;andal&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">query</span>
+<span class="k">def</span> <span class="nf">delete_data</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;SARAVANA&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">query</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">create_table</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="s2">&quot;users&quot;</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">add_where_class</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="s2">&quot;users&quot;</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">insert_data</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="s2">&quot;users&quot;</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">update_data</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="s2">&quot;users&quot;</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">delete_data</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="s2">&quot;users&quot;</span><span class="p">)))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">startpy</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="ss">&quot;id&quot;</span><span class="p">,</span><span class="ss">&quot;name&quot;</span><span class="p">,</span><span class="ss">&quot;email&quot;</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="ss">&quot;users&quot;</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="ss">&quot;id&quot;</span><span class="p">,</span><span class="ss">&quot;name&quot;</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="ss">&quot;users&quot;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="ss">&quot;name&quot;</span><span class="o">=</span><span class="s1">&#39;SARAVANA&#39;</span>
+<span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="ss">&quot;users&quot;</span><span class="w"> </span><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="p">,</span><span class="ss">&quot;name&quot;</span><span class="p">,</span><span class="ss">&quot;email&quot;</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;SARAVANA&#39;</span><span class="p">,</span><span class="s1">&#39;saro@example.com&#39;</span><span class="p">)</span>
+<span class="k">UPDATE</span><span class="w"> </span><span class="ss">&quot;users&quot;</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="ss">&quot;name&quot;</span><span class="o">=</span><span class="s1">&#39;andal&#39;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="ss">&quot;id&quot;</span><span class="o">=</span><span class="mi">1</span>
+<span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="ss">&quot;users&quot;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="ss">&quot;name&quot;</span><span class="o">=</span><span class="s1">&#39;SARAVANA&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p>
+<p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://saravana4545.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/<yourusername>/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>Py Notes by Saravanakumar</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
