@@ -46,26 +46,32 @@
         
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/assign1.html"><h3 class="article-title">Assign1</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+                <a href="https://saravana4545.github.io/pynotes/assign1-even.html"><h3 class="article-title">Assign1-Even</h3></a>
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;ENTER THE NUMBER:&quot;</span><span class="p">))</span>
-<span class="k">def</span> <span class="nf">even_or_odd</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">number</span><span class="o">%</span><span class="mi">2</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s a odd number...&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">even_or_odd</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">num</span><span class="o">%</span><span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2"> It&#39;s a odd number...&quot;</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s a even number...&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2"> It&#39;s a even number...&quot;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>ENTER THE NUMBER: 25
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">even_or_odd</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">even_or_odd</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>It&#39;s a odd number...
+<div class="highlight"><pre><span></span><code><span class="mf">0</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">even</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
+<span class="mf">1</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">odd</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
+<span class="mf">2</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">even</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
+<span class="mf">3</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">odd</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
+<span class="mf">4</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">even</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
+<span class="mf">5</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">odd</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
+<span class="mf">6</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">even</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
+<span class="mf">7</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">odd</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
+<span class="mf">8</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">even</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
+<span class="mf">9</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">odd</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>
@@ -88,41 +94,8 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/assign1-even.html"><h3 class="article-title">Assign1-Even</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">even_or_odd</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">num</span><span class="o">%</span><span class="mi">2</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2"> It&#39;s a odd number...&quot;</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2"> It&#39;s a even number...&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">even_or_odd</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">0</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">even</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
-<span class="mf">1</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">odd</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
-<span class="mf">2</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">even</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
-<span class="mf">3 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign1-even.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
                 <a href="https://saravana4545.github.io/pynotes/assign10-divisible.html"><h3 class="article-title">Assign10-Divisible</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
 </h6>
 
 
@@ -147,40 +120,8 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/assign2.html"><h3 class="article-title">Assign2</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">leap_year</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is a leap year.&quot;</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is not a leap year.&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">2020</span><span class="p">,</span><span class="mi">2025</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">leap_year</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">2020</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leap</span><span class="w"> </span><span class="n">year</span><span class="mf">.</span>
-<span class="mf">2021</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leap</span><span class="w"> </span><span class="n">year</span><span class="mf">.</span>
-<span class="mf">2022</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="ow">not …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign2.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
                 <a href="https://saravana4545.github.io/pynotes/assign2-leapyear.html"><h3 class="article-title">Assign2-Leapyear</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
 </h6>
 
 
@@ -211,46 +152,8 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/assign3.html"><h3 class="article-title">Assign3</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">60</span><span class="p">]</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">find_max_min</span><span class="p">():</span>
-    <span class="n">max_num</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
-    <span class="n">min_num</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">max_num</span><span class="p">,</span> <span class="n">min_num</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">find_max_min</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>(60, 10)
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign3.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
                 <a href="https://saravana4545.github.io/pynotes/assign3-maxnum.html"><h3 class="article-title">Assign3-Maxnum</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
 </h6>
 
 
@@ -287,42 +190,8 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/assign4.html"><h3 class="article-title">Assign4</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">count_words</span><span class="p">(</span><span class="n">sentences</span><span class="p">):</span>
-    <span class="n">words</span> <span class="o">=</span> <span class="n">sentences</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">count_words</span><span class="p">(</span><span class="s2">&quot;My Name Is Saravana&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">4</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign4.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
                 <a href="https://saravana4545.github.io/pynotes/assign4-countwors.html"><h3 class="article-title">Assign4-Countwors</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
 </h6>
 
 
@@ -355,8 +224,8 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/assign5.html"><h3 class="article-title">Assign5</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
+                <a href="https://saravana4545.github.io/pynotes/assign5-checkprime.html"><h3 class="article-title">Assign5-Checkprime</h3></a>
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
 </h6>
 
 
@@ -381,7 +250,164 @@
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign5.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign5-checkprime.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/assign6-reverse.html"><h3 class="article-title">Assign6-Reverse</h3></a>
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Reverse the given list</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">reverse</span><span class="p">():</span>
+    <span class="nb">list</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
+    <span class="n">rev_str</span> <span class="o">=</span> <span class="nb">list</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">rev_str</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">reverse</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>&#39;!dlroW olleH&#39;
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign6-reverse.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/assign7-calculate.html"><h3 class="article-title">Assign7-Calculate</h3></a>
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Calculates the sum of its digits.Prints the result.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">sum_of_digits</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="n">digit_sum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">digit_sum</span> <span class="o">+=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">10</span>
+        <span class="n">num</span> <span class="o">//=</span> <span class="mi">10</span>
+    <span class="k">return</span> <span class="n">digit_sum</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">list</span> <span class="o">=</span> <span class="mi">4545</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sum_of_digits</span><span class="p">(</span><span class="nb">list</span><span class="p">))</span> 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">18</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign7-calculate.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/assign8-small-largenum.html"><h3 class="article-title">Assign8-Small-Largenum</h3></a>
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Finds and prints the smallest and largest numbers in the list.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">large_and_small_nums</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="n">max_num</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="n">min_num</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">max_num</span><span class="p">,</span> <span class="n">min_num</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">list</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">24</span><span class="p">)</span>
+<span class="n">large_and_small_nums</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>(50, 10)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign8-small-largenum.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/assign9-swap-var.html"><h3 class="article-title">Assign9-Swap-Var</h3></a>
+<h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Swaps their values without using a third variable.Prints the swapped values.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">swap</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">-</span><span class="n">b</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span><span class="o">-</span><span class="n">b</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;After swap a=</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">,b=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">swap</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">45</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>After swap a=45,b=25
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign9-swap-var.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

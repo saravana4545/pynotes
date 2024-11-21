@@ -4,7 +4,7 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>Assign9-Swap-Var</title>
+    <title>Faker-Pattern</title>
 
     <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/normalize.css" />
     <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/foundation.min.css" />
@@ -44,35 +44,41 @@
     <div class="large-9 columns">
 <article>
     <header>
-        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/assign9-swap-var.html" rel="bookmark"
-        title="Permalink to Assign9-Swap-Var">Assign9-Swap-Var</a></h3>
+        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/faker-pattern.html" rel="bookmark"
+        title="Permalink to Faker-Pattern">Faker-Pattern</a></h3>
     </header>
 
 <h6 class="subheader" title="2024-11-21T00:00:00-05:00">Thu 21 November 2024
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="c1">#Swaps their values without using a third variable.Prints the swapped values.</span>
+    <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">swap</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">-</span><span class="n">b</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span><span class="o">-</span><span class="n">b</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;After swap a=</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">,b=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">swap</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">45</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">address_pat</span><span class="p">():</span>
+    <span class="n">fak_address</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">()</span>
+    <span class="n">address</span> <span class="o">=</span> <span class="n">fak_address</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">address</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>After swap a=45,b=25
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">address_pat</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">3946</span><span class="o">/</span><span class="n">Braun</span><span class="o">/</span><span class="n">Hill</span><span class="o">/</span><span class="n">Apt</span><span class="mf">.</span><span class="o">/</span><span class="mf">495</span>
+<span class="n">North</span><span class="o">/</span><span class="n">Kathleen</span><span class="p">,</span><span class="o">/</span><span class="n">LA</span><span class="o">/</span><span class="mf">91986</span>
+<span class="mf">05851</span><span class="o">/</span><span class="n">Maria</span><span class="o">/</span><span class="n">Lodge</span><span class="o">/</span><span class="n">Suite</span><span class="o">/</span><span class="mf">728</span>
+<span class="n">Teresamouth</span><span class="p">,</span><span class="o">/</span><span class="n">WA</span><span class="o">/</span><span class="mf">02644</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 0</strong></p>
+<p><strong>Score: 5</strong></p>
 <p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
 
 </p>
