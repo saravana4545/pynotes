@@ -2,7 +2,7 @@
 title: Numpy-Lib
 date: 2024-11-22
 author: Your Name
-cell_count: 6
+cell_count: 5
 score: 5
 ---
 
@@ -17,14 +17,9 @@ import random
 
 
 ```python
-np.random.seed(123);
-```
-
-
-```python
 def coin_twist():
     for num in range(1,20):
-        coin = np.random.randint(0, 3);
+        coin = random.randint(0, 3);
         print(coin);
         if(coin == 0):
             return "heads"
@@ -37,7 +32,7 @@ def coin_twist():
 print(coin_twist())
 ```
 
-    1
+    3
     tails
 
 
