@@ -47,6 +47,47 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/pandas-crud.html"><h3 class="article-title">Pandas-Crud</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#from openpyxl import pd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_df</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;name&#39;</span><span class="p">:[</span><span class="s1">&#39;andal&#39;</span><span class="p">,</span><span class="s1">&#39;saravana&#39;</span><span class="p">,</span><span class="s1">&#39;santhosh&#39;</span><span class="p">,</span><span class="s1">&#39;sandy&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;age&#39;</span><span class="p">:[</span><span class="mi">25</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">27</span><span class="p">,</span><span class="mi">28</span><span class="p">],</span>
+        <span class="s1">&#39;city&#39;</span><span class="p">:[</span><span class="s1">&#39;chennai&#39;</span><span class="p">,</span><span class="s1">&#39;madurai&#39;</span><span class="p">,</span><span class="s1">&#39;coimbatore&#39;</span><span class="p">,</span><span class="s1">&#39;salem&#39;</span><span class="p">]</span>
+    <span class="p">}</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">read_excel</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">update_df</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="c1">#read dataframe …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/pandas-crud.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/pdf-creator.html"><h3 class="article-title">Pdf-Creator</h3></a>
 <h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
 </h6>
