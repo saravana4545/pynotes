@@ -401,49 +401,42 @@ Mo Tu We Th Fr Sa Su
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/cric-using-matplotlib.html"><h3 class="article-title">Cric Using Matplotlib</h3></a>
+                <a href="https://saravana4545.github.io/pynotes/colorama-lib.html"><h3 class="article-title">Colorama-Lib</h3></a>
 <h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">colorama</span> <span class="kn">import</span> <span class="n">Fore</span><span class="p">,</span> <span class="n">Back</span><span class="p">,</span> <span class="n">Style</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cric_score</span><span class="p">():</span>
-    <span class="n">players</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Virat Kohli&quot;</span><span class="p">,</span> <span class="s2">&quot;MS Dhoni&quot;</span><span class="p">,</span> <span class="s2">&quot;Rohit Sharma&quot;</span><span class="p">]</span>
-    <span class="n">runs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">15000</span><span class="p">,</span> <span class="mi">10500</span><span class="p">,</span> <span class="mi">14000</span><span class="p">]</span>
-
-    <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">players</span><span class="p">,</span> <span class="n">runs</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cricket Players Runs&quot;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Players&quot;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Runs&quot;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">colorful_message</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">foreground</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">formatted_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">foreground</span><span class="p">:</span>
+        <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">foreground</span>
+    <span class="k">if</span> <span class="n">background</span><span class="p">:</span>
+        <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">background</span>
+    <span class="k">if</span> <span class="n">style</span><span class="p">:</span>
+        <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">style</span>
+    <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">text</span> <span class="o">+</span> <span class="n">Style</span><span class="o">.</span><span class="n">RESET_ALL</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">formatted_text</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">cric_score</span><span class="p">())</span>
-</code></pre></div>
-
-<p><img alt="png" src="Cric_using_matplotlib_files/Cric_using_matplotlib_2_0.png"></p>
-<div class="highlight"><pre><span></span><code>None
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example usage</span>
+<span class="n">colorful_message</span><span class="p">(</span><span class="s2">&quot;Warning!&quot;</span><span class="p">,</span> <span class="n">Fore</span><span class="o">.</span><span class="n">BLACK</span><span class="p">,</span> <span class="n">Back</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span> <span class="n">Style</span><span class="o">.</span><span class="n">BRIGHT</span><span class="p">)</span>
+<span class="n">colorful_message</span><span class="p">(</span><span class="s2">&quot;Info&quot;</span><span class="p">,</span> <span class="n">Fore</span><span class="o">.</span><span class="n">CYAN</span><span class="p">)</span>
+<span class="n">colorful_message</span><span class="p">(</span><span class="s2">&quot;Success!&quot;</span><span class="p">,</span> <span class="n">Fore …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/cric-using-matplotlib.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/colorama-lib.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 2 of 6</h6>
+<h6 class="subheader">Page 2 of 7</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/index.html">&laquo; Prev</a>
