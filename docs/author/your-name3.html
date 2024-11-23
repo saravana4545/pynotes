@@ -47,6 +47,26 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/cricket.html"><h3 class="article-title">Cricket</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/cricket.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/cricket-score.html"><h3 class="article-title">Cricket-Score</h3></a>
 <h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
 </h6>
@@ -130,6 +150,43 @@
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/dash-framework.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/datatime-using-pytz-lib.html"><h3 class="article-title">Datatime-Using-Pytz-Lib</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pytz</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">utc</span> <span class="o">=</span> <span class="n">pytz</span><span class="o">.</span><span class="n">utc</span>
+<span class="n">local</span> <span class="o">=</span> <span class="n">pytz</span><span class="o">.</span><span class="n">timezone</span><span class="p">(</span><span class="s1">&#39;Asia/kolkata&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">utc_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">utc</span><span class="p">)</span>
+<span class="n">local_time</span> <span class="o">=</span> <span class="n">utc_time</span><span class="o">.</span><span class="n">astimezone</span><span class="p">(</span><span class="n">local</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;UTC Time:&quot;</span><span class="p">,</span> <span class="n">utc_time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Local Time (IST):&quot;</span><span class="p">,</span> <span class="n">local_time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>UTC Time: 2024-11-23 02:17 …</code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/datatime-using-pytz-lib.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -383,93 +440,6 @@ That&#39;s not a valid number!
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/file-handling.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/find-pattern-with-re.html"><h3 class="article-title">Find-Pattern-With-Re</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Email me at example@gmail.com or support@example.org.&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Found email:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">Found</span><span class="w"> </span><span class="nl">email</span><span class="p">:</span><span class="w"> </span><span class="n">example</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span>
-<span class="k">Found</span><span class="w"> </span><span class="nl">email</span><span class="p">:</span><span class="w"> </span><span class="n">support</span><span class="nv">@example</span><span class="p">.</span><span class="n">org</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-pattern-with-re.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/for-loop.html"><h3 class="article-title">For-Loop</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nv">Cell</span><span class="w"> </span><span class="nv">In</span>[<span class="mi">10</span>],<span class="w"> </span><span class="nv">line</span><span class="w"> </span><span class="mi">1</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">range</span><span class="ss">(</span><span class="mi">5</span><span class="ss">)</span>:
-<span class="w">                      </span><span class="o">^</span>
-<span class="nv">SyntaxError</span>:<span class="w"> </span><span class="nv">incomplete</span><span class="w"> </span><span class="nv">input</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">]</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>apple
-banana
-cherry
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/for-loop.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

@@ -47,6 +47,123 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/logging-lib.html"><h3 class="article-title">Logging-Lib</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">logging</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%(asctime)s</span><span class="s1"> - </span><span class="si">%(levelname)s</span><span class="s1"> - </span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;This is a debug message&quot;</span><span class="p">)</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;This is an info message&quot;</span><span class="p">)</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;This is a warning message&quot;</span><span class="p">)</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;This is an error message&quot;</span><span class="p">)</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;This is a critical message&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2024 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/logging-lib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/make-qrcode.html"><h3 class="article-title">Make-Qrcode</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">qrcode</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">make_qrcode</span><span class="p">():</span>
+    <span class="n">qr</span> <span class="o">=</span> <span class="n">qrcode</span><span class="o">.</span><span class="n">QRCode</span><span class="p">(</span>
+        <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">error_correction</span><span class="o">=</span><span class="n">qrcode</span><span class="o">.</span><span class="n">constants</span><span class="o">.</span><span class="n">ERROR_CORRECT_L</span><span class="p">,</span>
+        <span class="n">box_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">border</span><span class="o">=</span><span class="mi">4</span>
+    <span class="p">)</span>
+    <span class="n">qr</span><span class="o">.</span><span class="n">add_data</span><span class="p">(</span><span class="s2">&quot;https://github.com/saravana4545/&quot;</span><span class="p">)</span>
+    <span class="n">qr</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">fit</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">qr</span><span class="o">.</span><span class="n">make_image</span><span class="p">(</span><span class="n">fill_color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">back_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+    <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;qrcode.png&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">img</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>  <span class="nb">print</span><span class="p">(</span><span class="n">make_qrcode</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>&lt;qrcode.image.pil.PilImage object at 0x7f603616ad80&gt;
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score …</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/make-qrcode.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/mongo-insert-method.html"><h3 class="article-title">Mongo-Insert-Method</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pymongo</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">myclient</span> <span class="o">=</span> <span class="n">pymongo</span><span class="o">.</span><span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
+<span class="n">DB_NAME</span> <span class="o">=</span> <span class="n">myclient</span><span class="p">[</span><span class="s2">&quot;mydatabase&quot;</span><span class="p">]</span>
+<span class="n">DB_COL</span> <span class="o">=</span> <span class="n">DB_NAME</span><span class="p">[</span><span class="s2">&quot;customers&quot;</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">data_add</span><span class="p">():</span>
+    <span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span>
+      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Amy&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Apple st 652&quot;</span><span class="p">},</span>
+      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Hannah&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Mountain 21&quot;</span><span class="p">},</span>
+      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Michael&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Valley 345&quot;</span><span class="p">},</span>
+      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sandy&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Ocean blvd 2&quot;</span><span class="p">}</span>
+    <span class="p">]</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">DB_COL</span><span class="o">.</span><span class="n">insert_many</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
+    <span class="k">return</span> <span class="sa">f …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/mongo-insert-method.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/name-generator.html"><h3 class="article-title">Name Generator</h3></a>
 <h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
 </h6>
@@ -139,6 +256,55 @@ hasty-orchid-crab-fb050e54
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/numpy-lib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/openpyxl-lib.html"><h3 class="article-title">Openpyxl-Lib</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">openpyxl</span> <span class="kn">import</span> <span class="n">Workbook</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Create a workbook and add data</span>
+<span class="n">workbook</span> <span class="o">=</span> <span class="n">Workbook</span><span class="p">()</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">workbook</span><span class="o">.</span><span class="n">active</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Sample Sheet&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sheet</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;City&quot;</span><span class="p">])</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;New York&quot;</span><span class="p">])</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;Los Angeles&quot;</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">workbook</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;sample.xlsx&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Excel file created!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Excel file created!
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/openpyxl-lib.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -280,55 +446,14 @@ hasty-orchid-crab-fb050e54
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/turtle-lib.html"><h3 class="article-title">Turtle-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">home</span><span class="p">():</span>
-    <span class="n">screen</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
-    <span class="n">t</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-        <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-        <span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">done</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">turtle</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">home</span><span class="p">())</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>&lt;module &#39;turtle&#39; from &#39;/home/saravanakumar/miniconda3/envs/py12/lib/python3.12/turtle.py&#39;&gt;
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/turtle-lib.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 2 of 2</h6>
+<h6 class="subheader">Page 2 of 3</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/category/snippets.html">&laquo; Prev</a>
 
+        <a href="https://saravana4545.github.io/pynotes/category/snippets3.html">Next &raquo;</a>
 </p>
 </div>
 
