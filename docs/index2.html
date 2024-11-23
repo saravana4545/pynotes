@@ -47,6 +47,40 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/assign5-checkprime.html"><h3 class="article-title">Assign5-Checkprime</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Checks if the number is a prime number.</span>
+<span class="c1">#Prints &quot;Prime&quot; or &quot;Not Prime.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">check_prime</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2"> It&#39;s not a prime number&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2"> It&#39;s a prime number&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">check_prime</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">1</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="ow">not …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign5-checkprime.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/assign6-reverse.html"><h3 class="article-title">Assign6-Reverse</h3></a>
 <h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
 </h6>
@@ -394,43 +428,6 @@ Mo Tu We Th Fr Sa Su
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/collections-lib.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/colorama-lib.html"><h3 class="article-title">Colorama-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">colorama</span> <span class="kn">import</span> <span class="n">Fore</span><span class="p">,</span> <span class="n">Back</span><span class="p">,</span> <span class="n">Style</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">colorful_message</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">foreground</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="n">formatted_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">foreground</span><span class="p">:</span>
-        <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">foreground</span>
-    <span class="k">if</span> <span class="n">background</span><span class="p">:</span>
-        <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">background</span>
-    <span class="k">if</span> <span class="n">style</span><span class="p">:</span>
-        <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">style</span>
-    <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">text</span> <span class="o">+</span> <span class="n">Style</span><span class="o">.</span><span class="n">RESET_ALL</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">formatted_text</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Example usage</span>
-<span class="n">colorful_message</span><span class="p">(</span><span class="s2">&quot;Warning!&quot;</span><span class="p">,</span> <span class="n">Fore</span><span class="o">.</span><span class="n">BLACK</span><span class="p">,</span> <span class="n">Back</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span> <span class="n">Style</span><span class="o">.</span><span class="n">BRIGHT</span><span class="p">)</span>
-<span class="n">colorful_message</span><span class="p">(</span><span class="s2">&quot;Info&quot;</span><span class="p">,</span> <span class="n">Fore</span><span class="o">.</span><span class="n">CYAN</span><span class="p">)</span>
-<span class="n">colorful_message</span><span class="p">(</span><span class="s2">&quot;Success!&quot;</span><span class="p">,</span> <span class="n">Fore …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/colorama-lib.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

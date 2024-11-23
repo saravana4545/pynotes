@@ -47,6 +47,51 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/faker-pattern.html"><h3 class="article-title">Faker-Pattern</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">address_pat</span><span class="p">():</span>
+    <span class="n">fak_address</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">()</span>
+    <span class="n">address</span> <span class="o">=</span> <span class="n">fak_address</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">address</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">address_pat</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">3946</span><span class="o">/</span><span class="n">Braun</span><span class="o">/</span><span class="n">Hill</span><span class="o">/</span><span class="n">Apt</span><span class="mf">.</span><span class="o">/</span><span class="mf">495</span>
+<span class="n">North</span><span class="o">/</span><span class="n">Kathleen</span><span class="p">,</span><span class="o">/</span><span class="n">LA</span><span class="o">/</span><span class="mf">91986</span>
+<span class="mf">05851</span><span class="o">/</span><span class="n">Maria</span><span class="o">/</span><span class="n">Lodge</span><span class="o">/</span><span class="n">Suite</span><span class="o">/</span><span class="mf">728</span>
+<span class="n">Teresamouth</span><span class="p">,</span><span class="o">/</span><span class="n">WA</span><span class="o">/</span><span class="mf">02644</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/faker-pattern.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/file-handling.html"><h3 class="article-title">File-Handling</h3></a>
 <h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
 </h6>
@@ -381,56 +426,6 @@ freely_ruling_fly
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/logging-lib.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/make-qrcode.html"><h3 class="article-title">Make-Qrcode</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">qrcode</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">make_qrcode</span><span class="p">():</span>
-    <span class="n">qr</span> <span class="o">=</span> <span class="n">qrcode</span><span class="o">.</span><span class="n">QRCode</span><span class="p">(</span>
-        <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-        <span class="n">error_correction</span><span class="o">=</span><span class="n">qrcode</span><span class="o">.</span><span class="n">constants</span><span class="o">.</span><span class="n">ERROR_CORRECT_L</span><span class="p">,</span>
-        <span class="n">box_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-        <span class="n">border</span><span class="o">=</span><span class="mi">4</span>
-    <span class="p">)</span>
-    <span class="n">qr</span><span class="o">.</span><span class="n">add_data</span><span class="p">(</span><span class="s2">&quot;https://github.com/saravana4545/&quot;</span><span class="p">)</span>
-    <span class="n">qr</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">fit</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">img</span> <span class="o">=</span> <span class="n">qr</span><span class="o">.</span><span class="n">make_image</span><span class="p">(</span><span class="n">fill_color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">back_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
-    <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;qrcode.png&quot;</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">img</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>  <span class="nb">print</span><span class="p">(</span><span class="n">make_qrcode</span><span class="p">())</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>&lt;qrcode.image.pil.PilImage object at 0x7f603616ad80&gt;
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score …</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/make-qrcode.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

@@ -47,6 +47,35 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/pypika-lib.html"><h3 class="article-title">Pypika-Lib</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pypika</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Table</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_table</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">query</span>
+<span class="k">def</span> <span class="nf">add_where_class</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;SARAVANA&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">query</span>
+<span class="k">def</span> <span class="nf">insert_data</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">into</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;SARAVANA&quot;</span><span class="p">,</span> <span class="s2">&quot;saro@example …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/pypika-lib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/rich-library.html"><h3 class="article-title">Rich-Library</h3></a>
 <h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
 </h6>
@@ -157,6 +186,38 @@
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/scikit-learn.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/squarify-lib.html"><h3 class="article-title">Squarify-Lib</h3></a>
+<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">squarify</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># these values define the coordinate system for the returned rectangles</span>
+<span class="c1"># the values will range from x to x + width and y to y + height</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mf">0.</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">0.</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mf">700.</span>
+<span class="n">height</span> <span class="o">=</span> <span class="mf">433.</span>
+
+<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">500</span><span class="p">,</span> <span class="mi">433</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+
+<span class="c1"># values must be sorted descending (and positive, obviously)</span>
+<span class="n">values …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/squarify-lib.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
