@@ -1,6 +1,6 @@
 ---
 title: H5Py-Lib
-date: 2024-11-23
+date: 2024-11-26
 author: Your Name
 cell_count: 4
 score: 0
@@ -13,9 +13,12 @@ import h5py
 
 ```python
 def startpy():
-    file = h5py.File('dset.h5','w')
-
-    dataset = file.create_dataset("dset",(4, 6), h5py.h5t.STD_I32BE)
+    file    = h5py.File('dset.h5','w')
+    dataset = file.create_dataset(
+        "dset",
+        (4, 6),
+        h5py.h5t.STD_I32BE
+    )
     print("Dataset dataspace is", dataset.shape)
     print("Dataset Numpy datatype is", dataset.dtype)
     print("Dataset name is", dataset.name)

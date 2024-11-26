@@ -1,6 +1,6 @@
 ---
 title: Dash-Framework
-date: 2024-11-23
+date: 2024-11-26
 author: Your Name
 cell_count: 5
 score: 5
@@ -28,8 +28,18 @@ def dash_frame():
 
 ```python
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(
+        debug=True
+    )
 ```
+
+    ---------------------------------------------------------------------------
+    NoLayoutException                         Traceback (most recent call last)
+    NoLayoutException: The layout was `None` at the time that `run_server` was called.
+    Make sure to set the `layout` attribute of your application
+    before running the server.
+    
+
 
 
 

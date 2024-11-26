@@ -1,6 +1,6 @@
 ---
 title: Openpyxl-Lib
-date: 2024-11-23
+date: 2024-11-26
 author: Your Name
 cell_count: 7
 score: 5
@@ -13,8 +13,8 @@ from openpyxl import Workbook
 
 ```python
 # Create a workbook and add data
-workbook = Workbook()
-sheet = workbook.active
+workbook    = Workbook()
+sheet       = workbook.active
 sheet.title = "Sample Sheet"
 ```
 

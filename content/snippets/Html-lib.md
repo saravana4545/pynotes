@@ -1,6 +1,6 @@
 ---
 title: Html-Lib
-date: 2024-11-23
+date: 2024-11-26
 author: Your Name
 cell_count: 5
 score: 5
@@ -20,7 +20,7 @@ def convert_text(text):
 
 ```python
 def startpy():
-    text = "&lt;ul&gt;&lt;li&gt;one.&lt;/li&gt;&lt;li&gt;two.&lt;/li&gt;&lt;/ul&gt;"
+    text       = "&lt;ul&gt;&lt;li&gt;one.&lt;/li&gt;&lt;li&gt;two.&lt;/li&gt;&lt;/ul&gt;"
     final_html = convert_text(text)
     print(f'original_string :{text}\nfinal_html:{final_html}')
 ```

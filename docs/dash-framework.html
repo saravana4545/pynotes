@@ -48,7 +48,7 @@
         title="Permalink to Dash-Framework">Dash-Framework</a></h3>
     </header>
 
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -67,7 +67,16 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span>
+        <span class="n">debug</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="o">---------------------------------------------------------------------------</span>
+<span class="n">NoLayoutException</span><span class="w">                         </span><span class="n">Traceback</span><span class="w"> </span><span class="p">(</span><span class="n">most</span><span class="w"> </span><span class="n">recent</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="k">last</span><span class="p">)</span>
+<span class="n">NoLayoutException</span><span class="o">:</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">layout</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n n-Quoted">`None`</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="kt">time</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n n-Quoted">`run_server`</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n">called</span><span class="p">.</span>
+<span class="n">Make</span><span class="w"> </span><span class="n">sure</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n n-Quoted">`layout`</span><span class="w"> </span><span class="k">attribute</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">application</span>
+<span class="k">before</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">server</span><span class="p">.</span>
 </code></pre></div>
 
 <p><iframe

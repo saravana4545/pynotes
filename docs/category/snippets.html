@@ -47,7 +47,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/argparse-lib.html"><h3 class="article-title">Argparse-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -114,7 +114,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/base64-lib.html"><h3 class="article-title">Base64-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -122,18 +122,22 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">encode_data</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span><span class="p">):</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">userid</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">expiry_date</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">data</span>         <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">userid</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">expiry_date</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="n">encoded_data</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">urlsafe_b64encode</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">encoded_data</span>
 
 <span class="k">def</span> <span class="nf">decode_data</span><span class="p">(</span><span class="n">encoded_data</span><span class="p">):</span>
-    <span class="n">decoded_data</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">urlsafe_b64decode</span><span class="p">(</span><span class="n">encoded_data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+    <span class="n">decoded_data</span>               <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">urlsafe_b64decode</span><span class="p">(</span><span class="n">encoded_data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
     <span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span> <span class="o">=</span> <span class="n">decoded_data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span>
 
 <span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
     <span class="c1"># Example Usage</span>
-    <span class="n">encoded_value</span> <span class="o">=</span> <span class="n">encode_data</span><span class="p">(</span><span class="s1">&#39;123&#39;</span><span class="p">,</span> <span class="s1">&#39;saravana4545@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-12-31&#39;</span><span class="p">)</span>
+    <span class="n">encoded_value</span> <span class="o">=</span> <span class="n">encode_data</span><span class="p">(</span>
+        <span class="s1">&#39;123&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;saravana4545@gmail.com&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;2024-12-31&#39;</span>
+    <span class="p">)</span>
     <span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>
@@ -149,7 +153,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/calender-lib.html"><h3 class="article-title">Calender-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -186,7 +190,7 @@ Mo Tu We Th Fr Sa Su
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/collections-lib.html"><h3 class="article-title">Collections-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -224,7 +228,7 @@ Mo Tu We Th Fr Sa Su
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/colorama-lib.html"><h3 class="article-title">Colorama-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -244,9 +248,19 @@ Mo Tu We Th Fr Sa Su
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Example usage</span>
-<span class="n">colorful_message</span><span class="p">(</span><span class="s2">&quot;Warning!&quot;</span><span class="p">,</span> <span class="n">Fore</span><span class="o">.</span><span class="n">BLACK</span><span class="p">,</span> <span class="n">Back</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span> <span class="n">Style</span><span class="o">.</span><span class="n">BRIGHT</span><span class="p">)</span>
-<span class="n">colorful_message</span><span class="p">(</span><span class="s2">&quot;Info&quot;</span><span class="p">,</span> <span class="n">Fore</span><span class="o">.</span><span class="n">CYAN</span><span class="p">)</span>
-<span class="n">colorful_message</span><span class="p">(</span><span class="s2">&quot;Success!&quot;</span><span class="p">,</span> <span class="n">Fore …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+<span class="n">colorful_message</span><span class="p">(</span>
+    <span class="s2">&quot;Warning!&quot;</span><span class="p">,</span>
+    <span class="n">Fore</span><span class="o">.</span><span class="n">BLACK</span><span class="p">,</span>
+    <span class="n">Back</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span>
+    <span class="n">Style</span><span class="o">.</span><span class="n">BRIGHT</span>
+<span class="p">)</span>
+<span class="n">colorful_message</span><span class="p">(</span>
+    <span class="s2">&quot;Info&quot;</span><span class="p">,</span>
+    <span class="n">Fore</span><span class="o">.</span><span class="n">CYAN</span>
+<span class="p">)</span>
+<span class="n">colorful_message</span><span class="p">(</span>
+    <span class="s2">&quot;Success!&quot;</span><span class="p">,</span>
+    <span class="n">Fore …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>
 
@@ -261,7 +275,7 @@ Mo Tu We Th Fr Sa Su
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/cric-using-matplotlib.html"><h3 class="article-title">Cric Using Matplotlib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -305,7 +319,7 @@ Mo Tu We Th Fr Sa Su
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/cricket-score.html"><h3 class="article-title">Cricket-Score</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -345,7 +359,7 @@ Mo Tu We Th Fr Sa Su
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/dash-framework.html"><h3 class="article-title">Dash-Framework</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -364,23 +378,14 @@ Mo Tu We Th Fr Sa Su
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span>
+        <span class="n">debug</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
 </code></pre></div>
 
-<p><iframe
-    width="100%"
-    height="650"
-    src="http://127.0.0.1:8050/"
-    frameborder="0"
-    allowfullscreen
-
-></iframe>
-</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+<div class="highlight"><pre><span></span><code><span class="o">---------------------------------------------------------------------------</span>
+<span class="n">NoLayoutException</span><span class="w">                         </span><span class="n">Traceback</span><span class="w"> </span><span class="p">(</span><span class="n">most</span><span class="w"> </span><span class="n">recent</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="k">last</span><span class="p">)</span>
+<span class="n">NoLayoutException</span><span class="o">:</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">layout</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n n-Quoted">`None`</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="kt">time</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n n-Quoted">`run_server …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>
 
@@ -395,7 +400,7 @@ Mo Tu We Th Fr Sa Su
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/datatime-using-pytz-lib.html"><h3 class="article-title">Datatime-Using-Pytz-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -405,19 +410,23 @@ Mo Tu We Th Fr Sa Su
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pytz</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">utc</span> <span class="o">=</span> <span class="n">pytz</span><span class="o">.</span><span class="n">utc</span>
+<div class="highlight"><pre><span></span><code><span class="n">utc</span>   <span class="o">=</span> <span class="n">pytz</span><span class="o">.</span><span class="n">utc</span>
 <span class="n">local</span> <span class="o">=</span> <span class="n">pytz</span><span class="o">.</span><span class="n">timezone</span><span class="p">(</span><span class="s1">&#39;Asia/kolkata&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">utc_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">utc</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">utc_time</span>   <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">utc</span><span class="p">)</span>
 <span class="n">local_time</span> <span class="o">=</span> <span class="n">utc_time</span><span class="o">.</span><span class="n">astimezone</span><span class="p">(</span><span class="n">local</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;UTC Time:&quot;</span><span class="p">,</span> <span class="n">utc_time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Local Time (IST):&quot;</span><span class="p">,</span> <span class="n">local_time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;UTC Time:&quot;</span><span class="p">,</span>
+      <span class="n">utc_time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
+     <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Local Time (IST):&quot;</span><span class="p">,</span>
+      <span class="n">local_time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
+     <span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>UTC Time: 2024-11-23 02:17 …</code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+<div class="highlight"><pre><span></span><code>UTC Time: 2024-11-26 16:48 …</code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>
 
@@ -432,7 +441,7 @@ Mo Tu We Th Fr Sa Su
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/faker.html"><h3 class="article-title">Faker</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 

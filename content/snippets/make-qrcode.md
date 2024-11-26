@@ -1,6 +1,6 @@
 ---
 title: Make-Qrcode
-date: 2024-11-23
+date: 2024-11-26
 author: Your Name
 cell_count: 5
 score: 5
@@ -21,7 +21,10 @@ def make_qrcode():
     )
     qr.add_data("https://github.com/saravana4545/")
     qr.make(fit=True)
-    img = qr.make_image(fill_color="black", back_color="white")
+    img = qr.make_image(
+        fill_color="black",
+        back_color="white"
+    )
     img.save("qrcode.png")
 
     return img

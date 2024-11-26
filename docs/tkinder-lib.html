@@ -48,7 +48,7 @@
         title="Permalink to Tkinder-Lib">Tkinder-Lib</a></h3>
     </header>
 
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -56,7 +56,9 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">():</span>
-    <span class="n">label</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">entry</span><span class="o">.</span><span class="n">get</span><span class="p">()</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+    <span class="n">label</span><span class="o">.</span><span class="n">config</span><span class="p">(</span>
+        <span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Hello,</span><span class="si">{</span><span class="n">entry</span><span class="o">.</span><span class="n">get</span><span class="p">()</span><span class="si">}</span><span class="s2">!&quot;</span>
+    <span class="p">)</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Create GUI</span>
@@ -67,7 +69,10 @@
 <div class="highlight"><pre><span></span><code>&#39;&#39;
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">label</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Enter your name:&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">label</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span>
+    <span class="n">root</span><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Enter your name:&quot;</span>
+<span class="p">)</span>
 <span class="n">label</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
 </code></pre></div>
 
@@ -75,7 +80,11 @@
 <span class="n">entry</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">button</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Greet&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">greet</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">button</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
+    <span class="n">root</span><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Greet&quot;</span><span class="p">,</span>
+    <span class="n">command</span><span class="o">=</span><span class="n">greet</span>
+<span class="p">)</span>
 <span class="n">button</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
 
 <span class="n">root</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>

@@ -48,7 +48,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign5-checkprime.html"><h3 class="article-title">Assign5-Checkprime</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -82,7 +82,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign6-reverse.html"><h3 class="article-title">Assign6-Reverse</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -120,7 +120,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign7-calculate.html"><h3 class="article-title">Assign7-Calculate</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -161,7 +161,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign8-small-largenum.html"><h3 class="article-title">Assign8-Small-Largenum</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -200,7 +200,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign9-swap-var.html"><h3 class="article-title">Assign9-Swap-Var</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -239,7 +239,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/base64-lib.html"><h3 class="article-title">Base64-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -247,18 +247,22 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">encode_data</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span><span class="p">):</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">userid</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">expiry_date</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">data</span>         <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">userid</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">expiry_date</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="n">encoded_data</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">urlsafe_b64encode</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">encoded_data</span>
 
 <span class="k">def</span> <span class="nf">decode_data</span><span class="p">(</span><span class="n">encoded_data</span><span class="p">):</span>
-    <span class="n">decoded_data</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">urlsafe_b64decode</span><span class="p">(</span><span class="n">encoded_data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+    <span class="n">decoded_data</span>               <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">urlsafe_b64decode</span><span class="p">(</span><span class="n">encoded_data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
     <span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span> <span class="o">=</span> <span class="n">decoded_data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span>
 
 <span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
     <span class="c1"># Example Usage</span>
-    <span class="n">encoded_value</span> <span class="o">=</span> <span class="n">encode_data</span><span class="p">(</span><span class="s1">&#39;123&#39;</span><span class="p">,</span> <span class="s1">&#39;saravana4545@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-12-31&#39;</span><span class="p">)</span>
+    <span class="n">encoded_value</span> <span class="o">=</span> <span class="n">encode_data</span><span class="p">(</span>
+        <span class="s1">&#39;123&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;saravana4545@gmail.com&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;2024-12-31&#39;</span>
+    <span class="p">)</span>
     <span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>
@@ -274,7 +278,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/basic-json.html"><h3 class="article-title">Basic-Json</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -321,7 +325,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/calender-lib.html"><h3 class="article-title">Calender-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -358,7 +362,7 @@ Mo Tu We Th Fr Sa Su
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/class.html"><h3 class="article-title">Class</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -395,7 +399,7 @@ Mo Tu We Th Fr Sa Su
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/class-work.html"><h3 class="article-title">Class-Work</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
+<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
 </h6>
 
 
@@ -430,7 +434,7 @@ Mo Tu We Th Fr Sa Su
 
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 2 of 7</h6>
+<h6 class="subheader">Page 2 of 8</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/author/your-name.html">&laquo; Prev</a>

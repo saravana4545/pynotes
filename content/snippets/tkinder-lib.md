@@ -1,6 +1,6 @@
 ---
 title: Tkinder-Lib
-date: 2024-11-23
+date: 2024-11-26
 author: Your Name
 cell_count: 7
 score: 5
@@ -13,7 +13,9 @@ import tkinter as tk
 
 ```python
 def greet():
-    label.config(text=f"Hello, {entry.get()}!")
+    label.config(
+        text=f"Hello,{entry.get()}!"
+    )
 ```
 
 
@@ -32,7 +34,10 @@ root.title("Simple GUI")
 
 
 ```python
-label = tk.Label(root, text="Enter your name:")
+label = tk.Label(
+    root,
+    text="Enter your name:"
+)
 label.pack()
 ```
 
@@ -44,7 +49,11 @@ entry.pack()
 
 
 ```python
-button = tk.Button(root, text="Greet", command=greet)
+button = tk.Button(
+    root,
+    text="Greet",
+    command=greet
+)
 button.pack()
 
 root.mainloop()

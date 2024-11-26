@@ -1,6 +1,6 @@
 ---
 title: Pandas-Crud
-date: 2024-11-23
+date: 2024-11-26
 author: Your Name
 cell_count: 9
 score: 5
@@ -24,7 +24,10 @@ def create_df(filename):
         'city':['chennai','madurai','coimbatore','salem']
     }
     df = pd.DataFrame(data)
-    df.to_excel(filename,index=False)
+    df.to_excel(
+        filename,
+        index=False
+    )
 ```
 
 
@@ -40,7 +43,10 @@ def update_df(file_name):
     #read dataframe
     df = pd.read_excel(file_name)
     df.loc[df['name']=='jerin','age'] = 21
-    df.to_excel(file_name,index=False)
+    df.to_excel(
+        file_name,
+        index=False
+    )
     return df
 ```
 
@@ -49,7 +55,10 @@ def update_df(file_name):
 def delete_data_from_excel(file_name):
     df = pd.read_excel(file_name)
     dfs = df[df["name"]!= 'sanjay']
-    dfs.to_excel(file_name,index=False)
+    dfs.to_excel(
+        file_name,
+        index=False
+    )
     return dfs
 ```
 

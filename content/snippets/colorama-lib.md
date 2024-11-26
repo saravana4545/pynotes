@@ -1,6 +1,6 @@
 ---
 title: Colorama-Lib
-date: 2024-11-23
+date: 2024-11-26
 author: Your Name
 cell_count: 4
 score: 0
@@ -27,9 +27,21 @@ def colorful_message(text, foreground, background=None, style=None):
 
 ```python
 # Example usage
-colorful_message("Warning!", Fore.BLACK, Back.RED, Style.BRIGHT)
-colorful_message("Info", Fore.CYAN)
-colorful_message("Success!", Fore.GREEN, Style.BRIGHT)
+colorful_message(
+    "Warning!",
+    Fore.BLACK,
+    Back.RED,
+    Style.BRIGHT
+)
+colorful_message(
+    "Info",
+    Fore.CYAN
+)
+colorful_message(
+    "Success!",
+    Fore.GREEN,
+    Style.BRIGHT
+)
 ```
 
     [30m[41m[1mWarning![0m

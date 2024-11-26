@@ -1,6 +1,6 @@
 ---
 title: Numpy-Lib
-date: 2024-11-23
+date: 2024-11-26
 author: Your Name
 cell_count: 5
 score: 5
@@ -20,7 +20,7 @@ import random
 def coin_twist():
     for num in range(1,20):
         coin = random.randint(0, 3);
-        print(coin);
+        print(coin)
         if(coin == 0):
             return "heads"
         else:
@@ -32,8 +32,8 @@ def coin_twist():
 print(coin_twist())
 ```
 
-    3
-    tails
+    0
+    heads
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Squarify-Lib
-date: 2024-11-23
+date: 2024-11-26
 author: Your Name
 cell_count: 3
 score: 0
@@ -16,7 +16,7 @@ import squarify
 # the values will range from x to x + width and y to y + height
 x = 0.
 y = 0.
-width = 700.
+width  = 700.
 height = 433.
 
 values = [500, 433, 78, 25, 25, 7]
