@@ -47,6 +47,51 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/fake-pattern-.html"><h3 class="article-title">Fake-Pattern(-)</h3></a>
+<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">address_pat</span><span class="p">():</span>
+    <span class="n">fak_address</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">()</span>
+    <span class="n">address</span> <span class="o">=</span> <span class="n">fak_address</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">address</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">address_pat</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">881</span><span class="o">-</span><span class="n">Cynthia</span><span class="o">-</span><span class="n">Summit</span>
+<span class="n">Port</span><span class="o">-</span><span class="n">Paulabury</span><span class="p">,</span><span class="o">-</span><span class="ow">OR</span><span class="o">-</span><span class="mf">66193</span>
+<span class="mf">34627</span><span class="o">-</span><span class="n">Thompson</span><span class="o">-</span><span class="n">Glen</span><span class="o">-</span><span class="n">Suite</span><span class="o">-</span><span class="mf">767</span>
+<span class="n">Hayleystad</span><span class="p">,</span><span class="o">-</span><span class="n">ND</span><span class="o">-</span><span class="mf">50275</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/fake-pattern-.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/faker.html"><h3 class="article-title">Faker</h3></a>
 <h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
 </h6>
@@ -411,43 +456,6 @@ freely_ruling_fly
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/h5py-lib.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/html-lib.html"><h3 class="article-title">Html-Lib</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">html</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">convert_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-    <span class="n">output_text</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">output_text</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
-    <span class="n">text</span>       <span class="o">=</span> <span class="s2">&quot;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;one.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;two.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&quot;</span>
-    <span class="n">final_html</span> <span class="o">=</span> <span class="n">convert_text</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;original_string :</span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="se">\n</span><span class="s1">final_html:</span><span class="si">{</span><span class="n">final_html</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">startpy</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>original_string<span class="w"> </span>:<span class="ni">&amp;lt …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/html-lib.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
