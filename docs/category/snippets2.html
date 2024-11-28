@@ -261,9 +261,6 @@
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi.responses</span> <span class="kn">import</span> <span class="n">HTMLResponse</span>
-</code></pre></div>
-
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">nest_asyncio</span>
 </code></pre></div>
 
@@ -276,16 +273,32 @@
 <div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">,</span> <span class="n">response_class</span><span class="o">=</span><span class="n">HTMLResponse</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">read_root</span><span class="p">():</span>
-    <span class="k">return</span> <span class="s2">&quot;&lt;h1&gt;Welcome to FastAPI in JupyterLab!&lt;/h1&gt;&quot;</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello from FastAPI in JupyterLab!&quot;</span><span class="p">}</span>
 
-<span class="c1"># Run the server</span>
+
+<span class="c1"># Run FastAPI server</span>
 <span class="n">config</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span>
     <span class="n">app</span>      <span class="o">=</span><span class="n">app</span><span class="p">,</span>
     <span class="n">host</span>     <span class="o">=</span><span class="s2">&quot;127.0.0.1&quot;</span><span class="p">,</span>
     <span class="n">port</span>     <span class="o">=</span><span class="mi">8000</span><span class="p">,</span>
-    <span class="n">log_level</span><span class="o">=</span><span class="s2">&quot;info …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+    <span class="n">log_level</span><span class="o">=</span><span class="s2">&quot;info&quot;</span>
+<span class="p">)</span>
+
+<span class="n">server</span> <span class="o">=</span> <span class="n">Server</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+
+<span class="n">server</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>
 
