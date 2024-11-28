@@ -47,8 +47,41 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/h5py-lib.html"><h3 class="article-title">H5Py-Lib</h3></a>
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">h5py</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
+    <span class="n">file</span>    <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="s1">&#39;dset.h5&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+    <span class="n">dataset</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span>
+        <span class="s2">&quot;dset&quot;</span><span class="p">,</span>
+        <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
+        <span class="n">h5py</span><span class="o">.</span><span class="n">h5t</span><span class="o">.</span><span class="n">STD_I32BE</span>
+    <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataset dataspace is&quot;</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataset Numpy datatype is&quot;</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataset name is&quot;</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataset is a member of the group&quot;</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataset …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/h5py-lib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/html-lib.html"><h3 class="article-title">Html-Lib</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
 </h6>
 
 
@@ -85,7 +118,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/if-cond.html"><h3 class="article-title">If-Cond</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
 </h6>
 
 
@@ -117,7 +150,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/len-str.html"><h3 class="article-title">Len-Str</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
 </h6>
 
 
@@ -158,7 +191,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/list.html"><h3 class="article-title">List</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
 </h6>
 
 
@@ -193,7 +226,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/logging-lib.html"><h3 class="article-title">Logging-Lib</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
 </h6>
 
 
@@ -225,7 +258,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/make-qrcode.html"><h3 class="article-title">Make-Qrcode</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
 </h6>
 
 
@@ -278,7 +311,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/mongo-crud-func.html"><h3 class="article-title">Mongo-Crud-Func</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
 </h6>
 
 
@@ -317,7 +350,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/mongo-insert-method.html"><h3 class="article-title">Mongo-Insert-Method</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
 </h6>
 
 
@@ -352,7 +385,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/name-generator.html"><h3 class="article-title">Name Generator</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
 </h6>
 
 
@@ -397,52 +430,6 @@ hasty-orchid-crab-fb050e54
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/name-generator.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/numpy-lib.html"><h3 class="article-title">Numpy-Lib</h3></a>
-<h6 class="subheader" title="2024-11-27T00:00:00-05:00">Wed 27 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="p">;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">coin_twist</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">):</span>
-        <span class="n">coin</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">coin</span><span class="p">)</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">coin</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-            <span class="k">return</span> <span class="s2">&quot;heads&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;tails&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">coin_twist</span><span class="p">())</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">0</span>
-<span class="n">heads</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/numpy-lib.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
