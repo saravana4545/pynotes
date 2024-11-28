@@ -4,7 +4,7 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>Untitled</title>
+    <title>Find-Cls-Id-Bs4</title>
 
     <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/normalize.css" />
     <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/foundation.min.css" />
@@ -44,8 +44,8 @@
     <div class="large-9 columns">
 <article>
     <header>
-        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/untitled.html" rel="bookmark"
-        title="Permalink to Untitled">Untitled</a></h3>
+        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/find-cls-id-bs4.html" rel="bookmark"
+        title="Permalink to Find-Cls-Id-Bs4">Find-Cls-Id-Bs4</a></h3>
     </header>
 
 <h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
@@ -89,8 +89,7 @@ Main Header
 This is the main content description.
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1"># Extract the content of the element with class &quot;sidebar</span>
-<span class="n">sidebar_div</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;sidebar&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">sidebar_div</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;sidebar&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Content in &#39;sidebar&#39;:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sidebar_div</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
 </code></pre></div>
@@ -100,8 +99,7 @@ Sidebar Header
 This is the sidebar description.
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1"># Extract all &lt;p&gt; tags with the class &quot;description&quot;</span>
-<span class="n">description_paragraphs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;description&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">description_paragraphs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;description&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Descriptions:&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">para</span> <span class="ow">in</span> <span class="n">description_paragraphs</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">para</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>

@@ -178,6 +178,41 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/find-cls-id-bs4.html"><h3 class="article-title">Find-Cls-Id-Bs4</h3></a>
+<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#8. Class and ID-Based Selection</span>
+<span class="c1">#Extract content using specific classes or IDs from a webpage.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Example HTML content</span>
+<span class="n">html_content</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;html&gt;</span>
+<span class="s2">    &lt;body&gt;</span>
+<span class="s2">        &lt;div id=&quot;main&quot;&gt;</span>
+<span class="s2">            &lt;h1&gt;Main Header&lt;/h1&gt;</span>
+<span class="s2">            &lt;p class=&quot;description&quot;&gt;This is the main content description.&lt;/p&gt;</span>
+<span class="s2">        &lt;/div&gt;</span>
+<span class="s2">        &lt;div class=&quot;sidebar&quot;&gt;</span>
+<span class="s2">            &lt;h2&gt;Sidebar Header&lt;/h2 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-cls-id-bs4.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/find-pattern-with-re.html"><h3 class="article-title">Find-Pattern-With-Re</h3></a>
 <h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
 </h6>
@@ -414,45 +449,6 @@ freely_ruling_fly
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/make-qrcode.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/mongo-crud-func.html"><h3 class="article-title">Mongo-Crud-Func</h3></a>
-<h6 class="subheader" title="2024-11-28T00:00:00-05:00">Thu 28 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pymongo</span> <span class="kn">import</span> <span class="n">MongoClient</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Connect to MongoDB</span>
-<span class="n">client</span>     <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
-<span class="n">db</span>         <span class="o">=</span> <span class="n">client</span><span class="p">[</span><span class="s2">&quot;test_db&quot;</span><span class="p">]</span> 
-<span class="n">collection</span> <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="s2">&quot;session_1&quot;</span><span class="p">]</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_document</span><span class="p">():</span>
-    <span class="n">new_document</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
-        <span class="s2">&quot;skills&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;Flask&quot;</span><span class="p">,</span> <span class="s2">&quot;MongoDB&quot;</span><span class="p">]</span>
-    <span class="p">}</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">collection</span><span class="o">.</span><span class="n">insert_one</span><span class="p">(</span><span class="n">new_document</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inserted Document ID:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="o">.</span><span class="n">inserted_id</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">read_documents</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Reading Documents …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/mongo-crud-func.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
