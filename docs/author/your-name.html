@@ -322,6 +322,12 @@
 </h6>
 
 
+<div class="highlight"><pre><span></span><code><span class="c1">#find even or odd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called even_or_odd</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">even_or_odd</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">num</span><span class="o">%</span><span class="mi">2</span><span class="p">:</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2"> It&#39;s a odd number...&quot;</span>
@@ -329,14 +335,14 @@
         <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2"> It&#39;s a even number...&quot;</span>
 </code></pre></div>
 
+<div class="highlight"><pre><span></span><code><span class="c1">#put tje range for it and print</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">even_or_odd</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">0</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">even</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
-<span class="mf">1</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">odd</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
-<span class="mf">2</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">even</span><span class="w"> </span><span class="n">number</span><span class="mf">...</span>
-<span class="mf">3 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+<div class="highlight"><pre><span></span><code><span class="mf">0</span><span class="w"> </span><span class="n">It</span><span class="err">&#39;</span><span class="n">s …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
 
 </p>
 
@@ -381,6 +387,12 @@
 </h6>
 
 
+<div class="highlight"><pre><span></span><code><span class="c1">#Find its leap year or not</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create method called leap_year</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">leap_year</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is a leap year.&quot;</span>
@@ -388,13 +400,10 @@
         <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is not a leap year.&quot;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">2020</span><span class="p">,</span><span class="mi">2025</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">leap_year</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#put a range for it and print</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">2020</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leap</span><span class="w"> </span><span class="n">year</span><span class="mf">.</span>
-<span class="mf">2021</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leap</span><span class="w"> </span><span class="n">year</span><span class="mf">.</span>
-<span class="mf">2022</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="ow">not …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">2020</span><span class="p">,</span><span class="mi">2025 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
 
 </p>
 
@@ -413,13 +422,25 @@
 </h6>
 
 
+<div class="highlight"><pre><span></span><code><span class="c1">#Find max and min num in a list of numbers</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a list</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">60</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a variable  called find_max_min</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">find_max_min</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
     <span class="n">max_num</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
     <span class="n">min_num</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">max_num</span><span class="p">,</span> <span class="n">min_num</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#call the method and put list as perameter</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="n">find_max_min</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
@@ -432,7 +453,7 @@
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+<p><strong>Score …</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
 
 </p>
 

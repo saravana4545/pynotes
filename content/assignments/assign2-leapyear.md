@@ -2,9 +2,19 @@
 title: Assign2-Leapyear
 date: 2024-11-29
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 6
+score: 5
 ---
+
+```python
+#Find its leap year or not
+```
+
+
+```python
+#create method called leap_year
+```
+
 
 ```python
 def leap_year(year):
@@ -12,6 +22,11 @@ def leap_year(year):
         return f"{year} is a leap year."
     else:
         return f"{year} is not a leap year."
+```
+
+
+```python
+#put a range for it and print
 ```
 
 
@@ -34,4 +49,4 @@ for i in range (2020,2025):
 
 
 ---
-**Score: 0**
+**Score: 5**

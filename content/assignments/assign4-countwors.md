@@ -2,14 +2,29 @@
 title: Assign4-Countwors
 date: 2024-11-29
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 6
+score: 5
 ---
+
+```python
+#count the words
+```
+
+
+```python
+#create a method called count_words
+```
+
 
 ```python
 def count_words(sentences):
     words = sentences.split(" ")
     return len(words)
+```
+
+
+```python
+#call the method and set perameter for sentences
 ```
 
 
@@ -31,4 +46,4 @@ count_words("My Name Is Saravana")
 
 
 ---
-**Score: 0**
+**Score: 5**

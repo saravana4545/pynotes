@@ -2,13 +2,17 @@
 title: Assign5-Checkprime
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 6
+score: 5
 ---
 
 ```python
 #Checks if the number is a prime number.
-#Prints "Prime" or "Not Prime.
+```
+
+
+```python
+#create a method called check_prime
 ```
 
 
@@ -18,6 +22,11 @@ def check_prime(num):
         return f"{num} It's not a prime number"
     else:
         return f"{num} It's a prime number"
+```
+
+
+```python
+#Prints "Prime" or "Not Prime.
 ```
 
 
@@ -45,4 +54,4 @@ for i in range(1,11):
 
 
 ---
-**Score: 0**
+**Score: 5**

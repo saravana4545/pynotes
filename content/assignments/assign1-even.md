@@ -2,9 +2,19 @@
 title: Assign1-Even
 date: 2024-11-29
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 6
+score: 5
 ---
+
+```python
+#find even or odd
+```
+
+
+```python
+#create a method called even_or_odd
+```
+
 
 ```python
 def even_or_odd(num):
@@ -12,6 +22,11 @@ def even_or_odd(num):
         return f"{num} It's a odd number..."
     else:
         return f"{num} It's a even number..."
+```
+
+
+```python
+#put tje range for it and print
 ```
 
 
@@ -39,4 +54,4 @@ for i in range(10):
 
 
 ---
-**Score: 0**
+**Score: 5**
