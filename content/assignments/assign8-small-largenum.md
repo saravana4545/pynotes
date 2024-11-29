@@ -2,8 +2,8 @@
 title: Assign8-Small-Largenum
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 6
+score: 5
 ---
 
 ```python
@@ -12,10 +12,20 @@ score: 0
 
 
 ```python
+#create a method called large_and_small_nums()
+```
+
+
+```python
 def large_and_small_nums(num):
     max_num = max(num)
     min_num = min(num)
     return max_num, min_num
+```
+
+
+```python
+#create a variable and put the value for num
 ```
 
 
@@ -38,4 +48,4 @@ large_and_small_nums(list)
 
 
 ---
-**Score: 0**
+**Score: 5**

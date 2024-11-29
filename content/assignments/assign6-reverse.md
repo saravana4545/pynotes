@@ -2,8 +2,8 @@
 title: Assign6-Reverse
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 6
+score: 5
 ---
 
 ```python
@@ -12,10 +12,20 @@ score: 0
 
 
 ```python
+#create a method called reverse()
+```
+
+
+```python
 def reverse():
     list = "Hello World!"
     rev_str = list[::-1]
     return rev_str
+```
+
+
+```python
+#And call the method
 ```
 
 
@@ -37,4 +47,4 @@ reverse()
 
 
 ---
-**Score: 0**
+**Score: 5**

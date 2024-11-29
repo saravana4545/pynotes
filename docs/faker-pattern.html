@@ -52,16 +52,28 @@
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+    <div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#connect the faker </span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called address_pat()</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">address_pat</span><span class="p">():</span>
     <span class="n">fak_address</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">()</span>
     <span class="n">address</span> <span class="o">=</span> <span class="n">fak_address</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">address</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#set the range</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>

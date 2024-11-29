@@ -2,12 +2,22 @@
 title: Fake-Pattern(-)
 date: 2024-11-29
 author: Your Name
-cell_count: 5
+cell_count: 9
 score: 5
 ---
 
 ```python
+#import neccessery libraries
+```
+
+
+```python
 from faker import Faker
+```
+
+
+```python
+#connect the faker 
 ```
 
 
@@ -17,10 +27,20 @@ fake = Faker()
 
 
 ```python
+#create a method called address_pat()
+```
+
+
+```python
 def address_pat():
     fak_address = fake.address()
     address = fak_address.replace(" ", "-")
     return address
+```
+
+
+```python
+#set the range
 ```
 
 

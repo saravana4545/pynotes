@@ -2,12 +2,17 @@
 title: Assign9-Swap-Var
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 6
+score: 5
 ---
 
 ```python
 #Swaps their values without using a third variable.Prints the swapped values.
+```
+
+
+```python
+#create a method called swap()
 ```
 
 
@@ -17,6 +22,11 @@ def swap(a,b):
     b = a-b
     a = a-b
     return f"After swap a={a},b={b}"
+```
+
+
+```python
+#call the method into the print func
 ```
 
 
@@ -34,4 +44,4 @@ print(swap(25,45))
 
 
 ---
-**Score: 0**
+**Score: 5**

@@ -170,16 +170,28 @@ That&#39;s not a valid number!
 </h6>
 
 
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
 </code></pre></div>
 
+<div class="highlight"><pre><span></span><code><span class="c1">#connect the faker </span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called address_pat()</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">address_pat</span><span class="p">():</span>
     <span class="n">fak_address</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">()</span>
     <span class="n">address</span> <span class="o">=</span> <span class="n">fak_address</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">address</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#set the range</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
@@ -189,14 +201,7 @@ That&#39;s not a valid number!
 <div class="highlight"><pre><span></span><code><span class="mf">881</span><span class="o">-</span><span class="n">Cynthia</span><span class="o">-</span><span class="n">Summit</span>
 <span class="n">Port</span><span class="o">-</span><span class="n">Paulabury</span><span class="p">,</span><span class="o">-</span><span class="ow">OR</span><span class="o">-</span><span class="mf">66193</span>
 <span class="mf">34627</span><span class="o">-</span><span class="n">Thompson</span><span class="o">-</span><span class="n">Glen</span><span class="o">-</span><span class="n">Suite</span><span class="o">-</span><span class="mf">767</span>
-<span class="n">Hayleystad</span><span class="p">,</span><span class="o">-</span><span class="n">ND</span><span class="o">-</span><span class="mf">50275</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+<span class="n">Hayleystad …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
 
 </p>
 
@@ -266,10 +271,19 @@ That&#39;s not a valid number!
 </h6>
 
 
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
 </code></pre></div>
 
+<div class="highlight"><pre><span></span><code><span class="c1">#connect the faker </span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called address_pat()</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">address_pat</span><span class="p">():</span>
@@ -278,21 +292,16 @@ That&#39;s not a valid number!
     <span class="k">return</span> <span class="n">address</span>
 </code></pre></div>
 
+<div class="highlight"><pre><span></span><code><span class="c1">#set the range</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">address_pat</span><span class="p">())</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="mf">3946</span><span class="o">/</span><span class="n">Braun</span><span class="o">/</span><span class="n">Hill</span><span class="o">/</span><span class="n">Apt</span><span class="mf">.</span><span class="o">/</span><span class="mf">495</span>
 <span class="n">North</span><span class="o">/</span><span class="n">Kathleen</span><span class="p">,</span><span class="o">/</span><span class="n">LA</span><span class="o">/</span><span class="mf">91986</span>
-<span class="mf">05851</span><span class="o">/</span><span class="n">Maria</span><span class="o">/</span><span class="n">Lodge</span><span class="o">/</span><span class="n">Suite</span><span class="o">/</span><span class="mf">728</span>
-<span class="n">Teresamouth</span><span class="p">,</span><span class="o">/</span><span class="n">WA</span><span class="o">/</span><span class="mf">02644</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+<span class="mf">05851</span><span class="o">/</span><span class="n">Maria</span><span class="o">/</span><span class="n">Lodge</span><span class="o">/</span><span class="n">Suite …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
 
 </p>
 

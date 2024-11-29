@@ -2,12 +2,17 @@
 title: Assign7-Calculate
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 6
+score: 5
 ---
 
 ```python
 #Calculates the sum of its digits.Prints the result.
+```
+
+
+```python
+#create method called sum_of_digits()
 ```
 
 
@@ -18,6 +23,11 @@ def sum_of_digits(num):
         digit_sum += num % 10
         num //= 10
     return digit_sum
+```
+
+
+```python
+#create a variable and put the value for num
 ```
 
 
@@ -36,4 +46,4 @@ print(sum_of_digits(list))
 
 
 ---
-**Score: 0**
+**Score: 5**
