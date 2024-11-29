@@ -164,27 +164,27 @@
 </h6>
 
 
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessory libraries</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">base64</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method to encode the datas</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">encode_data</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span><span class="p">):</span>
     <span class="n">data</span>         <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">userid</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">expiry_date</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="n">encoded_data</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">urlsafe_b64encode</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">encoded_data</span>
+</code></pre></div>
 
-<span class="k">def</span> <span class="nf">decode_data</span><span class="p">(</span><span class="n">encoded_data</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method to decode the datas</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">decode_data</span><span class="p">(</span><span class="n">encoded_data</span><span class="p">):</span>
     <span class="n">decoded_data</span>               <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">urlsafe_b64decode</span><span class="p">(</span><span class="n">encoded_data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
-    <span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span> <span class="o">=</span> <span class="n">decoded_data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span>
-
-<span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
-    <span class="c1"># Example Usage</span>
-    <span class="n">encoded_value</span> <span class="o">=</span> <span class="n">encode_data</span><span class="p">(</span>
-        <span class="s1">&#39;123&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;saravana4545@gmail.com&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;2024-12-31&#39;</span>
-    <span class="p">)</span>
-    <span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+    <span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span> <span class="o">=</span> <span class="n">decoded_data …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>
 

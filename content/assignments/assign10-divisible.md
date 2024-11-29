@@ -2,12 +2,16 @@
 title: Assign10-Divisible
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 6
+score: 5
 ---
 
 ```python
 #Takes a number Checks if it is divisible by both 5 and 3.
+```
+
+
+```python
 #Prints "Divisible by both" or "Not divisible by both."
 ```
 
@@ -17,6 +21,11 @@ def check(num):
     if (num%5==0 and num%3==0):
         return (f"{num} is divisible by both 5 and 3")
     return (f"{num} is not divisible by both 5 and 3")
+```
+
+
+```python
+#set a range for the method
 ```
 
 
@@ -55,4 +64,4 @@ for i in range(10,31):
 
 
 ---
-**Score: 0**
+**Score: 5**
