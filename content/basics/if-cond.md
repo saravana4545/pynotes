@@ -2,12 +2,22 @@
 title: If-Cond
 date: 2024-11-29
 author: Your Name
-cell_count: 2
+cell_count: 4
 score: 0
 ---
 
 ```python
+#create a variable and put some value
+```
+
+
+```python
 x = 10
+```
+
+
+```python
+#using if condition the value greater or less
 ```
 
 

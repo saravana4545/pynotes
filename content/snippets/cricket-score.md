@@ -2,13 +2,23 @@
 title: Cricket-Score
 date: 2024-11-29
 author: Your Name
-cell_count: 5
+cell_count: 9
 score: 5
 ---
 
 ```python
+#import neccessory libraries
+```
+
+
+```python
 import time
 from random import randint
+```
+
+
+```python
+#create a method called get_ball_in_words()
 ```
 
 
@@ -30,7 +40,12 @@ def get_ball_in_words(ball):
 
 
 ```python
-def play_over(bowler = 'STARC', batsman = 'ROHIT'):
+#create a method and set the loop func
+```
+
+
+```python
+def play_over(bowler, batsman):
     
     for i in range(6):       
         ball = i + 1
@@ -44,21 +59,26 @@ def play_over(bowler = 'STARC', batsman = 'ROHIT'):
 
 
 ```python
-play_over()s
+#call the method and put the value for perameter
+```
+
+
+```python
+play_over('STARC','ROHIT')
 ```
 
     STARC bowling first ball : 
     ROHIT hits 1
     STARC bowling second ball : 
-    ROHIT hits 6
-    STARC bowling third ball : 
     ROHIT hits 3
-    STARC bowling fourth ball : 
+    STARC bowling third ball : 
     ROHIT hits 4
+    STARC bowling fourth ball : 
+    ROHIT hits 3
     STARC bowling fifth ball : 
     ROHIT hits 2
     STARC bowling last ball : 
-    ROHIT hits 1
+    ROHIT hits 6
 
 
 

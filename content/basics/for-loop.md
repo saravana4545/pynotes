@@ -2,25 +2,22 @@
 title: For-Loop
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 5
+score: 5
 ---
 
 ```python
-for i in range(5):
+#create a variable put some values inside.
 ```
-
-
-      Cell In[10], line 1
-        for i in range(5):
-                          ^
-    SyntaxError: incomplete input
-
-
 
 
 ```python
 fruits = ["apple", "banana", "cherry"]
+```
+
+
+```python
+#In for loop the output comes line by line
 ```
 
 
@@ -41,4 +38,4 @@ for fruit in fruits:
 
 
 ---
-**Score: 0**
+**Score: 5**

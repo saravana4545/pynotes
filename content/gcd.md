@@ -2,9 +2,14 @@
 title: Gcd
 date: 2024-11-29
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 5
+score: 5
 ---
+
+```python
+#create a method called gcd()
+```
+
 
 ```python
 def gcd(a, b):
@@ -12,7 +17,11 @@ def gcd(a, b):
         return a
     else:
         return gcd(b, a % b)
-    
+```
+
+
+```python
+#put the values for a and b by calling the method
 ```
 
 
@@ -30,4 +39,4 @@ print(gcd(17, 23))
 
 
 ---
-**Score: 0**
+**Score: 5**

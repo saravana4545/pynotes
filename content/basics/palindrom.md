@@ -2,14 +2,24 @@
 title: Palindrom
 date: 2024-11-29
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 5
+score: 5
 ---
+
+```python
+#create a method called is_palindrome()
+```
+
 
 ```python
 def is_palindrome(string):
     string = string.lower().replace(" ", "")
     return string == string[::-1]
+```
+
+
+```python
+#create a variable to get a value from user is palindrom or not.
 ```
 
 
@@ -34,4 +44,4 @@ else:
 
 
 ---
-**Score: 0**
+**Score: 5**

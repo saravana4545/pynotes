@@ -2,9 +2,14 @@
 title: List
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 7
+score: 5
 ---
+
+```python
+#create a variable a put some values inside
+```
+
 
 ```python
 list = [1,2,3,4]
@@ -12,7 +17,17 @@ list = [1,2,3,4]
 
 
 ```python
+#get the particular values by calling the variable name
+```
+
+
+```python
 get = list[3]
+```
+
+
+```python
+#call the variable and get the output
 ```
 
 
@@ -34,4 +49,4 @@ get
 
 
 ---
-**Score: 0**
+**Score: 5**

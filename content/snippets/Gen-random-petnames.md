@@ -2,12 +2,22 @@
 title: Gen-Random-Petnames
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 7
+score: 5
 ---
 
 ```python
+#import neccessery libraries
+```
+
+
+```python
 import petname
+```
+
+
+```python
+#create a method called ran_petname()
 ```
 
 
@@ -18,6 +28,11 @@ def ran_petname():
         separator="_"
     )
     return name
+```
+
+
+```python
+#set a range for the method
 ```
 
 
@@ -40,4 +55,4 @@ for _ in range(5):
 
 
 ---
-**Score: 0**
+**Score: 5**

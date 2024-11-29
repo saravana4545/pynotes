@@ -2,9 +2,14 @@
 title: Squarify-Lib
 date: 2024-11-29
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 14
+score: 10
 ---
+
+```python
+#import neccessery libraries
+```
+
 
 ```python
 import squarify
@@ -14,26 +19,60 @@ import squarify
 ```python
 # these values define the coordinate system for the returned rectangles
 # the values will range from x to x + width and y to y + height
+```
+
+
+```python
 x = 0.
 y = 0.
 width  = 700.
 height = 433.
 
 values = [500, 433, 78, 25, 25, 7]
+```
 
+
+```python
 # values must be sorted descending (and positive, obviously)
+```
+
+
+```python
 values.sort(reverse=True)
+```
 
+
+```python
 # the sum of the values must equal the total area to be laid out
-# i.e., sum(values) == width * height
+```
+
+
+```python
 values = squarify.normalize_sizes(values, width, height)
+```
 
+
+```python
 # returns a list of rectangles
+```
+
+
+```python
 rects = squarify.squarify(values, x, y, width, height)
+```
 
+
+```python
 # padded rectangles will probably visualize better for certain cases
-padded_rects = squarify.padded_squarify(values, x, y, width, height)
+```
 
+
+```python
+padded_rects = squarify.padded_squarify(values, x, y, width, height)
+```
+
+
+```python
 print(padded_rects)
 ```
 
@@ -47,4 +86,4 @@ print(padded_rects)
 
 
 ---
-**Score: 0**
+**Score: 10**

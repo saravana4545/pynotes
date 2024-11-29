@@ -2,12 +2,22 @@
 title: H5Py-Lib
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 7
+score: 5
 ---
 
 ```python
+#import neccessery libraries
+```
+
+
+```python
 import h5py
+```
+
+
+```python
+#create a method called startpy()
 ```
 
 
@@ -30,6 +40,11 @@ def startpy():
 
 
 ```python
+#This line checks if the script is being run directly or imported
+```
+
+
+```python
 if __name__ == '__main__':
     startpy()
 ```
@@ -48,4 +63,4 @@ if __name__ == '__main__':
 
 
 ---
-**Score: 0**
+**Score: 5**

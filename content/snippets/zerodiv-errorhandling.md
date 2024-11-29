@@ -2,7 +2,7 @@
 title: Zerodiv-Errorhandling
 date: 2024-11-29
 author: Your Name
-cell_count: 4
+cell_count: 3
 score: 0
 ---
 
@@ -27,11 +27,6 @@ number(10,0)
 
     Numbers can't divisible by zero
 
-
-
-```python
-
-```
 
 
 ---

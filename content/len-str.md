@@ -2,9 +2,19 @@
 title: Len-Str
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 7
+score: 5
 ---
+
+```python
+# assert string_length("123456789") == 9
+```
+
+
+```python
+#create a method called string_length()
+```
+
 
 ```python
 def string_length(s):
@@ -12,13 +22,15 @@ def string_length(s):
     length_of_word = len(s)
     if length_of_word == 5:
        return length_of_word
-    # assert string_length("123456789") == 9
-
 ```
 
 
 ```python
 #print(string_length("123456789"))
+```
+
+
+```python
 print(string_length("hello"))
 ```
 
@@ -37,4 +49,4 @@ print(string_length("hello"))
 
 
 ---
-**Score: 0**
+**Score: 5**

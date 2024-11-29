@@ -52,8 +52,14 @@
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+    <div class="highlight"><pre><span></span><code><span class="c1">#import neccessory libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called get_ball_in_words()</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_ball_in_words</span><span class="p">(</span><span class="n">ball</span><span class="p">):</span>
@@ -71,7 +77,10 @@
         <span class="k">return</span> <span class="s1">&#39;last&#39;</span> 
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">play_over</span><span class="p">(</span><span class="n">bowler</span> <span class="o">=</span> <span class="s1">&#39;STARC&#39;</span><span class="p">,</span> <span class="n">batsman</span> <span class="o">=</span> <span class="s1">&#39;ROHIT&#39;</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method and set the loop func</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">play_over</span><span class="p">(</span><span class="n">bowler</span><span class="p">,</span> <span class="n">batsman</span><span class="p">):</span>
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>       
         <span class="n">ball</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
@@ -83,21 +92,24 @@
         <span class="nb">print</span><span class="p">(</span><span class="n">batsman</span><span class="o">+</span><span class="s1">&#39; hits &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">run</span><span class="p">))</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">play_over</span><span class="p">()</span><span class="n">s</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#call the method and put the value for perameter</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">play_over</span><span class="p">(</span><span class="s1">&#39;STARC&#39;</span><span class="p">,</span><span class="s1">&#39;ROHIT&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>STARC bowling first ball : 
 ROHIT hits 1
 STARC bowling second ball : 
-ROHIT hits 6
-STARC bowling third ball : 
 ROHIT hits 3
-STARC bowling fourth ball : 
+STARC bowling third ball : 
 ROHIT hits 4
+STARC bowling fourth ball : 
+ROHIT hits 3
 STARC bowling fifth ball : 
 ROHIT hits 2
 STARC bowling last ball : 
-ROHIT hits 1
+ROHIT hits 6
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>

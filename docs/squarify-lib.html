@@ -52,32 +52,49 @@
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">squarify</span>
+    <div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">squarify</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># these values define the coordinate system for the returned rectangles</span>
 <span class="c1"># the values will range from x to x + width and y to y + height</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mf">0.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mf">0.</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mf">0.</span>
 <span class="n">width</span>  <span class="o">=</span> <span class="mf">700.</span>
 <span class="n">height</span> <span class="o">=</span> <span class="mf">433.</span>
 
 <span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">500</span><span class="p">,</span> <span class="mi">433</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</code></pre></div>
 
-<span class="c1"># values must be sorted descending (and positive, obviously)</span>
-<span class="n">values</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># values must be sorted descending (and positive, obviously)</span>
+</code></pre></div>
 
-<span class="c1"># the sum of the values must equal the total area to be laid out</span>
-<span class="c1"># i.e., sum(values) == width * height</span>
-<span class="n">values</span> <span class="o">=</span> <span class="n">squarify</span><span class="o">.</span><span class="n">normalize_sizes</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">values</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
 
-<span class="c1"># returns a list of rectangles</span>
-<span class="n">rects</span> <span class="o">=</span> <span class="n">squarify</span><span class="o">.</span><span class="n">squarify</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># the sum of the values must equal the total area to be laid out</span>
+</code></pre></div>
 
-<span class="c1"># padded rectangles will probably visualize better for certain cases</span>
-<span class="n">padded_rects</span> <span class="o">=</span> <span class="n">squarify</span><span class="o">.</span><span class="n">padded_squarify</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">values</span> <span class="o">=</span> <span class="n">squarify</span><span class="o">.</span><span class="n">normalize_sizes</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+</code></pre></div>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">padded_rects</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># returns a list of rectangles</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">rects</span> <span class="o">=</span> <span class="n">squarify</span><span class="o">.</span><span class="n">squarify</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># padded rectangles will probably visualize better for certain cases</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">padded_rects</span> <span class="o">=</span> <span class="n">squarify</span><span class="o">.</span><span class="n">padded_squarify</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">padded_rects</span><span class="p">)</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>[{&#39;x&#39;: 1.0, &#39;y&#39;: 1.0, &#39;dx&#39;: 325.7153558052434, &#39;dy&#39;: 431.0}, {&#39;x&#39;: 328.7153558052434, &#39;y&#39;: 1.0, &#39;dx&#39;: 370.2846441947566, &#39;dy&#39;: 328.0862676056338}, {&#39;x&#39;: 328.7153558052434, &#39;y&#39;: 331.0862676056338, &#39;dx&#39;: 213.0977944236371, &#39;dy&#39;: 100.9137323943662}, {&#39;x&#39;: 543.8131502288805, &#39;y&#39;: 331.0862676056338, &#39;dx&#39;: 66.94160077680677, &#39;dy&#39;: 100.9137323943662}, {&#39;x&#39;: 612.7547510056874, &#39;y&#39;: 331.0862676056338, &#39;dx&#39;: 86.24524899431273, &#39;dy&#39;: 78.40135343309854}, {&#39;x&#39;: 612.7547510056874, &#39;y&#39;: 411.4876210387323, &#39;dx&#39;: 86.2452489943124, &#39;dy&#39;: 20.51237896126767}]
@@ -87,7 +104,7 @@
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 0</strong></p>
+<p><strong>Score: 10</strong></p>
 <p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>

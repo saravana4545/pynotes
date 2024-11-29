@@ -2,9 +2,14 @@
 title: Logging-Lib
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 7
+score: 5
 ---
+
+```python
+#import neccessery libraries
+```
+
 
 ```python
 import logging
@@ -12,7 +17,17 @@ import logging
 
 
 ```python
+#This Configures logging level, format, and output details for messages.
+```
+
+
+```python
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+```
+
+
+```python
+#It's doing lots of alert messages
 ```
 
 
@@ -38,4 +53,4 @@ logging.critical("This is a critical message")
 
 
 ---
-**Score: 0**
+**Score: 5**

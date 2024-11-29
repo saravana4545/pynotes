@@ -2,12 +2,22 @@
 title: Turtle-Lib
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 7
+score: 5
 ---
 
 ```python
+#import neccessery libraries
+```
+
+
+```python
 import turtle
+```
+
+
+```python
+#create a method called home()
 ```
 
 
@@ -20,6 +30,11 @@ def home():
         t.right(90)
     turtle.done()
     return turtle
+```
+
+
+```python
+#call the method using print
 ```
 
 
@@ -37,4 +52,4 @@ print(home())
 
 
 ---
-**Score: 0**
+**Score: 5**
