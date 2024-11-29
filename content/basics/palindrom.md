@@ -1,6 +1,6 @@
 ---
 title: Palindrom
-date: 2024-11-28
+date: 2024-11-29
 author: Your Name
 cell_count: 3
 score: 0

@@ -1,6 +1,6 @@
 ---
 title: Class
-date: 2024-11-28
+date: 2024-11-29
 author: Your Name
 cell_count: 2
 score: 0

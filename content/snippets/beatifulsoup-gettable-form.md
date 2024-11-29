@@ -1,10 +1,15 @@
 ---
 title: Beatifulsoup-Gettable-Form
-date: 2024-11-28
+date: 2024-11-29
 author: Your Name
-cell_count: 8
-score: 5
+cell_count: 13
+score: 10
 ---
+
+```python
+# import necessary library
+```
+
 
 ```python
 from bs4 import BeautifulSoup
@@ -17,7 +22,17 @@ import requests
 
 
 ```python
+#put some random url
+```
+
+
+```python
 url = "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+```
+
+
+```python
+#get the url using requests method
 ```
 
 
@@ -27,7 +42,17 @@ response = requests.get(url)
 
 
 ```python
+# Parse the HTML content
+```
+
+
+```python
 soup = BeautifulSoup(response.text, "html.parser")
+```
+
+
+```python
+#extract the table path
 ```
 
 
@@ -77,4 +102,4 @@ else:
 
 
 ---
-**Score: 5**
+**Score: 10**
