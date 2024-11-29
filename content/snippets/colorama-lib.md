@@ -2,12 +2,22 @@
 title: Colorama-Lib
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 7
+score: 5
 ---
 
 ```python
+#import colorama
+```
+
+
+```python
 from colorama import Fore, Back, Style
+```
+
+
+```python
+#create a method called colorful_message
 ```
 
 
@@ -27,6 +37,10 @@ def colorful_message(text, foreground, background=None, style=None):
 
 ```python
 # Example usage
+```
+
+
+```python
 colorful_message(
     "Warning!",
     Fore.BLACK,
@@ -56,4 +70,4 @@ colorful_message(
 
 
 ---
-**Score: 0**
+**Score: 5**

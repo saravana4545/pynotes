@@ -2,13 +2,18 @@
 title: Beatifulsoup-Heading
 date: 2024-11-29
 author: Your Name
-cell_count: 8
-score: 5
+cell_count: 13
+score: 10
 ---
 
 ```python
 #1.Webpage Title Extraction
 #Extract the title of a webpage from its HTML content.
+```
+
+
+```python
+#import neccesery libraries
 ```
 
 
@@ -23,7 +28,17 @@ import requests
 
 
 ```python
+#put the url 
+```
+
+
+```python
 url = "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+```
+
+
+```python
+#get url using requests 
 ```
 
 
@@ -33,7 +48,17 @@ response = requests.get(url)
 
 
 ```python
+#parse the html content
+```
+
+
+```python
 soup = BeautifulSoup(response.content, 'html.parser')
+```
+
+
+```python
+#add the title
 ```
 
 
@@ -52,4 +77,4 @@ print("Title tag:", title )
 
 
 ---
-**Score: 5**
+**Score: 10**

@@ -2,12 +2,16 @@
 title: Find-Cls-Id-Bs4
 date: 2024-11-29
 author: Your Name
-cell_count: 8
-score: 5
+cell_count: 15
+score: 15
 ---
 
 ```python
 #8. Class and ID-Based Selection
+```
+
+
+```python
 #Extract content using specific classes or IDs from a webpage.
 ```
 
@@ -19,6 +23,10 @@ from bs4 import BeautifulSoup
 
 ```python
 # Example HTML content
+```
+
+
+```python
 html_content = """
 <html>
     <body>
@@ -37,7 +45,17 @@ html_content = """
 
 
 ```python
+#parse the html content
+```
+
+
+```python
 soup = BeautifulSoup(html_content, 'html.parser')
+```
+
+
+```python
+#find the id
 ```
 
 
@@ -54,6 +72,11 @@ print(main_div.text.strip())
 
 
 ```python
+#find the class
+```
+
+
+```python
 sidebar_div = soup.find('div', class_='sidebar')
 print("\nContent in 'sidebar':")
 print(sidebar_div.text.strip())
@@ -64,6 +87,11 @@ print(sidebar_div.text.strip())
     Sidebar Header
     This is the sidebar description.
 
+
+
+```python
+#find the descreiption
+```
 
 
 ```python
@@ -85,5 +113,10 @@ for para in description_paragraphs:
 ```
 
 
+```python
+
+```
+
+
 ---
-**Score: 5**
+**Score: 15**

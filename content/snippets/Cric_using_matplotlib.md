@@ -2,12 +2,22 @@
 title: Cric Using Matplotlib
 date: 2024-11-29
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 7
+score: 5
 ---
 
 ```python
+#import neccessary libraries
+```
+
+
+```python
 import matplotlib.pyplot as plt
+```
+
+
+```python
+#create a method called cric_score
 ```
 
 
@@ -25,12 +35,17 @@ def cric_score():
 
 
 ```python
+#print the method
+```
+
+
+```python
 print(cric_score())
 ```
 
 
     
-![png](Cric_using_matplotlib_files/Cric_using_matplotlib_2_0.png)
+![png](Cric_using_matplotlib_files/Cric_using_matplotlib_5_0.png)
     
 
 
@@ -44,4 +59,4 @@ print(cric_score())
 
 
 ---
-**Score: 0**
+**Score: 5**

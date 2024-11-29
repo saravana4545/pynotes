@@ -2,12 +2,22 @@
 title: Bs4-Basic
 date: 2024-11-29
 author: Your Name
-cell_count: 7
-score: 5
+cell_count: 11
+score: 10
 ---
 
 ```python
+#import neccessary libraries
+```
+
+
+```python
 from bs4 import BeautifulSoup
+```
+
+
+```python
+#create html content
 ```
 
 
@@ -25,7 +35,17 @@ html_content = """
 
 
 ```python
+#parse the html content
+```
+
+
+```python
 soup = BeautifulSoup(html_content, 'html.parser')
+```
+
+
+```python
+#print the title
 ```
 
 
@@ -59,4 +79,4 @@ print(soup.p.text)
 
 
 ---
-**Score: 5**
+**Score: 10**

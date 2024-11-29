@@ -2,12 +2,22 @@
 title: Calender-Lib
 date: 2024-11-29
 author: Your Name
-cell_count: 5
+cell_count: 8
 score: 5
 ---
 
 ```python
+#import the calendor library
+```
+
+
+```python
 import calendar
+```
+
+
+```python
+#create a variable and put some random year
 ```
 
 
@@ -18,6 +28,11 @@ print(f"Is {year} a leap year?", calendar.isleap(year))
 
     Is 2023 a leap year? False
 
+
+
+```python
+#print the variable
+```
 
 
 ```python

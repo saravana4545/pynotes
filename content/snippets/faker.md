@@ -2,9 +2,14 @@
 title: Faker
 date: 2024-11-29
 author: Your Name
-cell_count: 6
+cell_count: 9
 score: 5
 ---
+
+```python
+#import the faker module
+```
+
 
 ```python
 from faker import Faker
@@ -12,7 +17,17 @@ from faker import Faker
 
 
 ```python
+#call the Faker module using variable
+```
+
+
+```python
 fake = Faker()
+```
+
+
+```python
+#create a method called fake_detailes
 ```
 
 

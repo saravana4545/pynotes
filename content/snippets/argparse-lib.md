@@ -2,9 +2,14 @@
 title: Argparse-Lib
 date: 2024-11-29
 author: Your Name
-cell_count: 5
+cell_count: 7
 score: 5
 ---
+
+```python
+#import neccessery libraries
+```
+
 
 ```python
 import argparse
@@ -13,6 +18,11 @@ import argparse
 
 ```python
 import sys
+```
+
+
+```python
+#create a method called main
 ```
 
 

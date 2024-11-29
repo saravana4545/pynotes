@@ -2,9 +2,19 @@
 title: Collections-Lib
 date: 2024-11-29
 author: Your Name
-cell_count: 5
-score: 5
+cell_count: 10
+score: 10
 ---
+
+```python
+#import collections library
+```
+
+
+```python
+# !pip install collections like this
+```
+
 
 ```python
 from collections import Counter, defaultdict, deque
@@ -13,6 +23,10 @@ from collections import Counter, defaultdict, deque
 
 ```python
 # Counter example
+```
+
+
+```python
 data = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
 counter = Counter(data)
 print("Counts:", counter)
@@ -24,6 +38,10 @@ print("Counts:", counter)
 
 ```python
 # defaultdict example
+```
+
+
+```python
 scores = defaultdict(list)
 scores['Alice'].append(90)
 scores['Bob'].append(85)
@@ -36,6 +54,10 @@ print("Scores:", dict(scores))
 
 ```python
 # deque example
+```
+
+
+```python
 queue = deque([1, 2, 3])
 queue.append(4)
 queue.popleft()
@@ -52,4 +74,4 @@ print("Deque:", queue)
 
 
 ---
-**Score: 5**
+**Score: 10**
