@@ -52,24 +52,53 @@
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pypika</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Table</span>
+    <div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pypika</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Table</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#This function generates a SQL-like SELECT query.</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_table</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
     <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">query</span>
-<span class="k">def</span> <span class="nf">add_where_class</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#This function generates a SELECT query with a WHERE condition.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">add_where_class</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
     <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;SARAVANA&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">query</span>
-<span class="k">def</span> <span class="nf">insert_data</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#This function generates an INSERT query.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">insert_data</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
     <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">into</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;SARAVANA&quot;</span><span class="p">,</span> <span class="s2">&quot;saro@example.com&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">query</span>
-<span class="k">def</span> <span class="nf">update_data</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#This function generates an UPDATE query.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">update_data</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
     <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;andal&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">query</span>
-<span class="k">def</span> <span class="nf">delete_data</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#This function generates a DELETE query.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">delete_data</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
     <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;SARAVANA&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">query</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called startpy, where we can run the all above methods</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
@@ -78,6 +107,9 @@
     <span class="nb">print</span><span class="p">(</span><span class="n">insert_data</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="s2">&quot;users&quot;</span><span class="p">)))</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">update_data</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="s2">&quot;users&quot;</span><span class="p">)))</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">delete_data</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="s2">&quot;users&quot;</span><span class="p">)))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#This line checks if the script is being run directly or imported</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
@@ -95,7 +127,7 @@
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 5</strong></p>
+<p><strong>Score: 15</strong></p>
 <p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>

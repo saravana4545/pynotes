@@ -2,9 +2,14 @@
 title: Pypika-Lib
 date: 2024-11-29
 author: Your Name
-cell_count: 5
-score: 5
+cell_count: 17
+score: 15
 ---
+
+```python
+#import neccessery libraries
+```
+
 
 ```python
 from pypika import Query, Table
@@ -12,21 +17,67 @@ from pypika import Query, Table
 
 
 ```python
+#This function generates a SQL-like SELECT query.
+```
+
+
+```python
 def create_table(users):
     query = Query.from_(users).select("id", "name", "email")
     return query
+```
+
+
+```python
+#This function generates a SELECT query with a WHERE condition.
+```
+
+
+```python
 def add_where_class(users):
     query = Query.from_(users).select("id", "name").where(users.name == "SARAVANA")
     return query
+```
+
+
+```python
+#This function generates an INSERT query.
+```
+
+
+```python
 def insert_data(users):
     query = Query.into(users).columns("id", "name", "email").insert(1, "SARAVANA", "saro@example.com")
     return query
+```
+
+
+```python
+#This function generates an UPDATE query.
+```
+
+
+```python
 def update_data(users):
     query = Query.update(users).set(users.name, "andal").where(users.id == 1)
     return query
+```
+
+
+```python
+#This function generates a DELETE query.
+```
+
+
+```python
 def delete_data(users):
     query = Query.from_(users).delete().where(users.name == "SARAVANA")
     return query
+```
+
+
+```python
+#create a method called startpy, where we can run the all above methods
 ```
 
 
@@ -37,6 +88,11 @@ def startpy():
     print(insert_data(Table("users")))
     print(update_data(Table("users")))
     print(delete_data(Table("users")))
+```
+
+
+```python
+#This line checks if the script is being run directly or imported
 ```
 
 
@@ -59,4 +115,4 @@ if __name__ == '__main__':
 
 
 ---
-**Score: 5**
+**Score: 15**
