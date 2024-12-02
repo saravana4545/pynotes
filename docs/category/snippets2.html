@@ -47,6 +47,106 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/colorama-lib.html"><h3 class="article-title">Colorama-Lib</h3></a>
+<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import colorama</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">colorama</span> <span class="kn">import</span> <span class="n">Fore</span><span class="p">,</span> <span class="n">Back</span><span class="p">,</span> <span class="n">Style</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called colorful_message</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">colorful_message</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">foreground</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">formatted_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">foreground</span><span class="p">:</span>
+        <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">foreground</span>
+    <span class="k">if</span> <span class="n">background</span><span class="p">:</span>
+        <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">background</span>
+    <span class="k">if</span> <span class="n">style</span><span class="p">:</span>
+        <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">style</span>
+    <span class="n">formatted_text</span> <span class="o">+=</span> <span class="n">text</span> <span class="o">+</span> <span class="n">Style</span><span class="o">.</span><span class="n">RESET_ALL</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">formatted_text</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Example usage</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">colorful_message</span><span class="p">(</span>
+    <span class="s2">&quot;Warning!&quot;</span><span class="p">,</span>
+    <span class="n">Fore</span><span class="o">.</span><span class="n">BLACK</span><span class="p">,</span>
+    <span class="n">Back</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span>
+    <span class="n">Style</span><span class="o">.</span><span class="n">BRIGHT …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/colorama-lib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/cric-using-matplotlib.html"><h3 class="article-title">Cric Using Matplotlib</h3></a>
+<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called cric_score</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cric_score</span><span class="p">():</span>
+    <span class="n">players</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Virat Kohli&quot;</span><span class="p">,</span> <span class="s2">&quot;MS Dhoni&quot;</span><span class="p">,</span> <span class="s2">&quot;Rohit Sharma&quot;</span><span class="p">]</span>
+    <span class="n">runs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">15000</span><span class="p">,</span> <span class="mi">10500</span><span class="p">,</span> <span class="mi">14000</span><span class="p">]</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">players</span><span class="p">,</span> <span class="n">runs</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cricket Players Runs&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Players&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Runs&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#print the method</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">cric_score</span><span class="p">())</span>
+</code></pre></div>
+
+<p><img alt="png" src="Cric_using_matplotlib_files/Cric_using_matplotlib_5_0.png"></p>
+<div class="highlight"><pre><span></span><code>None
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score …</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/cric-using-matplotlib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/cricket-score.html"><h3 class="article-title">Cricket-Score</h3></a>
 <h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
 </h6>
@@ -387,94 +487,6 @@
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-pattern-with-re.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/form-data-extraction.html"><h3 class="article-title">Form-Data-Extraction</h3></a>
-<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#10. Form Data Extraction</span>
-<span class="c1">#Extract all form elements (&lt;form&gt;, &lt;input&gt;, &lt;button&gt;) from a webpage.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">html_content</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;html&gt;</span>
-<span class="s2">    &lt;body&gt;</span>
-<span class="s2">        &lt;form action=&quot;/submit&quot; method=&quot;post&quot;&gt;</span>
-<span class="s2">            &lt;label for=&quot;username&quot;&gt;Username:&lt;/label&gt;</span>
-<span class="s2">            &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot;&gt;</span>
-
-<span class="s2">            &lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;</span>
-<span class="s2">            &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/form-data-extraction.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/gen-random-petnames.html"><h3 class="article-title">Gen-Random-Petnames</h3></a>
-<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">petname</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#create a method called ran_petname()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ran_petname</span><span class="p">():</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">petname</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span>
-        <span class="n">words</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
-        <span class="n">separator</span><span class="o">=</span><span class="s2">&quot;_&quot;</span>
-    <span class="p">)</span>
-    <span class="k">return</span> <span class="n">name</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#set a range for the method</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">ran_petname</span><span class="p">())</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>lovely_cute_maggot
-newly_valued_swine
-rarely_tough_marmot
-solely_heroic_kite
-freely_ruling_fly
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/gen-random-petnames.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

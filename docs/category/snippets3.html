@@ -47,6 +47,94 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/form-data-extraction.html"><h3 class="article-title">Form-Data-Extraction</h3></a>
+<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#10. Form Data Extraction</span>
+<span class="c1">#Extract all form elements (&lt;form&gt;, &lt;input&gt;, &lt;button&gt;) from a webpage.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">html_content</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;html&gt;</span>
+<span class="s2">    &lt;body&gt;</span>
+<span class="s2">        &lt;form action=&quot;/submit&quot; method=&quot;post&quot;&gt;</span>
+<span class="s2">            &lt;label for=&quot;username&quot;&gt;Username:&lt;/label&gt;</span>
+<span class="s2">            &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot;&gt;</span>
+
+<span class="s2">            &lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;</span>
+<span class="s2">            &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/form-data-extraction.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/gen-random-petnames.html"><h3 class="article-title">Gen-Random-Petnames</h3></a>
+<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">petname</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called ran_petname()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ran_petname</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">petname</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span>
+        <span class="n">words</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="n">separator</span><span class="o">=</span><span class="s2">&quot;_&quot;</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">name</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#set a range for the method</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ran_petname</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>lovely_cute_maggot
+newly_valued_swine
+rarely_tough_marmot
+solely_heroic_kite
+freely_ruling_fly
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/gen-random-petnames.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/getdetails-usingbs4.html"><h3 class="article-title">Getdetails-Usingbs4</h3></a>
 <h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
 </h6>
@@ -291,6 +379,53 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/match-method-re.html"><h3 class="article-title">Match-Method-Re</h3></a>
+<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import re module</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a variable and put some text</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="s2">&quot;apple, banana; orange: grape&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Match if the string starts with &#39;Python&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#check it&#39;s matched or not</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matched:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Matched</span><span class="o">:</span><span class="w"> </span><span class="n">apple</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Find &#39;[;,:]&#39; matches any of these characters …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/match-method-re.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/mongo-crud-func.html"><h3 class="article-title">Mongo-Crud-Func</h3></a>
 <h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
 </h6>
@@ -323,140 +458,6 @@
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/mongo-crud-func.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/mongo-insert-method.html"><h3 class="article-title">Mongo-Insert-Method</h3></a>
-<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pymongo</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">myclient</span> <span class="o">=</span> <span class="n">pymongo</span><span class="o">.</span><span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
-<span class="n">DB_NAME</span> <span class="o">=</span> <span class="n">myclient</span><span class="p">[</span><span class="s2">&quot;mydatabase&quot;</span><span class="p">]</span>
-<span class="n">DB_COL</span> <span class="o">=</span> <span class="n">DB_NAME</span><span class="p">[</span><span class="s2">&quot;customers&quot;</span><span class="p">]</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">data_add</span><span class="p">():</span>
-    <span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Amy&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Apple st 652&quot;</span><span class="p">},</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Hannah&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Mountain 21&quot;</span><span class="p">},</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Michael&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Valley 345&quot;</span><span class="p">},</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sandy&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Ocean blvd 2&quot;</span><span class="p">}</span>
-    <span class="p">]</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">DB_COL</span><span class="o">.</span><span class="n">insert_many</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
-    <span class="k">return</span> <span class="sa">f …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/mongo-insert-method.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/name-generator.html"><h3 class="article-title">Name Generator</h3></a>
-<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">namegenerator</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">uuid</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">name_gen</span><span class="p">():</span>
-    <span class="n">random_name</span> <span class="o">=</span> <span class="n">namegenerator</span><span class="o">.</span><span class="n">gen</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">random_name</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">unique_id</span><span class="p">():</span>
-    <span class="n">random_name</span> <span class="o">=</span> <span class="n">namegenerator</span><span class="o">.</span><span class="n">gen</span><span class="p">()</span>
-    <span class="n">unique_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">random_name</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
-    <span class="k">return</span> <span class="n">unique_name</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">name_gen</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">unique_id</span><span class="p">())</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">startpy</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>sleepy-lilac-gerbil
-hasty-orchid-crab-fb050e54
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/name-generator.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/numpy-lib.html"><h3 class="article-title">Numpy-Lib</h3></a>
-<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="p">;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">coin_twist</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">):</span>
-        <span class="n">coin</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">coin</span><span class="p">)</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">coin</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-            <span class="k">return</span> <span class="s2">&quot;heads&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;tails&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">coin_twist</span><span class="p">())</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">0</span>
-<span class="n">heads</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/numpy-lib.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
