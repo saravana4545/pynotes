@@ -1,6 +1,6 @@
 ---
 title: Assign1-Even
-date: 2024-11-29
+date: 2024-12-02
 author: Your Name
 cell_count: 6
 score: 5

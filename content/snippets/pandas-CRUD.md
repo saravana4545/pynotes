@@ -1,10 +1,15 @@
 ---
 title: Pandas-Crud
-date: 2024-11-29
+date: 2024-12-02
 author: Your Name
-cell_count: 9
-score: 5
+cell_count: 16
+score: 15
 ---
+
+```python
+#import neccessery libraries
+```
+
 
 ```python
 import pandas as pd
@@ -12,7 +17,7 @@ import pandas as pd
 
 
 ```python
-#from openpyxl import pd
+#create a file and dump the datas
 ```
 
 
@@ -32,9 +37,19 @@ def create_df(filename):
 
 
 ```python
+#read the excel file
+```
+
+
+```python
 def read_excel(file_name):
     df = pd.read_excel(file_name)
     return df
+```
+
+
+```python
+#update a new data on the excel file
 ```
 
 
@@ -52,6 +67,11 @@ def update_df(file_name):
 
 
 ```python
+#delete a some data in a excel file
+```
+
+
+```python
 def delete_data_from_excel(file_name):
     df = pd.read_excel(file_name)
     dfs = df[df["name"]!= 'sanjay']
@@ -64,11 +84,21 @@ def delete_data_from_excel(file_name):
 
 
 ```python
+#create a method called startpy and call the all methods on that
+```
+
+
+```python
 def startpy():
     print(create_df('example.xlsx'))
     print(read_excel('example.xlsx'))
     print(update_df('example.xlsx'))
     print(delete_data_from_excel('example.xlsx'))
+```
+
+
+```python
+#This line checks if the script is being run directly or imported
 ```
 
 
@@ -101,5 +131,10 @@ if __name__ == '__main__':
 ```
 
 
+```python
+
+```
+
+
 ---
-**Score: 5**
+**Score: 15**

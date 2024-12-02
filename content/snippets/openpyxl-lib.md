@@ -1,10 +1,15 @@
 ---
 title: Openpyxl-Lib
-date: 2024-11-29
+date: 2024-12-02
 author: Your Name
-cell_count: 7
-score: 5
+cell_count: 12
+score: 10
 ---
+
+```python
+#import neccessary libraries
+```
+
 
 ```python
 from openpyxl import Workbook
@@ -13,9 +18,18 @@ from openpyxl import Workbook
 
 ```python
 # Create a workbook and add data
+```
+
+
+```python
 workbook    = Workbook()
 sheet       = workbook.active
 sheet.title = "Sample Sheet"
+```
+
+
+```python
+#Append the datas in the work book
 ```
 
 
@@ -27,7 +41,17 @@ sheet.append(["Bob", 30, "Los Angeles"])
 
 
 ```python
+#save the datas in the file
+```
+
+
+```python
 workbook.save("sample.xlsx")
+```
+
+
+```python
+#Then print it
 ```
 
 
@@ -50,4 +74,4 @@ print("Excel file created!")
 
 
 ---
-**Score: 5**
+**Score: 10**
