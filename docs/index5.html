@@ -263,6 +263,48 @@ freely_ruling_fly
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/getdetails-usingbs4.html"><h3 class="article-title">Getdetails-Usingbs4</h3></a>
+<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># URL of the webpage to scrape</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Fetch the HTML content of the webpage</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Check if the request was successful</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/getdetails-usingbs4.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/h5py-lib.html"><h3 class="article-title">H5Py-Lib</h3></a>
 <h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
 </h6>
@@ -407,54 +449,6 @@ freely_ruling_fly
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/if-cond.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/len-str.html"><h3 class="article-title">Len-Str</h3></a>
-<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># assert string_length(&quot;123456789&quot;) == 9</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#create a method called string_length()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">string_length</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-
-    <span class="n">length_of_word</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">length_of_word</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
-       <span class="k">return</span> <span class="n">length_of_word</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#print(string_length(&quot;123456789&quot;))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">string_length</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">5</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/len-str.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

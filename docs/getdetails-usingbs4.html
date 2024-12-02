@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Getdetails-Usingbs4</title>
+
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://saravana4545.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://saravana4545.github.io/pynotes">Py Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/getdetails-usingbs4.html" rel="bookmark"
+        title="Permalink to Getdetails-Usingbs4">Getdetails-Usingbs4</a></h3>
+    </header>
+
+<h6 class="subheader" title="2024-12-02T00:00:00-05:00">Mon 02 December 2024
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># URL of the webpage to scrape</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Fetch the HTML content of the webpage</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Check if the request was successful</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Extract book details</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>    <span class="n">books</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;article&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;product_pod&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="n">books</span><span class="p">:</span>
+        <span class="c1"># Extract book title</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">h3</span><span class="o">.</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+
+        <span class="c1"># Extract book price</span>
+        <span class="n">price</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;price_color&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+
+        <span class="c1"># Extract book link (relative URL)</span>
+        <span class="n">link</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">h3</span><span class="o">.</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
+        <span class="n">full_link</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://books.toscrape.com/catalogue/</span><span class="si">{</span><span class="n">link</span><span class="si">}</span><span class="s2">&quot;</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Title: </span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Price: </span><span class="si">{</span><span class="n">price</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Link: </span><span class="si">{</span><span class="n">full_link</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c">Title: Sharp Objects</span>
+<span class="c">Price: Â£47</span><span class="nt">.</span><span class="c">82</span>
+<span class="c">Link: https://books</span><span class="nt">.</span><span class="c">toscrape</span><span class="nt">.</span><span class="c">com/catalogue/</span><span class="nt">..</span><span class="c">/sharp</span><span class="nb">-</span><span class="c">objects_997/index</span><span class="nt">.</span><span class="c">html</span>
+<span class="nb">----------------------------------------</span>
+<span class="c">Title: Soumission</span>
+<span class="c">Price: Â£50</span><span class="nt">.</span><span class="c">10</span>
+<span class="c">Link: https://books</span><span class="nt">.</span><span class="c">toscrape</span><span class="nt">.</span><span class="c">com/catalogue/</span><span class="nt">..</span><span class="c">/soumission_998/index</span><span class="nt">.</span><span class="c">html</span>
+<span class="nb">----------------------------------------</span>
+<span class="c">Title: Tipping the Velvet</span>
+<span class="c">Price: Â£53</span><span class="nt">.</span><span class="c">74</span>
+<span class="c">Link: https://books</span><span class="nt">.</span><span class="c">toscrape</span><span class="nt">.</span><span class="c">com/catalogue/</span><span class="nt">..</span><span class="c">/tipping</span><span class="nb">-</span><span class="c">the</span><span class="nb">-</span><span class="c">velvet_999/index</span><span class="nt">.</span><span class="c">html</span>
+<span class="nb">----------------------------------------</span>
+<span class="c">Title: A Light in the Attic</span>
+<span class="c">Price: Â£51</span><span class="nt">.</span><span class="c">77</span>
+<span class="c">Link: https://books</span><span class="nt">.</span><span class="c">toscrape</span><span class="nt">.</span><span class="c">com/catalogue/</span><span class="nt">..</span><span class="c">/a</span><span class="nb">-</span><span class="c">light</span><span class="nb">-</span><span class="c">in</span><span class="nb">-</span><span class="c">the</span><span class="nb">-</span><span class="c">attic_1000/index</span><span class="nt">.</span><span class="c">html</span>
+<span class="nb">----------------------------------------</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#check when the request was fail else will be run</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to retrieve the webpage. Status code: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 10</strong></p>
+<p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://saravana4545.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/<yourusername>/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>Py Notes by Saravanakumar</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
