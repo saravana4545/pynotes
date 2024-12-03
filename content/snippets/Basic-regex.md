@@ -2,7 +2,7 @@
 title: Basic-Regex
 date: 2024-12-03
 author: Your Name
-cell_count: 18
+cell_count: 15
 score: 15
 ---
 
@@ -51,21 +51,6 @@ if match:
 
     Found: $20
 
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
 
 
 ```python

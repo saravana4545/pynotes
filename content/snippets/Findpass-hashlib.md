@@ -2,7 +2,7 @@
 title: Findpass-Hashlib
 date: 2024-12-03
 author: Your Name
-cell_count: 11
+cell_count: 14
 score: 10
 ---
 
@@ -61,6 +61,21 @@ else:
 
     Password match!
 
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
 
 
 ```python
