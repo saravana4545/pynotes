@@ -1,9 +1,9 @@
 ---
 title: Basic-Regex
-date: 2024-12-02
+date: 2024-12-03
 author: Your Name
-cell_count: 9
-score: 5
+cell_count: 18
+score: 15
 ---
 
 ```python
@@ -58,5 +58,50 @@ if match:
 ```
 
 
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
 ---
-**Score: 5**
+**Score: 15**
