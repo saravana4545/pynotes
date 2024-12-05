@@ -47,6 +47,43 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/html-lib.html"><h3 class="article-title">Html-Lib</h3></a>
+<h6 class="subheader" title="2024-12-05T00:00:00-05:00">Thu 05 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">html</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">convert_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">output_text</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">output_text</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
+    <span class="n">text</span>       <span class="o">=</span> <span class="s2">&quot;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;one.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;two.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&quot;</span>
+    <span class="n">final_html</span> <span class="o">=</span> <span class="n">convert_text</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;original_string :</span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="se">\n</span><span class="s1">final_html:</span><span class="si">{</span><span class="n">final_html</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">startpy</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>original_string<span class="w"> </span>:<span class="ni">&amp;lt …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/html-lib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/logging-lib.html"><h3 class="article-title">Logging-Lib</h3></a>
 <h6 class="subheader" title="2024-12-05T00:00:00-05:00">Thu 05 December 2024
 </h6>
@@ -390,49 +427,6 @@
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/selenium-basic.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/selenium-with-webdriver.html"><h3 class="article-title">Selenium-With-Webdriver</h3></a>
-<h6 class="subheader" title="2024-12-05T00:00:00-05:00">Thu 05 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Import neccessary libraries</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
-<span class="kn">from</span> <span class="nn">selenium.webdriver.common.by</span> <span class="kn">import</span> <span class="n">By</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Set up the driver (e.g., ChromeDriver)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">()</span>
-<span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.youtube.com&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Extract text</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">heading</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">TAG_NAME</span><span class="p">,</span> <span class="s2">&quot;h1&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Heading:&quot;</span><span class="p">,</span> <span class="n">heading</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Extract attribute value</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">link</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">TAG_NAME …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/selenium-with-webdriver.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
