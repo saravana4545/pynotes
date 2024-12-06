@@ -51,13 +51,21 @@
 </h6>
 
 
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pymongo</span> <span class="kn">import</span> <span class="n">MongoClient</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Connect to MongoDB</span>
-<span class="n">client</span>     <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">client</span>     <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
 <span class="n">db</span>         <span class="o">=</span> <span class="n">client</span><span class="p">[</span><span class="s2">&quot;test_db&quot;</span><span class="p">]</span> 
 <span class="n">collection</span> <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="s2">&quot;session_1&quot;</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called create_document() </span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_document</span><span class="p">():</span>
@@ -70,10 +78,16 @@
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inserted Document ID:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="o">.</span><span class="n">inserted_id</span><span class="p">)</span>
 </code></pre></div>
 
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method for Read the documents</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">read_documents</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Reading Documents:&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">collection</span><span class="o">.</span><span class="n">find</span><span class="p">():</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method for update the documents</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">update_document</span><span class="p">():</span>
@@ -83,10 +97,16 @@
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matched Count:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="o">.</span><span class="n">matched_count</span><span class="p">,</span> <span class="s2">&quot;Modified Count:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="o">.</span><span class="n">modified_count</span><span class="p">)</span>
 </code></pre></div>
 
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method for delete the documents</span>
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">delete_document</span><span class="p">():</span>
     <span class="n">filter_criteria</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">}</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">collection</span><span class="o">.</span><span class="n">delete_one</span><span class="p">(</span><span class="n">filter_criteria</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Deleted Count:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="o">.</span><span class="n">deleted_count</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called startpy() and here we can call the all methods</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
@@ -100,10 +120,10 @@
      <span class="n">startpy</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Inserted Document ID: 674603826eb9dd2b11624a5d
+<div class="highlight"><pre><span></span><code>Inserted Document ID: 6753200d2595f81b5f9fd86f
 
 Reading Documents:
-{&#39;_id&#39;: ObjectId(&#39;674603826eb9dd2b11624a5d&#39;), &#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 25, &#39;skills&#39;: [&#39;Python&#39;, &#39;Flask&#39;, &#39;MongoDB&#39;]}
+{&#39;_id&#39;: ObjectId(&#39;6753200d2595f81b5f9fd86f&#39;), &#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 25, &#39;skills&#39;: [&#39;Python&#39;, &#39;Flask&#39;, &#39;MongoDB&#39;]}
 Matched Count: 1 Modified Count: 1
 Deleted Count: 1
 </code></pre></div>
@@ -112,7 +132,7 @@ Deleted Count: 1
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a>
+<p><strong>Score: 15</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a>
 
 </p>
 
@@ -133,23 +153,31 @@ Deleted Count: 1
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pymongo</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary library</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">myclient</span> <span class="o">=</span> <span class="n">pymongo</span><span class="o">.</span><span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
-<span class="n">DB_NAME</span> <span class="o">=</span> <span class="n">myclient</span><span class="p">[</span><span class="s2">&quot;mydatabase&quot;</span><span class="p">]</span>
-<span class="n">DB_COL</span> <span class="o">=</span> <span class="n">DB_NAME</span><span class="p">[</span><span class="s2">&quot;customers&quot;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pymongo</span> <span class="kn">import</span> <span class="n">MongoClient</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Connect to MongoDB</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">client</span>       <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
+<span class="n">db</span>           <span class="o">=</span> <span class="n">client</span><span class="p">[</span><span class="s2">&quot;mydatabase&quot;</span><span class="p">]</span>
+<span class="n">collection</span>   <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="s2">&quot;customers&quot;</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called data_add() and give some datas</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">data_add</span><span class="p">():</span>
     <span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Amy&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Apple st 652&quot;</span><span class="p">},</span>
+      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Amy&quot;</span><span class="p">,</span>    <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Apple st 652&quot;</span><span class="p">},</span>
       <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Hannah&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Mountain 21&quot;</span><span class="p">},</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Michael&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Valley 345&quot;</span><span class="p">},</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sandy&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Ocean blvd 2&quot;</span><span class="p">}</span>
-    <span class="p">]</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">DB_COL</span><span class="o">.</span><span class="n">insert_many</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
-    <span class="k">return</span> <span class="sa">f …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a>
+      <span class="p">{</span> <span class="s2">&quot;name …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a>
 
 </p>
 

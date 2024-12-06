@@ -52,23 +52,31 @@
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pymongo</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary library</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">myclient</span> <span class="o">=</span> <span class="n">pymongo</span><span class="o">.</span><span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
-<span class="n">DB_NAME</span> <span class="o">=</span> <span class="n">myclient</span><span class="p">[</span><span class="s2">&quot;mydatabase&quot;</span><span class="p">]</span>
-<span class="n">DB_COL</span> <span class="o">=</span> <span class="n">DB_NAME</span><span class="p">[</span><span class="s2">&quot;customers&quot;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pymongo</span> <span class="kn">import</span> <span class="n">MongoClient</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Connect to MongoDB</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">client</span>       <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
+<span class="n">db</span>           <span class="o">=</span> <span class="n">client</span><span class="p">[</span><span class="s2">&quot;mydatabase&quot;</span><span class="p">]</span>
+<span class="n">collection</span>   <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="s2">&quot;customers&quot;</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called data_add() and give some datas</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">data_add</span><span class="p">():</span>
     <span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Amy&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Apple st 652&quot;</span><span class="p">},</span>
+      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Amy&quot;</span><span class="p">,</span>    <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Apple st 652&quot;</span><span class="p">},</span>
       <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Hannah&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Mountain 21&quot;</span><span class="p">},</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Michael&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Valley 345&quot;</span><span class="p">},</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sandy&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Ocean blvd 2&quot;</span><span class="p">}</span>
-    <span class="p">]</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">DB_COL</span><span class="o">.</span><span class="n">insert_many</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
-    <span class="k">return</span> <span class="sa">f …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a>
+      <span class="p">{</span> <span class="s2">&quot;name …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a>
 
 </p>
 

@@ -2,9 +2,14 @@
 title: Mongo-Crud-Func
 date: 2024-12-06
 author: Your Name
-cell_count: 9
-score: 5
+cell_count: 16
+score: 15
 ---
+
+```python
+#import neccessary libraries
+```
+
 
 ```python
 from pymongo import MongoClient
@@ -13,9 +18,18 @@ from pymongo import MongoClient
 
 ```python
 # Connect to MongoDB
+```
+
+
+```python
 client     = MongoClient("mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net")
 db         = client["test_db"] 
 collection = db["session_1"]
+```
+
+
+```python
+#create a method called create_document() 
 ```
 
 
@@ -32,10 +46,20 @@ def create_document():
 
 
 ```python
+#create a method for Read the documents
+```
+
+
+```python
 def read_documents():
     print("\nReading Documents:")
     for doc in collection.find():
         print(doc)
+```
+
+
+```python
+#create a method for update the documents
 ```
 
 
@@ -49,10 +73,20 @@ def update_document():
 
 
 ```python
+#create a method for delete the documents
+```
+
+
+```python
 def delete_document():
     filter_criteria = {"name": "Alice"}
     result = collection.delete_one(filter_criteria)
     print("Deleted Count:", result.deleted_count)
+```
+
+
+```python
+#create a method called startpy() and here we can call the all methods
 ```
 
 
@@ -70,10 +104,10 @@ if __name__ == "__main__":
      startpy()
 ```
 
-    Inserted Document ID: 674603826eb9dd2b11624a5d
+    Inserted Document ID: 6753200d2595f81b5f9fd86f
     
     Reading Documents:
-    {'_id': ObjectId('674603826eb9dd2b11624a5d'), 'name': 'Alice', 'age': 25, 'skills': ['Python', 'Flask', 'MongoDB']}
+    {'_id': ObjectId('6753200d2595f81b5f9fd86f'), 'name': 'Alice', 'age': 25, 'skills': ['Python', 'Flask', 'MongoDB']}
     Matched Count: 1 Modified Count: 1
     Deleted Count: 1
 
@@ -85,4 +119,4 @@ if __name__ == "__main__":
 
 
 ---
-**Score: 5**
+**Score: 15**
