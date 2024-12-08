@@ -47,8 +47,45 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/pypika-lib.html"><h3 class="article-title">Pypika-Lib</h3></a>
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pypika</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Table</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#This function generates a SQL-like SELECT query.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_table</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">query</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#This function generates a SELECT query with a WHERE condition.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">add_where_class</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">users …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/pypika-lib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/random.html"><h3 class="article-title">Random</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -94,7 +131,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/rich-library.html"><h3 class="article-title">Rich-Library</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -130,7 +167,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/schedule-lib.html"><h3 class="article-title">Schedule-Lib</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -173,7 +210,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/scikit-learn.html"><h3 class="article-title">Scikit-Learn</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -211,7 +248,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/seaborn-all-plots.html"><h3 class="article-title">Seaborn-All-Plots</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -249,7 +286,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/seaborn-using-pandas.html"><h3 class="article-title">Seaborn-Using-Pandas</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -294,7 +331,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/selenium-basic.html"><h3 class="article-title">Selenium-Basic</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -320,7 +357,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/selenium-with-webdriver.html"><h3 class="article-title">Selenium-With-Webdriver</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -363,7 +400,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/set.html"><h3 class="article-title">Set</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -402,60 +439,6 @@
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/set.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/simple-bookstore-api.html"><h3 class="article-title">Simple-Bookstore-Api</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccesary libraries</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span><span class="p">,</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Path</span><span class="p">,</span> <span class="n">Depends</span>
-<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">fake_db</span> <span class="o">=</span> <span class="p">[]</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Book Model</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">author</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">description</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">rating</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Dependency: Simulating a database check</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_db</span><span class="p">():</span>
-    <span class="k">if …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/simple-bookstore-api.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

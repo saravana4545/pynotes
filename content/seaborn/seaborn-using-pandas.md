@@ -1,6 +1,6 @@
 ---
 title: Seaborn-Using-Pandas
-date: 2024-12-06
+date: 2024-12-08
 author: Your Name
 cell_count: 20
 score: 20

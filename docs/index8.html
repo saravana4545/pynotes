@@ -47,8 +47,51 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/mongo-crud-func.html"><h3 class="article-title">Mongo-Crud-Func</h3></a>
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pymongo</span> <span class="kn">import</span> <span class="n">MongoClient</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Connect to MongoDB</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">client</span>     <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
+<span class="n">db</span>         <span class="o">=</span> <span class="n">client</span><span class="p">[</span><span class="s2">&quot;test_db&quot;</span><span class="p">]</span> 
+<span class="n">collection</span> <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="s2">&quot;session_1&quot;</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called create_document() </span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_document</span><span class="p">():</span>
+    <span class="n">new_document</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+        <span class="s2">&quot;skills&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;Flask&quot;</span><span class="p">,</span> <span class="s2">&quot;MongoDB&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">collection</span><span class="o">.</span><span class="n">insert_one</span><span class="p">(</span><span class="n">new_document</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inserted Document ID …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/mongo-crud-func.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/mongo-insert-method.html"><h3 class="article-title">Mongo-Insert-Method</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -91,7 +134,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/name-generator.html"><h3 class="article-title">Name Generator</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -144,7 +187,7 @@ hasty-orchid-crab-fb050e54
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/numpy-lib.html"><h3 class="article-title">Numpy-Lib</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -190,7 +233,7 @@ hasty-orchid-crab-fb050e54
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/numpy-using-pandas.html"><h3 class="article-title">Numpy-Using-Pandas</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -240,7 +283,7 @@ hasty-orchid-crab-fb050e54
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/openpyxl-lib.html"><h3 class="article-title">Openpyxl-Lib</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -281,7 +324,7 @@ hasty-orchid-crab-fb050e54
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/palindrom.html"><h3 class="article-title">Palindrom</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -315,7 +358,7 @@ hasty-orchid-crab-fb050e54
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/pandas-crud.html"><h3 class="article-title">Pandas-Crud</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -360,7 +403,7 @@ hasty-orchid-crab-fb050e54
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/pdf-creator.html"><h3 class="article-title">Pdf-Creator</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -392,7 +435,7 @@ hasty-orchid-crab-fb050e54
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/pivot-table-using-pandas.html"><h3 class="article-title">Pivot-Table-Using-Pandas</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
+<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
 </h6>
 
 
@@ -432,43 +475,6 @@ hasty-orchid-crab-fb050e54
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/pivot-table-using-pandas.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/pypika-lib.html"><h3 class="article-title">Pypika-Lib</h3></a>
-<h6 class="subheader" title="2024-12-06T00:00:00-05:00">Fri 06 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pypika</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Table</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#This function generates a SQL-like SELECT query.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_table</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
-    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">query</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#This function generates a SELECT query with a WHERE condition.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">add_where_class</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
-    <span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="o">.</span><span class="n">from_</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">users …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/pypika-lib.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
