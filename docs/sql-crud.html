@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Sql-Crud</title>
+
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://saravana4545.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://saravana4545.github.io/pynotes">Py Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/sql-crud.html" rel="bookmark"
+        title="Permalink to Sql-Crud">Sql-Crud</a></h3>
+    </header>
+
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sqlite3</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Establish database connection</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">connect</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;example.db&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Create Table (Run this once)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_table</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">connect</span><span class="p">()</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">            CREATE TABLE IF NOT EXISTS users (</span>
+<span class="s2">                id INTEGER PRIMARY KEY AUTOINCREMENT,</span>
+<span class="s2">                name TEXT NOT NULL,</span>
+<span class="s2">                age INTEGER NOT NULL,</span>
+<span class="s2">                email TEXT UNIQUE NOT NULL</span>
+<span class="s2">            )</span>
+<span class="s2">        &quot;&quot;&quot;</span><span class="p">)</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># CREATE</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_user</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">email</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">connect</span><span class="p">()</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO users (name, age, email) VALUES (?, ?, ?)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">email</span><span class="p">))</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;User added successfully!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># READ</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_users</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">connect</span><span class="p">()</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM users&quot;</span><span class="p">)</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># UPDATE</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">update_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">connect</span><span class="p">()</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">updates</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
+            <span class="n">updates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;name = &#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">age</span><span class="p">:</span>
+            <span class="n">updates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;age = </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">email</span><span class="p">:</span>
+            <span class="n">updates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;email = &#39;</span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">updates</span><span class="p">:</span>
+            <span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;UPDATE users SET </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">updates</span><span class="p">)</span><span class="si">}</span><span class="s2"> WHERE id = ?&quot;</span>
+            <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="p">(</span><span class="n">user_id</span><span class="p">,))</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;User updated successfully!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># DELETE</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">delete_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">connect</span><span class="p">()</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;DELETE FROM users WHERE id = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">user_id</span><span class="p">,))</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;User deleted successfully!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Example Usage</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">create_table</span><span class="p">()</span>
+
+    <span class="c1"># CREATE</span>
+    <span class="n">create_user</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;alice@example.com&quot;</span><span class="p">)</span>
+    <span class="n">create_user</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;bob@example.com&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>User added successfully!
+User added successfully!
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># READ</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">All Users:&quot;</span><span class="p">)</span>
+    <span class="n">get_users</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="ow">All</span><span class="w"> </span><span class="nl">Users</span><span class="p">:</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;alice@example.com&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;bob@example.com&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>  <span class="c1"># UPDATE</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Updating Bob&#39;s age:&quot;</span><span class="p">)</span>
+    <span class="n">update_user</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">35</span><span class="p">)</span>
+    <span class="n">get_users</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Updating</span><span class="w"> </span><span class="n">Bob</span><span class="s1">&#39;s age:</span>
+<span class="s1">User updated successfully!</span>
+<span class="s1">(1, &#39;</span><span class="n">Alice</span><span class="s1">&#39;, 25, &#39;</span><span class="n">alice</span><span class="nv">@example</span><span class="p">.</span><span class="n">com</span><span class="s1">&#39;)</span>
+<span class="s1">(2, &#39;</span><span class="n">Bob</span><span class="s1">&#39;, 35, &#39;</span><span class="n">bob</span><span class="nv">@example</span><span class="p">.</span><span class="n">com</span><span class="err">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> <span class="c1"># DELETE</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Deleting Alice:&quot;</span><span class="p">)</span>
+    <span class="n">delete_user</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">get_users</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Deleting</span><span class="w"> </span><span class="nl">Alice</span><span class="p">:</span>
+<span class="k">User</span><span class="w"> </span><span class="n">deleted</span><span class="w"> </span><span class="n">successfully</span><span class="err">!</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">35</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;bob@example.com&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 25</strong></p>
+<p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">SQL-CRUD</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://saravana4545.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">SQL-CRUD</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/<yourusername>/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>Py Notes by Saravanakumar</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -48,7 +48,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/simple-bookstore-api.html"><h3 class="article-title">Simple-Bookstore-Api</h3></a>
-<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
 </h6>
 
 
@@ -101,8 +101,50 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/sql-crud.html"><h3 class="article-title">Sql-Crud</h3></a>
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sqlite3</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Establish database connection</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">connect</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;example.db&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Create Table (Run this once)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_table</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">connect</span><span class="p">()</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">            CREATE TABLE IF NOT EXISTS users (</span>
+<span class="s2">                id INTEGER PRIMARY KEY AUTOINCREMENT,</span>
+<span class="s2">                name TEXT NOT NULL,</span>
+<span class="s2">                age INTEGER NOT NULL …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">SQL-CRUD</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/sql-crud.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/squarify-lib.html"><h3 class="article-title">Squarify-Lib</h3></a>
-<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
 </h6>
 
 
@@ -139,7 +181,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/time-module.html"><h3 class="article-title">Time-Module</h3></a>
-<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
 </h6>
 
 
@@ -178,7 +220,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/time-series-analysis.html"><h3 class="article-title">Time-Series-Analysis</h3></a>
-<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
 </h6>
 
 
@@ -224,7 +266,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/tkinder-lib.html"><h3 class="article-title">Tkinder-Lib</h3></a>
-<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
 </h6>
 
 
@@ -278,7 +320,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/tuple.html"><h3 class="article-title">Tuple</h3></a>
-<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
 </h6>
 
 
@@ -327,7 +369,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/turtle-lib.html"><h3 class="article-title">Turtle-Lib</h3></a>
-<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
 </h6>
 
 
@@ -371,7 +413,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/zero-type-erroe.html"><h3 class="article-title">Zero-Type-Erroe</h3></a>
-<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
 </h6>
 
 
@@ -424,7 +466,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/zerodiv-errorhandling.html"><h3 class="article-title">Zerodiv-Errorhandling</h3></a>
-<h6 class="subheader" title="2024-12-08T00:00:00-05:00">Sun 08 December 2024
+<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
 </h6>
 
 
@@ -453,26 +495,6 @@
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/zerodiv-errorhandling.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/cricket.html"><h3 class="article-title">Cricket</h3></a>
-<h6 class="subheader" title="2024-11-26T00:00:00-05:00">Tue 26 November 2024
-</h6>
-
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/cricket.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -511,6 +533,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">SQL-CRUD</a></li>
    
         </ul>
 
