@@ -47,7 +47,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/fastapi-basic.html"><h3 class="article-title">Fastapi-Basic</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -121,8 +121,54 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/fastapi-using-class.html"><h3 class="article-title">Fastapi-Using-Class</h3></a>
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Pydantic model for book data</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="nb">id</span>    <span class="p">:</span> <span class="nb">int</span>
+    <span class="n">title</span> <span class="p">:</span> <span class="nb">str</span>
+    <span class="n">author</span><span class="p">:</span> <span class="nb">str</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># BookStore class to manage books</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">BookStore</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">books</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Start with an empty list</span>
+
+    <span class="k">def …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/fastapi-using-class.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/fastapi-with-nest-asyncio.html"><h3 class="article-title">Fastapi-With-Nest Asyncio</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -174,7 +220,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/simple-bookstore-api.html"><h3 class="article-title">Simple-Bookstore-Api</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -256,7 +302,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
-            <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">SQL-CRUD</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>
    
         </ul>
 

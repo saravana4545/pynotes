@@ -1,6 +1,6 @@
 ---
 title: Advanced-Dataframe-Using-Pd
-date: 2024-12-09
+date: 2024-12-16
 author: Your Name
 cell_count: 26
 score: 25

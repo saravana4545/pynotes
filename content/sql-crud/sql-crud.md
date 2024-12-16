@@ -1,6 +1,6 @@
 ---
 title: Sql-Crud
-date: 2024-12-09
+date: 2024-12-16
 author: Your Name
 cell_count: 25
 score: 25
@@ -45,7 +45,6 @@ def create_table():
             )
         """)
         conn.commit()
-
 ```
 
 
@@ -61,7 +60,6 @@ def create_user(name, age, email):
         cursor.execute("INSERT INTO users (name, age, email) VALUES (?, ?, ?)", (name, age, email))
         conn.commit()
         print("User added successfully!")
-
 ```
 
 
@@ -78,7 +76,6 @@ def get_users():
         rows = cursor.fetchall()
         for row in rows:
             print(row)
-
 ```
 
 
@@ -103,8 +100,6 @@ def update_user(user_id, name=None, age=None, email=None):
             cursor.execute(query, (user_id,))
             conn.commit()
             print("User updated successfully!")
-
-
 ```
 
 
@@ -120,7 +115,6 @@ def delete_user(user_id):
         cursor.execute("DELETE FROM users WHERE id = ?", (user_id,))
         conn.commit()
         print("User deleted successfully!")
-
 
 ```
 

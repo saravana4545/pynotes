@@ -48,7 +48,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/faker.html"><h3 class="article-title">Faker</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -99,7 +99,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/faker-pattern.html"><h3 class="article-title">Faker-Pattern</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -148,7 +148,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/fastapi-basic.html"><h3 class="article-title">Fastapi-Basic</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -200,8 +200,54 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/fastapi-using-class.html"><h3 class="article-title">Fastapi-Using-Class</h3></a>
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Pydantic model for book data</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="nb">id</span>    <span class="p">:</span> <span class="nb">int</span>
+    <span class="n">title</span> <span class="p">:</span> <span class="nb">str</span>
+    <span class="n">author</span><span class="p">:</span> <span class="nb">str</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># BookStore class to manage books</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">BookStore</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">books</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Start with an empty list</span>
+
+    <span class="k">def …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/fastapi-using-class.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/fastapi-with-nest-asyncio.html"><h3 class="article-title">Fastapi-With-Nest Asyncio</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -253,7 +299,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/file-handling.html"><h3 class="article-title">File-Handling</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -290,7 +336,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/filehandling-error.html"><h3 class="article-title">Filehandling-Error</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -334,7 +380,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/filehandling-try-except.html"><h3 class="article-title">Filehandling-Try-Except</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -366,7 +412,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/filtering-and-querying-pd.html"><h3 class="article-title">Filtering-And-Querying-Pd</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -422,7 +468,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/find-cls-id-bs4.html"><h3 class="article-title">Find-Cls-Id-Bs4</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
+<h6 class="subheader" title="2024-12-16T00:00:00-05:00">Mon 16 December 2024
 </h6>
 
 
@@ -453,49 +499,6 @@
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-cls-id-bs4.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/find-pattern-with-re.html"><h3 class="article-title">Find-Pattern-With-Re</h3></a>
-<h6 class="subheader" title="2024-12-09T00:00:00-05:00">Mon 09 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Email me at example@gmail.com or support@example.org.&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Found email:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">Found</span><span class="w"> </span><span class="nl">email</span><span class="p">:</span><span class="w"> </span><span class="n">example</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span>
-<span class="k">Found</span><span class="w"> </span><span class="nl">email</span><span class="p">:</span><span class="w"> </span><span class="n">support</span><span class="nv">@example</span><span class="p">.</span><span class="n">org</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-pattern-with-re.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -534,7 +537,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
-            <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">SQL-CRUD</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>
    
         </ul>
 

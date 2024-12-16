@@ -1,6 +1,6 @@
 ---
 title: Zero-Type-Erroe
-date: 2024-12-09
+date: 2024-12-16
 author: Your Name
 cell_count: 12
 score: 10

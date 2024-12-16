@@ -1,6 +1,6 @@
 ---
 title: Simple-Bookstore-Api
-date: 2024-12-09
+date: 2024-12-16
 author: Your Name
 cell_count: 33
 score: 30
@@ -116,7 +116,7 @@ def get_book(book_id: int = Path(..., description="ID of the book to retrieve"))
 ```python
 @app.get("/books/search/", response_model=List[Book])
 def search_books(
-    title: Optional[str] = Query(None, description="Search by book title"),
+    title: Optional[str]  = Query(None, description="Search by book title"),
     author: Optional[str] = Query(None, description="Search by author name"),
     db=Depends(get_db),
 ):
