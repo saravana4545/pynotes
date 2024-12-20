@@ -1,6 +1,6 @@
 ---
 title: Fastapi-Basic
-date: 2024-12-16
+date: 2024-12-21
 author: Your Name
 cell_count: 12
 score: 10

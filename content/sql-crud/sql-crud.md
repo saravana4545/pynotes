@@ -1,9 +1,9 @@
 ---
 title: Sql-Crud
-date: 2024-12-16
+date: 2024-12-21
 author: Your Name
-cell_count: 25
-score: 25
+cell_count: 24
+score: 20
 ---
 
 ```python
@@ -209,10 +209,5 @@ if __name__ == "__main__":
 ```
 
 
-```python
-
-```
-
-
 ---
-**Score: 25**
+**Score: 20**
