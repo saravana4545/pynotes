@@ -1,6 +1,6 @@
 ---
 title: Assign2-Leapyear
-date: 2024-12-21
+date: 2024-12-23
 author: Your Name
 cell_count: 6
 score: 5
@@ -31,15 +31,14 @@ def leap_year(year):
 
 
 ```python
-for i in range (2020,2025):
+for i in range (1996,2000):
     print(leap_year(i))
 ```
 
-    2020 is a leap year.
-    2021 is not a leap year.
-    2022 is not a leap year.
-    2023 is not a leap year.
-    2024 is a leap year.
+    1996 is a leap year.
+    1997 is not a leap year.
+    1998 is not a leap year.
+    1999 is not a leap year.
 
 
 

@@ -47,38 +47,50 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/find-cls-id-bs4.html"><h3 class="article-title">Find-Cls-Id-Bs4</h3></a>
-<h6 class="subheader" title="2024-12-21T00:00:00-05:00">Sat 21 December 2024
+                <a href="https://saravana4545.github.io/pynotes/faker.html"><h3 class="article-title">Faker</h3></a>
+<h6 class="subheader" title="2024-12-23T00:00:00-05:00">Mon 23 December 2024
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="c1">#8. Class and ID-Based Selection</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#import the faker module</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#Extract content using specific classes or IDs from a webpage.</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#call the Faker module using variable</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1"># Example HTML content</span>
+<div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">html_content</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;html&gt;</span>
-<span class="s2">    &lt;body&gt;</span>
-<span class="s2">        &lt;div id=&quot;main&quot;&gt;</span>
-<span class="s2">            &lt;h1&gt;Main Header&lt;/h1&gt;</span>
-<span class="s2">            &lt;p class=&quot;description&quot;&gt;This is the main content description.&lt;/p&gt;</span>
-<span class="s2">        &lt;/div&gt;</span>
-<span class="s2">        &lt;div class=&quot;sidebar&quot;&gt;</span>
-<span class="s2">            &lt;h2&gt;Sidebar Header&lt;/h2 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called fake_detailes</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">fake_details</span><span class="p">():</span>
+    <span class="nb">list</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span>    <span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">(),</span>
+        <span class="s2">&quot;address&quot;</span> <span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">(),</span>
+        <span class="s2">&quot;emali&quot;</span>   <span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">email</span><span class="p">()</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nb">list</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fake_details</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">startpy</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="err">&#39;</span><span class="nx">name</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">Rebecca</span><span class="w"> </span><span class="nx">Soto</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">address</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">24033</span><span class="w"> </span><span class="nx">Matthew</span><span class="w"> </span><span class="nx">Canyon …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-cls-id-bs4.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/faker.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -86,118 +98,231 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/find-index.html"><h3 class="article-title">Find-Index</h3></a>
-<h6 class="subheader" title="2024-12-21T00:00:00-05:00">Sat 21 December 2024
+                <a href="https://saravana4545.github.io/pynotes/faker-pattern.html"><h3 class="article-title">Faker-Pattern</h3></a>
+<h6 class="subheader" title="2024-12-23T00:00:00-05:00">Mon 23 December 2024
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">find_index</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">lst</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#connect the faker </span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called address_pat()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">address_pat</span><span class="p">():</span>
+    <span class="n">fak_address</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">()</span>
+    <span class="n">address</span> <span class="o">=</span> <span class="n">fak_address</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">address</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#set the range</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">address_pat</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">3946</span><span class="o">/</span><span class="n">Braun</span><span class="o">/</span><span class="n">Hill</span><span class="o">/</span><span class="n">Apt</span><span class="mf">.</span><span class="o">/</span><span class="mf">495</span>
+<span class="n">North</span><span class="o">/</span><span class="n">Kathleen</span><span class="p">,</span><span class="o">/</span><span class="n">LA</span><span class="o">/</span><span class="mf">91986</span>
+<span class="mf">05851</span><span class="o">/</span><span class="n">Maria</span><span class="o">/</span><span class="n">Lodge</span><span class="o">/</span><span class="n">Suite …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/faker-pattern.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/fastapi-basic.html"><h3 class="article-title">Fastapi-Basic</h3></a>
+<h6 class="subheader" title="2024-12-23T00:00:00-05:00">Mon 23 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import all neccessary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">nest_asyncio</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">uvicorn</span> <span class="kn">import</span> <span class="n">Config</span><span class="p">,</span> <span class="n">Server</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">nest_asyncio</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#connect the FastAPI</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a route for get method</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">read_root</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello from FastAPI in JupyterLab!&quot;</span><span class="p">}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Run FastAPI server</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">config</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span>
+    <span class="n">app</span>      <span class="o">=</span><span class="n">app</span><span class="p">,</span>
+    <span class="n">host</span>     <span class="o">=</span><span class="s2">&quot;127.0.0 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/fastapi-basic.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/fastapi-using-class.html"><h3 class="article-title">Fastapi-Using-Class</h3></a>
+<h6 class="subheader" title="2024-12-23T00:00:00-05:00">Mon 23 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Pydantic model for book data</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="nb">id</span>    <span class="p">:</span> <span class="nb">int</span>
+    <span class="n">title</span> <span class="p">:</span> <span class="nb">str</span>
+    <span class="n">author</span><span class="p">:</span> <span class="nb">str</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># BookStore class to manage books</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">BookStore</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">books</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Start with an empty list</span>
+
+    <span class="k">def …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/fastapi-using-class.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/fastapi-with-nest-asyncio.html"><h3 class="article-title">Fastapi-With-Nest Asyncio</h3></a>
+<h6 class="subheader" title="2024-12-23T00:00:00-05:00">Mon 23 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Import required modules</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span><span class="p">,</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Path</span><span class="p">,</span> <span class="n">Depends</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+<span class="kn">import</span> <span class="nn">nest_asyncio</span>
+<span class="kn">from</span> <span class="nn">uvicorn</span> <span class="kn">import</span> <span class="n">Config</span><span class="p">,</span> <span class="n">Server</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Enable nested event loops</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">nest_asyncio</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Initialize FastAPI app</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Simulated database</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fake_db</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Book Model</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">title</span><span class="p">:</span> <span class="nb">str …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/fastapi-with-nest-asyncio.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/fibonacci-nums.html"><h3 class="article-title">Fibonacci-Nums</h3></a>
+<h6 class="subheader" title="2024-12-23T00:00:00-05:00">Mon 23 December 2024
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#21 - Write a function to return the first n Fibonacci numbers.</span>
+
+<span class="k">def</span> <span class="nf">fibonacci_numbers</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function finds the index of an item in a list.</span>
+<span class="sd">    Problem: Write a function to return the first n Fibonacci numbers.</span>
 
 <span class="sd">    Parameters:</span>
-<span class="sd">    item (any): The item to find in the list.</span>
-<span class="sd">    lst (list): The list to search for the item.</span>
+<span class="sd">    n (int): Number of Fibonacci numbers to return</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">    int: The index of the item in the list, or -1 if the item is …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-index.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/find-list-is-empty.html"><h3 class="article-title">Find-List-Is-Empty</h3></a>
-<h6 class="subheader" title="2024-12-21T00:00:00-05:00">Sat 21 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">is_list_empty</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Check if a list is empty.</span>
-
-<span class="sd">    Parameters:</span>
-<span class="sd">    lst (list): A list to be checked.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">    bool: True if the list is empty, False otherwise.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># Your code here</span>
-    <span class="k">if</span> <span class="n">lst</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
-
-    <span class="k">return</span> <span class="kc">True</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Sample test cases</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">is_list_empty</span><span class="p">([]))</span>  <span class="c1"># True</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>True
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">is_list_empty</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>  <span class="c1"># False</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>False …</code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-list-is-empty.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/find-max-num.html"><h3 class="article-title">Find-Max-Num</h3></a>
-<h6 class="subheader" title="2024-12-21T00:00:00-05:00">Sat 21 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">find_max_number</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function finds the maximum number in a list.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">    nums (list): A list of numbers.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">    int: The maximum number in the list.</span>
+<span class="sd">    list: List of the first n Fibonacci numbers</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">max_num</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">max_num</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Sample test cases</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">find_max_number</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]))</span> <span class="c1"># Expected output: 5</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">5</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">find_max_number</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+    <span class="c1"># Initialize the list to store Fibonacci numbers …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-max-num.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/fibonacci-nums.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -205,42 +330,36 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/find-pattern-with-re.html"><h3 class="article-title">Find-Pattern-With-Re</h3></a>
-<h6 class="subheader" title="2024-12-21T00:00:00-05:00">Sat 21 December 2024
+                <a href="https://saravana4545.github.io/pynotes/file-handling.html"><h3 class="article-title">File-Handling</h3></a>
+<h6 class="subheader" title="2024-12-23T00:00:00-05:00">Mon 23 December 2024
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;example.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Email me at example@gmail.com or support@example.org.&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;example.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Found email:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">Found</span><span class="w"> </span><span class="nl">email</span><span class="p">:</span><span class="w"> </span><span class="n">example</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span>
-<span class="k">Found</span><span class="w"> </span><span class="nl">email</span><span class="p">:</span><span class="w"> </span><span class="n">support</span><span class="nv">@example</span><span class="p">.</span><span class="n">org</span>
+<div class="highlight"><pre><span></span><code>Hello, World!
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-pattern-with-re.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/file-handling.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -248,40 +367,43 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/find-prime-num.html"><h3 class="article-title">Find-Prime-Num</h3></a>
-<h6 class="subheader" title="2024-12-21T00:00:00-05:00">Sat 21 December 2024
+                <a href="https://saravana4545.github.io/pynotes/filehandling-error.html"><h3 class="article-title">Filehandling-Error</h3></a>
+<h6 class="subheader" title="2024-12-23T00:00:00-05:00">Mon 23 December 2024
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="c1">#7. Write a function to check if a number is prime.</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># File Handling Inside a Method</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">is_prime</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Check if a number is prime.</span>
-
-<span class="sd">    Parameters:</span>
-<span class="sd">    num (int): The number to check for primality.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">    bool: True if the number is prime, False otherwise.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">True</span>
-
-    <span class="k">return</span> <span class="kc">False</span>
+<div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1"># Sample test cases</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">read_file</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Error: File &#39;</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">&#39; not found.&quot;</span>
+    <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Error: You don&#39;t have permission to read the file &#39;</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">&#39;.&quot;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example Usage</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># File exists</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">read_file</span><span class="p">(</span><span class="s2">&quot;example.txt …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-prime-num.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/filehandling-error.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -289,68 +411,31 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/findpass-hashlib.html"><h3 class="article-title">Findpass-Hashlib</h3></a>
-<h6 class="subheader" title="2024-12-21T00:00:00-05:00">Sat 21 December 2024
+                <a href="https://saravana4545.github.io/pynotes/filehandling-try-except.html"><h3 class="article-title">Filehandling-Try-Except</h3></a>
+<h6 class="subheader" title="2024-12-23T00:00:00-05:00">Mon 23 December 2024
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="c1">#Import neccessary module</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#File Handling with Error Management</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">hashlib</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#A common scenario with try-except is managing file operations.</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1"># Original password</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;Saro@2003&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Hash the password</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">hashed_password</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">password</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Simulate user input and hash it</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">user_input</span> <span class="o">=</span> <span class="s2">&quot;Saro@2003&quot;</span>
-<span class="n">hashed_input</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">user_input</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Compare hashes</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">hashed_password</span> <span class="o">==</span> <span class="n">hashed_input</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Password match!&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Incorrect password.&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Password match!
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 10 …</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;nonexistent_file.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File does not exist. Please check the file name.&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You don&#39;t have permission to read this …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/findpass-hashlib.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/filehandling-try-except.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -358,125 +443,61 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/for-loop.html"><h3 class="article-title">For-Loop</h3></a>
-<h6 class="subheader" title="2024-12-21T00:00:00-05:00">Sat 21 December 2024
+                <a href="https://saravana4545.github.io/pynotes/filtering-and-querying-pd.html"><h3 class="article-title">Filtering-And-Querying-Pd</h3></a>
+<h6 class="subheader" title="2024-12-23T00:00:00-05:00">Mon 23 December 2024
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="c1">#create a variable put some values inside.</span>
+<div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#In for loop the output comes line by line</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#Filtering and Querying</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">],</span>
+    <span class="s1">&#39;Salary&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50000</span><span class="p">,</span> <span class="mi">60000</span><span class="p">,</span> <span class="mi">70000</span><span class="p">]</span>
+<span class="p">}</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>apple
-banana
-cherry
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Querying the DataFrame</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">filtered</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;Age &gt; 28 and Salary &gt; 55000&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">filtered</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>      Name  Age  Salary
+1      Bob   30   60000
+2  Charlie   35   70000
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/for-loop.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/form-data-extraction.html"><h3 class="article-title">Form-Data-Extraction</h3></a>
-<h6 class="subheader" title="2024-12-21T00:00:00-05:00">Sat 21 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#10. Form Data Extraction</span>
-<span class="c1">#Extract all form elements (&lt;form&gt;, &lt;input&gt;, &lt;button&gt;) from a webpage.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">html_content</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;html&gt;</span>
-<span class="s2">    &lt;body&gt;</span>
-<span class="s2">        &lt;form action=&quot;/submit&quot; method=&quot;post&quot;&gt;</span>
-<span class="s2">            &lt;label for=&quot;username&quot;&gt;Username:&lt;/label&gt;</span>
-<span class="s2">            &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot;&gt;</span>
-
-<span class="s2">            &lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;</span>
-<span class="s2">            &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/form-data-extraction.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/func.html"><h3 class="article-title">Func</h3></a>
-<h6 class="subheader" title="2024-12-21T00:00:00-05:00">Sat 21 December 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#create a function name greet()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello,&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#called the function and give an argument</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">greet</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Hello, Alice
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">greet</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Hello, Bob
-</code></pre></div>
-
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+<div class="highlight"><pre><span></span><code><span class="c1">#Filtering with …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/func.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/filtering-and-querying-pd.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 6 of 12</h6>
+<h6 class="subheader">Page 6 of 14</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/index5.html">&laquo; Prev</a>

@@ -1,6 +1,6 @@
 ---
 title: Seaborn-All-Plots
-date: 2024-12-21
+date: 2024-12-23
 author: Your Name
 cell_count: 30
 score: 30
