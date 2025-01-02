@@ -47,6 +47,309 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/if-cond.html"><h3 class="article-title">If-Cond</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a variable and put some value</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#using if condition the value greater or less</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is greater than 5&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is 5 or less&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>x is greater than 5
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/if-cond.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/inverted-right-angle-triangle.html"><h3 class="article-title">Inverted-Right-Angle-Triangle</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Inverted Right-Angled Triangle</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">inverted_triangle</span><span class="p">():</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">inverted_triangle</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>*****
+****
+***
+**
+*
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/inverted-right-angle-triangle.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/key-error.html"><h3 class="article-title">Key-Error</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Handling Dictionary Lookups</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_value</span><span class="p">(</span><span class="n">dictionary</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Error: The key &#39;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">&#39; does not exist.&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Example Usage</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Saravana&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Key exists</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">get_value</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">))</span> 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Saravana
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Key does not exist</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">get_value</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Error</span><span class="o">:</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="s1">&#39;email&#39;</span><span class="w"> </span><span class="n">does</span><span class="w"> </span><span class="n">not …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/key-error.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/len-str.html"><h3 class="article-title">Len-Str</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># assert string_length(&quot;123456789&quot;) == 9</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called string_length()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">string_length</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+
+    <span class="n">length_of_word</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">length_of_word</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+       <span class="k">return</span> <span class="n">length_of_word</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#print(string_length(&quot;123456789&quot;))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">string_length</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">5</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/len-str.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/list.html"><h3 class="article-title">List</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a variable a put some values inside</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#get the particular values by calling the variable name</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">get</span> <span class="o">=</span> <span class="nb">list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#call the variable and get the output</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">get</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">4</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/list.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/list-assignment.html"><h3 class="article-title">List-Assignment</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Input 5 integers</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Enter number </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">: &quot;</span><span class="p">))</span>
+    <span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter number 1:  45
+Enter number 2:  24
+Enter number 3:  52
+Enter number 4:  42
+Enter number 5:  10
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Calculate sum and average</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">total_sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="n">average</span> <span class="o">=</span> <span class="n">total_sum</span> <span class="o">/</span> <span class="nb">len …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/list-assignment.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/logging-lib.html"><h3 class="article-title">Logging-Lib</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">logging</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#This Configures logging level, format, and output details for messages.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%(asctime)s</span><span class="s1"> - </span><span class="si">%(levelname)s</span><span class="s1"> - </span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#It&#39;s doing lots of alert messages</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;This is a debug message&quot;</span><span class="p">)</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;This is an info message&quot;</span><span class="p">)</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">warning …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/logging-lib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/make-qrcode.html"><h3 class="article-title">Make-Qrcode</h3></a>
 <h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
 </h6>
@@ -176,317 +479,9 @@
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/mongo-crud-func.html"><h3 class="article-title">Mongo-Crud-Func</h3></a>
-<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pymongo</span> <span class="kn">import</span> <span class="n">MongoClient</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Connect to MongoDB</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">client</span>     <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
-<span class="n">db</span>         <span class="o">=</span> <span class="n">client</span><span class="p">[</span><span class="s2">&quot;test_db&quot;</span><span class="p">]</span> 
-<span class="n">collection</span> <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="s2">&quot;session_1&quot;</span><span class="p">]</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#create a method called create_document() </span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_document</span><span class="p">():</span>
-    <span class="n">new_document</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
-        <span class="s2">&quot;skills&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;Flask&quot;</span><span class="p">,</span> <span class="s2">&quot;MongoDB&quot;</span><span class="p">]</span>
-    <span class="p">}</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">collection</span><span class="o">.</span><span class="n">insert_one</span><span class="p">(</span><span class="n">new_document</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inserted Document ID …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/mongo-crud-func.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/mongo-insert-method.html"><h3 class="article-title">Mongo-Insert-Method</h3></a>
-<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary library</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pymongo</span> <span class="kn">import</span> <span class="n">MongoClient</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Connect to MongoDB</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">client</span>       <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="s2">&quot;mongodb+srv://saravana45454:kumar123@saravana.kg1trkw.mongodb.net&quot;</span><span class="p">)</span>
-<span class="n">db</span>           <span class="o">=</span> <span class="n">client</span><span class="p">[</span><span class="s2">&quot;mydatabase&quot;</span><span class="p">]</span>
-<span class="n">collection</span>   <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="s2">&quot;customers&quot;</span><span class="p">]</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#create a method called data_add() and give some datas</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">data_add</span><span class="p">():</span>
-    <span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Amy&quot;</span><span class="p">,</span>    <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Apple st 652&quot;</span><span class="p">},</span>
-      <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Hannah&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Mountain 21&quot;</span><span class="p">},</span>
-      <span class="p">{</span> <span class="s2">&quot;name …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/mongo-insert-method.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/name-generator.html"><h3 class="article-title">Name Generator</h3></a>
-<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">namegenerator</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">uuid</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">name_gen</span><span class="p">():</span>
-    <span class="n">random_name</span> <span class="o">=</span> <span class="n">namegenerator</span><span class="o">.</span><span class="n">gen</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">random_name</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">unique_id</span><span class="p">():</span>
-    <span class="n">random_name</span> <span class="o">=</span> <span class="n">namegenerator</span><span class="o">.</span><span class="n">gen</span><span class="p">()</span>
-    <span class="n">unique_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">random_name</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
-    <span class="k">return</span> <span class="n">unique_name</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">name_gen</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">unique_id</span><span class="p">())</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">startpy</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>sleepy-lilac-gerbil
-hasty-orchid-crab-fb050e54
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/name-generator.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/numbers-pattern.html"><h3 class="article-title">Numbers-Pattern</h3></a>
-<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># 6. Number Pattern</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">num_pattern</span><span class="p">():</span>
-    <span class="n">rows</span> <span class="o">=</span> <span class="mi">5</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">rows</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">num_pattern</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">1</span>
-<span class="mf">1</span><span class="w"> </span><span class="mf">2</span>
-<span class="mf">1</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">3</span>
-<span class="mf">1</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="mf">4</span>
-<span class="mf">1</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="mf">5</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/numbers-pattern.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/numpy-lib.html"><h3 class="article-title">Numpy-Lib</h3></a>
-<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="p">;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">coin_twist</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">):</span>
-        <span class="n">coin</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">coin</span><span class="p">)</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">coin</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-            <span class="k">return</span> <span class="s2">&quot;heads&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;tails&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">coin_twist</span><span class="p">())</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">0</span>
-<span class="n">heads</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/numpy-lib.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/numpy-using-pandas.html"><h3 class="article-title">Numpy-Using-Pandas</h3></a>
-<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Handling Missing Data</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Create a DataFrame with missing values</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#np.nan: Represents missing values.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
-    <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">35</span><span class="p">],</span>
-    <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;Chicago&#39;</span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Fill missing values with &#39;Unknown&#39; or …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/numpy-using-pandas.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/occurrences-count.html"><h3 class="article-title">Occurrences-Count</h3></a>
-<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Write a function to count the occurrences of an item in a list.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">count_occurrences</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Count the occurrences of an item in a list.</span>
-
-<span class="sd">    Parameters:</span>
-<span class="sd">    lst (list): The list to search for occurrences.</span>
-<span class="sd">    item: The item to count occurrences of.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">    int: The number of occurrences of the …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/occurrences-count.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 10 of 15</h6>
+<h6 class="subheader">Page 10 of 16</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/author/your-name9.html">&laquo; Prev</a>
@@ -512,6 +507,7 @@ hasty-orchid-crab-fb050e54
             <li><a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a></li>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Getting-Sch-Details</title>
+
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://saravana4545.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://saravana4545.github.io/pynotes">Py Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/getting-sch-details.html" rel="bookmark"
+        title="Permalink to Getting-Sch-Details">Getting-Sch-Details</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="c1"># Using beautiful_soup and get details from url</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccesary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a csv file and put inside variable</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;school_details.csv&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># we want a url</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://stackschools.com/schools/33120100909/air-force-schoolcoimbatore&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># create a method called get_data().</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_data</span><span class="p">():</span>
+    <span class="n">get_Code</span>        <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s2">&quot;#main_div &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; p &gt; span&quot;</span><span class="p">)</span>
+    <span class="n">get_scl_name</span>    <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s2">&quot;#main_div &gt; h2&quot;</span><span class="p">)</span>
+    <span class="n">publish_year</span>    <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s2">&quot;#main_div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; p &gt; span&quot;</span><span class="p">)</span>
+    <span class="n">Total_teachers</span>  <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s2">&quot;#main_div &gt; div:nth-child(10) &gt; p &gt; span.badge.bg-info&quot;</span><span class="p">)</span>
+    <span class="n">Total_student</span>   <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s2">&quot;#main_div &gt; div:nth-child(10) &gt; p &gt; span.badge.bg-danger&quot;</span><span class="p">)</span>
+    <span class="n">Total_classroom</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s2">&quot;#main_div &gt; div:nth-child(14) &gt; p &gt; span.badge.bg-warning&quot;</span><span class="p">)</span>
+
+
+    <span class="c1"># if get_Code:</span>
+    <span class="c1">#     print(get_Code.text)</span>
+    <span class="c1"># else:</span>
+    <span class="c1">#     print(&quot;UDISE Code is not found&quot;)</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;school_name&quot;</span>     <span class="p">:</span> <span class="n">get_scl_name</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
+        <span class="s2">&quot;school_code&quot;</span>     <span class="p">:</span> <span class="n">get_Code</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
+        <span class="s2">&quot;publish_year&quot;</span>    <span class="p">:</span> <span class="n">publish_year</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
+        <span class="s2">&quot;Total_teachers&quot;</span>  <span class="p">:</span> <span class="n">Total_teachers</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
+        <span class="s2">&quot;Total_student&quot;</span>   <span class="p">:</span> <span class="n">Total_student</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
+        <span class="s2">&quot;Total_classroom&quot;</span> <span class="p">:</span> <span class="n">Total_classroom</span><span class="o">.</span><span class="n">text</span>
+    <span class="p">}</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">data</span><span class="p">])</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># create variable for the method.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># print the variable </span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>                   school_name  school_code publish_year Total_teachers  \
+0  AIR FORCE SCHOOL,COIMBATORE  33120100909         1952             26
+
+  Total_student Total_classroom  
+0           864              24
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 15</strong></p>
+<p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://saravana4545.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/<yourusername>/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>Py Notes by Saravanakumar</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

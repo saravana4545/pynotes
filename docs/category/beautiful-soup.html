@@ -226,6 +226,88 @@
                 <hr  class="gradient"/>
             </article>
 
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/getting-sch-details.html"><h3 class="article-title">Getting-Sch-Details</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Using beautiful_soup and get details from url</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccesary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a csv file and put inside variable</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;school_details.csv&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># we want a url</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://stackschools.com/schools/33120100909/air-force-schoolcoimbatore&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/getting-sch-details.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/streamlit-using-beautifulsoup.html"><h3 class="article-title">Streamlit-Using-Beautifulsoup</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccesary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># we can use it for to create a title in webpage</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;School ID Extractor&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># we can use it for text inside of the search box</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">url</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">text_input</span><span class="p">(</span><span class="s2">&quot;Enter the …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/streamlit-using-beautifulsoup.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
             <!-- /#posts-list -->
 <div class="pagination-centered">
 <h6 class="subheader">Page 1 of 1</h6>
@@ -252,6 +334,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a></li>

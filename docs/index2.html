@@ -47,6 +47,41 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/assign2-leapyear.html"><h3 class="article-title">Assign2-Leapyear</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Find its leap year or not</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create method called leap_year</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">leap_year</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is a leap year.&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is not a leap year.&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#put a range for it and print</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1996</span><span class="p">,</span><span class="mi">2000 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign2-leapyear.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/assign3-maxnum.html"><h3 class="article-title">Assign3-Maxnum</h3></a>
 <h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
 </h6>
@@ -350,6 +385,39 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/bank-details.html"><h3 class="article-title">Bank-Details</h3></a>
+<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">BankAccount</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">account_number</span><span class="p">,</span> <span class="n">balance</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">account_number</span> <span class="o">=</span> <span class="n">account_number</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="n">balance</span>
+
+    <span class="k">def</span> <span class="nf">deposit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">+=</span> <span class="n">amount</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Deposited </span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s2">. New balance: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">withdraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">amount</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Insufficient balance!&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">-=</span> <span class="n">amount</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Withdrew </span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s2">. New balance …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/bank-details.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/base64-lib.html"><h3 class="article-title">Base64-Lib</h3></a>
 <h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
 </h6>
@@ -385,110 +453,9 @@
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/basic-hashlib.html"><h3 class="article-title">Basic-Hashlib</h3></a>
-<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import hashlib module</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">hashlib</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Input string</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Generate MD5 hash</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">md5_hash</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MD5 Hash:&quot;</span><span class="p">,</span> <span class="n">md5_hash</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>MD5 Hash: 65a8e27d8879283831b664bd8b7f0ad4
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Generate SHA-1 hash</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">sha1_hash</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha1</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SHA-1 Hash:&quot;</span><span class="p">,</span> <span class="n">sha1_hash</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>SHA-1 Hash: 0a0a9f2a6772942557ab5355d76af442f8f65e01
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Generate SHA-256 hash</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">sha256_hash</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">encode …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/basic-hashlib.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/basic-json.html"><h3 class="article-title">Basic-Json</h3></a>
-<h6 class="subheader" title="2025-01-02T00:00:00-05:00">Thu 02 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">City</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">toJSON</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="k">lambda</span> <span class="n">o</span><span class="p">:</span> <span class="n">o</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">me</span> <span class="o">=</span> <span class="n">City</span><span class="p">()</span>
-<span class="n">me</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Onur&quot;</span>
-<span class="n">me</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">me</span><span class="o">.</span><span class="n">toJSON</span><span class="p">())</span> 
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>{
-    &quot;id&quot;: 1,
-    &quot;name&quot;: &quot;Onur&quot;
-}
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/basic-json.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 2 of 15</h6>
+<h6 class="subheader">Page 2 of 16</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/index.html">&laquo; Prev</a>
@@ -514,6 +481,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a></li>
