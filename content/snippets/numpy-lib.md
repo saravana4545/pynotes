@@ -1,6 +1,6 @@
 ---
 title: Numpy-Lib
-date: 2024-12-23
+date: 2025-01-02
 author: Your Name
 cell_count: 5
 score: 5

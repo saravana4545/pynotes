@@ -1,6 +1,6 @@
 ---
 title: Find-Pattern-With-Re
-date: 2024-12-23
+date: 2025-01-02
 author: Your Name
 cell_count: 6
 score: 5

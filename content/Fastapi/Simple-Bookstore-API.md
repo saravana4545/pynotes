@@ -1,6 +1,6 @@
 ---
 title: Simple-Bookstore-Api
-date: 2024-12-23
+date: 2025-01-02
 author: Your Name
 cell_count: 33
 score: 30
