@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Py Notes - streamlit</title>
+
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://saravana4545.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://saravana4545.github.io/pynotes">Py Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+        
+        
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/streamlit-basic-title.html"><h3 class="article-title">Streamlit-Basic-Title</h3></a>
+<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># To create Title of the app</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Simple Streamlit App&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">43</span><span class="p">:</span><span class="mf">57.370</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">43</span><span class="p">:</span><span class="mf">57.372</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+
+
+
+
+
+<span class="n">DeltaGenerator</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># To create Adding a markdown</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">st</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="s2">&quot;### Welcome to this Streamlit POC!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">43</span><span class="p">:</span><span class="mf">58.192</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">43</span><span class="p">:</span><span class="mf">58.194</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+
+
+
+
+
+<span class="n">DeltaGenerator</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Displaying some data</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Here&#39;s a random dataset:&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">43</span><span class="p">:</span><span class="mf">58.818</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">43</span><span class="p">:</span><span class="mf">58.820</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">43</span><span class="p">:</span><span class="mf">58.821</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">43</span><span class="p">:</span><span class="mf">58.822</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Generating a random dataframe</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;col </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="p">)</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">43</span><span class="p">:</span><span class="mf">59.359</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">43</span><span class="p">:</span><span class="mf">59.360</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Adding a button widget</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">st</span><span class="o">.</span><span class="n">button</span><span class="p">(</span><span class="s2">&quot;Generate new data&quot;</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+        <span class="n">columns</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;col </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+    <span class="p">)</span>
+    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.050</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.051</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.052</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.054</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.054</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Adding a slider widget</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Select a number with the slider:&quot;</span><span class="p">)</span>
+<span class="n">number</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">slider</span><span class="p">(</span><span class="s2">&quot;Pick a number&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The number you selected is </span><span class="si">{</span><span class="n">number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.963</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.965</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.966</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.967</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.968</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.968</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.969</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.970</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.970</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.971</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.972</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.973</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+<span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">08</span><span class="w"> </span><span class="mf">20</span><span class="p">:</span><span class="mf">44</span><span class="p">:</span><span class="mf">00.973</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="err">&#39;</span><span class="n">MainThread</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="kr">run</span><span class="n">ning</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="mf">.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 10</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/streamlit.html">streamlit</a>
+
+</p>
+
+
+
+            </article>
+
+
+                <hr  class="gradient"/>
+
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/streamlit-using-methods.html"><h3 class="article-title">Streamlit-Using-Methods</h3></a>
+<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">text_input_example</span><span class="p">():</span>
+    <span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Text Input Example&quot;</span><span class="p">)</span>
+    <span class="n">user_input</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">text_input</span><span class="p">(</span><span class="s2">&quot;Enter your name&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">user_input</span><span class="p">:</span>
+        <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">user_input</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">checkbox_example</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">st</span><span class="o">.</span><span class="n">checkbox</span><span class="p">(</span><span class="s2">&quot;Show/Hide Text&quot;</span><span class="p">):</span>
+        <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;This is a hidden text revealed by the …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/streamlit.html">streamlit</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/streamlit-using-methods.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+            <!-- /#posts-list -->
+<div class="pagination-centered">
+<h6 class="subheader">Page 1 of 1</h6>
+
+<p>
+
+</p>
+</div>
+
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://saravana4545.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/faker.html">Faker</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/streamlit.html">streamlit</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/<yourusername>/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>Py Notes by Saravanakumar</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

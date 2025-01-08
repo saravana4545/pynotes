@@ -1,6 +1,6 @@
 ---
 title: Zerodiv-Errorhandling
-date: 2025-01-02
+date: 2025-01-08
 author: Your Name
 cell_count: 3
 score: 0

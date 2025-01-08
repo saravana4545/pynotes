@@ -1,6 +1,6 @@
 ---
 title: Getting-Sch-Details
-date: 2025-01-02
+date: 2025-01-08
 author: Your Name
 cell_count: 17
 score: 15
