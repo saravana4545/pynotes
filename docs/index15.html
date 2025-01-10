@@ -47,6 +47,60 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/simple-bookstore-api.html"><h3 class="article-title">Simple-Bookstore-Api</h3></a>
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccesary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span><span class="p">,</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Path</span><span class="p">,</span> <span class="n">Depends</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fake_db</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Book Model</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">author</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">description</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">rating</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Dependency: Simulating a database check</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_db</span><span class="p">():</span>
+    <span class="k">if …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/simple-bookstore-api.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/single-mul-line.html"><h3 class="article-title">Single-Mul-Line</h3></a>
 <h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
@@ -400,49 +454,9 @@
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/student-grade.html"><h3 class="article-title">Student-Grade</h3></a>
-<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">marks</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">marks</span> <span class="o">=</span> <span class="n">marks</span>
-
-    <span class="k">def</span> <span class="nf">grade</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;A&quot;</span>
-        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;B&quot;</span>
-        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;C&quot;</span>
-        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;D&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;F&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Create a student object</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">student</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s2">&quot;John …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/student-grade.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 15 of 17</h6>
+<h6 class="subheader">Page 15 of 18</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/index14.html">&laquo; Prev</a>
@@ -477,6 +491,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-escape-sequence.html">python-Escape-Sequence</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-identifiers.html">Python-Identifiers</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-keywords.html">Python-keywords</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>

@@ -47,6 +47,46 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/student-grade.html"><h3 class="article-title">Student-Grade</h3></a>
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">marks</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">marks</span> <span class="o">=</span> <span class="n">marks</span>
+
+    <span class="k">def</span> <span class="nf">grade</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;A&quot;</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;B&quot;</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;C&quot;</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;D&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;F&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Create a student object</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">student</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s2">&quot;John …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/student-grade.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/sum-of-numbers.html"><h3 class="article-title">Sum-Of-Numbers</h3></a>
 <h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
@@ -418,50 +458,9 @@
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/while-kw.html"><h3 class="article-title">While-Kw</h3></a>
-<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Created at 09-01-2025</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="p">(</span><span class="n">count</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The current count is: &quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;While loop ended!&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nv">The</span><span class="w"> </span><span class="nv">current</span><span class="w"> </span><span class="nv">count</span><span class="w"> </span><span class="nv">is</span>:<span class="w">  </span><span class="mi">0</span>
-<span class="nv">The</span><span class="w"> </span><span class="nv">current</span><span class="w"> </span><span class="nv">count</span><span class="w"> </span><span class="nv">is</span>:<span class="w">  </span><span class="mi">1</span>
-<span class="nv">The</span><span class="w"> </span><span class="nv">current</span><span class="w"> </span><span class="nv">count</span><span class="w"> </span><span class="nv">is</span>:<span class="w">  </span><span class="mi">2</span>
-<span class="k">While</span><span class="w"> </span><span class="k">loop</span><span class="w"> </span><span class="nv">ended</span><span class="o">!</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-keywords.html">Python-keywords</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/while-kw.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 16 of 17</h6>
+<h6 class="subheader">Page 16 of 18</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/author/your-name15.html">&laquo; Prev</a>
@@ -496,6 +495,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-escape-sequence.html">python-Escape-Sequence</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-identifiers.html">Python-Identifiers</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-keywords.html">Python-keywords</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>

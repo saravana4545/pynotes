@@ -47,6 +47,56 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/mergeing-list.html"><h3 class="article-title">Mergeing-List</h3></a>
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># created at: 08-01-2025 </span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># merge two list using method.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_merged_list</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
+    <span class="n">non_duplicates</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">merged_list</span> <span class="o">=</span> <span class="n">list1</span> <span class="o">+</span> <span class="n">list2</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">merged_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">non_duplicates</span><span class="p">:</span>
+            <span class="n">non_duplicates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">non_duplicates</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># create lists in method.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">lists</span><span class="p">():</span>
+    <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;jupiter&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;prakash&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ram&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;raju&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bruno&quot;</span><span class="p">,</span>
+        <span class="mf">2.3</span>
+    <span class="p">]</span>
+    <span class="n">list2</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="mf">2.3</span><span class="p">,</span>
+        <span class="s2">&quot;jupiter&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mars&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mercury …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/mergeing-list.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/mongo-crud-func.html"><h3 class="article-title">Mongo-Crud-Func</h3></a>
 <h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
@@ -450,50 +500,9 @@ hasty-orchid-crab-fb050e54
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/openpyxl-lib.html"><h3 class="article-title">Openpyxl-Lib</h3></a>
-<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">openpyxl</span> <span class="kn">import</span> <span class="n">Workbook</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Create a workbook and add data</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">workbook</span>    <span class="o">=</span> <span class="n">Workbook</span><span class="p">()</span>
-<span class="n">sheet</span>       <span class="o">=</span> <span class="n">workbook</span><span class="o">.</span><span class="n">active</span>
-<span class="n">sheet</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Sample Sheet&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Append the datas in the work book</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">sheet</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;City&quot;</span><span class="p">])</span>
-<span class="n">sheet</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;New York&quot;</span><span class="p">])</span>
-<span class="n">sheet</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;Los Angeles&quot;</span><span class="p">])</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#save the datas in …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/openpyxl-lib.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 12 of 17</h6>
+<h6 class="subheader">Page 12 of 18</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/author/your-name11.html">&laquo; Prev</a>
@@ -528,6 +537,7 @@ hasty-orchid-crab-fb050e54
             <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-escape-sequence.html">python-Escape-Sequence</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-identifiers.html">Python-Identifiers</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-keywords.html">Python-keywords</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>
