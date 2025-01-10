@@ -47,8 +47,80 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/bank-details.html"><h3 class="article-title">Bank-Details</h3></a>
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">BankAccount</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">account_number</span><span class="p">,</span> <span class="n">balance</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">account_number</span> <span class="o">=</span> <span class="n">account_number</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="n">balance</span>
+
+    <span class="k">def</span> <span class="nf">deposit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">+=</span> <span class="n">amount</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Deposited </span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s2">. New balance: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">withdraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">amount</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Insufficient balance!&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">-=</span> <span class="n">amount</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Withdrew </span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s2">. New balance …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/bank-details.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/base64-lib.html"><h3 class="article-title">Base64-Lib</h3></a>
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessory libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">base64</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method to encode the datas</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">encode_data</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span><span class="p">):</span>
+    <span class="n">data</span>         <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">userid</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">expiry_date</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">encoded_data</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">urlsafe_b64encode</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">encoded_data</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method to decode the datas</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">decode_data</span><span class="p">(</span><span class="n">encoded_data</span><span class="p">):</span>
+    <span class="n">decoded_data</span>               <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">urlsafe_b64decode</span><span class="p">(</span><span class="n">encoded_data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+    <span class="n">userid</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">expiry_date</span> <span class="o">=</span> <span class="n">decoded_data …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/base64-lib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/basic-hashlib.html"><h3 class="article-title">Basic-Hashlib</h3></a>
-<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
 
 
@@ -102,7 +174,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/basic-json.html"><h3 class="article-title">Basic-Json</h3></a>
-<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
 
 
@@ -149,7 +221,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/basic-regex.html"><h3 class="article-title">Basic-Regex</h3></a>
-<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
 
 
@@ -189,7 +261,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/beatifulsoup-gettable-form.html"><h3 class="article-title">Beatifulsoup-Gettable-Form</h3></a>
-<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
 
 
@@ -238,7 +310,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/beatifulsoup-heading.html"><h3 class="article-title">Beatifulsoup-Heading</h3></a>
-<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
 
 
@@ -284,47 +356,61 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/bs4-basic.html"><h3 class="article-title">Bs4-Basic</h3></a>
-<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
+                <a href="https://saravana4545.github.io/pynotes/bi-octal-hex.html"><h3 class="article-title">Bi-Octal-Hex</h3></a>
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Created at 10-01-2025</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Binary literal</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#create html content</span>
+<div class="highlight"><pre><span></span><code><span class="n">binary_value</span> <span class="o">=</span> <span class="mb">0b1010</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">html_content</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;html&gt;</span>
-<span class="s2">    &lt;head&gt;&lt;title&gt;My Web Page&lt;/title&gt;&lt;/head&gt;</span>
-<span class="s2">    &lt;body&gt;</span>
-<span class="s2">        &lt;h1&gt;Welcome to Web Scraping&lt;/h1&gt;</span>
-<span class="s2">        &lt;p&gt;This is a &lt;b&gt;simple&lt;/b&gt; example.&lt;/p&gt;</span>
-<span class="s2">    &lt;/body&gt;</span>
-<span class="s2">&lt;/html&gt;</span>
-<span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Binary:&quot;</span><span class="p">,</span> <span class="n">binary_value</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#parse the html content</span>
+<div class="highlight"><pre><span></span><code><span class="n">Binary</span><span class="o">:</span><span class="w"> </span><span class="mi">10</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html_content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Octal literal</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#print the title</span>
+<div class="highlight"><pre><span></span><code><span class="n">octal_value</span> <span class="o">=</span> <span class="mo">0o12</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Octal:&quot;</span><span class="p">,</span> <span class="n">octal_value</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Octal</span><span class="o">:</span><span class="w"> </span><span class="mi">10</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Hexadecimal literal</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">hex_value</span> <span class="o">=</span> <span class="mh">0xA</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hexadecimal:&quot;</span><span class="p">,</span> <span class="n">hex_value</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Hexadecimal</span><span class="o">:</span><span class="w"> </span><span class="mi">10</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 10</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/bs4-basic.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/bi-octal-hex.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -332,32 +418,64 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/calculate-area-of-circle.html"><h3 class="article-title">Calculate-Area-Of- Circle</h3></a>
-<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
+                <a href="https://saravana4545.github.io/pynotes/boolean-special-literals.html"><h3 class="article-title">Boolean-Special-Literals</h3></a>
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="c1">#19 - Write a function to calculate the area of a circle given its radius.</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Created at 10-01-2025</span>
+</code></pre></div>
 
-<span class="k">def</span> <span class="nf">calculate_circle_area</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Calculate the area of a circle given its radius.</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Boolean Literals</span>
+</code></pre></div>
 
-<span class="sd">    Parameters:</span>
-<span class="sd">    radius (float): The radius of the circle.</span>
+<div class="highlight"><pre><span></span><code><span class="n">is_happy</span> <span class="o">=</span> <span class="kc">True</span>
+</code></pre></div>
 
-<span class="sd">    Returns:</span>
-<span class="sd">    float: The area of the circle.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">PI</span> <span class="o">=</span> <span class="mf">3.14</span>
-    <span class="n">my_area</span> <span class="o">=</span> <span class="n">PI</span><span class="o">*</span><span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
-    <span class="k">return</span> <span class="n">my_area …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a>
+<div class="highlight"><pre><span></span><code><span class="n">is_sad</span> <span class="o">=</span> <span class="kc">False</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Is Happy:&quot;</span><span class="p">,</span> <span class="n">is_happy</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Is Happy: True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Is Sad:&quot;</span><span class="p">,</span> <span class="n">is_sad</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Is Sad: False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Special Literal</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Assigning None</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data:&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Data</span><span class="o">:</span><span class="w"> </span><span class="n">None</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 10</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/calculate-area-of-circle.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/boolean-special-literals.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -365,121 +483,44 @@
 
 
             <article>
-                <a href="https://saravana4545.github.io/pynotes/calender-lib.html"><h3 class="article-title">Calender-Lib</h3></a>
-<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
+                <a href="https://saravana4545.github.io/pynotes/break-sequence.html"><h3 class="article-title">Break-Sequence</h3></a>
+<h6 class="subheader" title="2025-01-10T00:00:00-05:00">Fri 10 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="c1">#import the calendor library</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Created at 09-01-2025</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">calendar</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># \n: This escape sequence breaks the statement line into two lines.</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#create a variable and put some random year</span>
+<div class="highlight"><pre><span></span><code><span class="n">break_line</span> <span class="o">=</span> <span class="s2">&quot;Good Morning </span><span class="se">\n</span><span class="s2">Python World&quot;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">year</span> <span class="o">=</span> <span class="mi">2023</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Is </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> a leap year?&quot;</span><span class="p">,</span> <span class="n">calendar</span><span class="o">.</span><span class="n">isleap</span><span class="p">(</span><span class="n">year</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">break_line</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Is 2023 a leap year? False
+<div class="highlight"><pre><span></span><code>Good Morning 
+Python World
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#print the variable</span>
+<div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Monthly Calendar:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">calendar</span><span class="o">.</span><span class="n">month</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Monthly Calendar:
-   November 2024
-Mo Tu …</code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-escape-sequence.html">python-Escape-Sequence</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/calender-lib.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/capturing-group-using-re.html"><h3 class="article-title">Capturing-Group-Using-Re</h3></a>
-<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import re module</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Using Parentheses () for Capturing Groups</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;My phone number is 123-456-7890.&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Extract the area code and number</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(\d</span><span class="si">{3}</span><span class="s1">)-(\d</span><span class="si">{3}</span><span class="s1">)-(\d</span><span class="si">{4}</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">match</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Full Match:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>  <span class="c1"># Output: 123-456-7890</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Area Code:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>  <span class="c1"># Output: 123 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/capturing-group-using-re.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/check-even-odd.html"><h3 class="article-title">Check-Even -Odd</h3></a>
-<h6 class="subheader" title="2025-01-08T00:00:00-05:00">Wed 08 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Write a function to check if a number is even or odd.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">check_even_odd</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function checks if a number is even or odd.</span>
-
-<span class="sd">    Parameters:</span>
-<span class="sd">    num (int): The number to be checked.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">    str: &#39;Even&#39; if the number is even, &#39;Odd&#39; if the number is odd.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="c1"># Check if the …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/check-even-odd.html">Read More</a>
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/break-sequence.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 3 of 16</h6>
+<h6 class="subheader">Page 3 of 17</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/author/your-name2.html">&laquo; Prev</a>
@@ -513,6 +554,9 @@ Mo Tu …</code></pre></div><p class="subheader">Category: <a href="https://sara
             <li><a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-escape-sequence.html">python-Escape-Sequence</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-keywords.html">Python-keywords</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>

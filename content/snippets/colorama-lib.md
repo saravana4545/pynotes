@@ -1,6 +1,6 @@
 ---
 title: Colorama-Lib
-date: 2025-01-08
+date: 2025-01-10
 author: Your Name
 cell_count: 7
 score: 5

@@ -1,6 +1,6 @@
 ---
 title: Beatifulsoup-Gettable-Form
-date: 2025-01-08
+date: 2025-01-10
 author: Your Name
 cell_count: 13
 score: 10

@@ -1,6 +1,6 @@
 ---
 title: Inverted-Right-Angle-Triangle
-date: 2025-01-08
+date: 2025-01-10
 author: Your Name
 cell_count: 4
 score: 0
