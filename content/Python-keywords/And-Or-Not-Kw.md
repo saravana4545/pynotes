@@ -1,13 +1,18 @@
 ---
 title: And-Or-Not-Kw
-date: 2025-01-10
+date: 2025-01-20
 author: Your Name
-cell_count: 9
-score: 5
+cell_count: 10
+score: 10
 ---
 
 ```python
 #Created at 09-01-2025
+```
+
+
+```python
+# https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/
 ```
 
 
@@ -64,4 +69,4 @@ if not c:
 
 
 ---
-**Score: 5**
+**Score: 10**

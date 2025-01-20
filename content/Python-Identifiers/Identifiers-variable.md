@@ -1,8 +1,8 @@
 ---
 title: Identifiers-Variable
-date: 2025-01-10
+date: 2025-01-20
 author: Your Name
-cell_count: 13
+cell_count: 14
 score: 10
 ---
 
@@ -13,6 +13,11 @@ score: 10
 
 ```python
 # valid identifiers Variables
+```
+
+
+```python
+#  reference - https://www.scientecheasy.com/2022/09/identifiers-in-python.html
 ```
 
 

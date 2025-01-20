@@ -1,13 +1,18 @@
 ---
 title: Single-Quote
-date: 2025-01-10
+date: 2025-01-20
 author: Your Name
-cell_count: 9
-score: 5
+cell_count: 10
+score: 10
 ---
 
 ```python
 # Create at 09-01-2025
+```
+
+
+```python
+# referance - https://www.scientecheasy.com/2022/09/escape-sequence-in-python.html
 ```
 
 
@@ -58,4 +63,4 @@ print(double_quote)
 
 
 ---
-**Score: 5**
+**Score: 10**

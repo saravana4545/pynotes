@@ -1,13 +1,18 @@
 ---
 title: Literal-Collections
-date: 2025-01-10
+date: 2025-01-20
 author: Your Name
-cell_count: 14
-score: 10
+cell_count: 15
+score: 15
 ---
 
 ```python
 # Created at 10-01-2025
+```
+
+
+```python
+# https://www.scientecheasy.com/2022/09/literals-in-python.html/
 ```
 
 
@@ -89,4 +94,4 @@ print("Set:", unique_numbers)
 
 
 ---
-**Score: 10**
+**Score: 15**
