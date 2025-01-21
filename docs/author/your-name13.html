@@ -47,8 +47,275 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/match-method-re.html"><h3 class="article-title">Match-Method-Re</h3></a>
+<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import re module</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a variable and put some text</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="s2">&quot;apple, banana; orange: grape&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Match if the string starts with &#39;Python&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#check it&#39;s matched or not</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matched:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Matched</span><span class="o">:</span><span class="w"> </span><span class="n">apple</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Find &#39;[;,:]&#39; matches any of these characters …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/match-method-re.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/memory-management.html"><h3 class="article-title">Memory-Management</h3></a>
+<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Created at 20-01-2025</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># https://www.scientecheasy.com/2022/09/memory-management-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Stack and Heap</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">add_numbers</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> 
+    <span class="k">return</span> <span class="n">result</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+<span class="n">final_result</span> <span class="o">=</span> <span class="n">add_numbers</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">final_result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">35</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-memory-management.html">Python-Memory-Management</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/memory-management.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/merge-dictionaries.html"><h3 class="article-title">Merge-Dictionaries</h3></a>
+<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Write a function to merge two dictionaries.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">merge_dicts</span><span class="p">(</span><span class="n">dict1</span><span class="p">,</span> <span class="n">dict2</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Merge two dictionaries into one.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    dict1 (dict): The first dictionary to be merged.</span>
+<span class="sd">    dict2 (dict): The second dictionary to be merged.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    dict: A new dictionary containing the merged key-value pairs from dict1 and dict2.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Loop through dict1 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/merge-dictionaries.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/mergeing-list.html"><h3 class="article-title">Mergeing-List</h3></a>
+<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># created at: 08-01-2025 </span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># merge two list using method.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_merged_list</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
+    <span class="n">non_duplicates</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">merged_list</span> <span class="o">=</span> <span class="n">list1</span> <span class="o">+</span> <span class="n">list2</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">merged_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">non_duplicates</span><span class="p">:</span>
+            <span class="n">non_duplicates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">non_duplicates</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># create lists in method.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">lists</span><span class="p">():</span>
+    <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;jupiter&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;prakash&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ram&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;raju&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bruno&quot;</span><span class="p">,</span>
+        <span class="mf">2.3</span>
+    <span class="p">]</span>
+    <span class="n">list2</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="mf">2.3</span><span class="p">,</span>
+        <span class="s2">&quot;jupiter&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mars&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mercury …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/mergeing-list.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/modulus-operator.html"><h3 class="article-title">Modulus-Operator</h3></a>
+<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Created at 21-01-2025</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># https://www.scientecheasy.com/2022/10/operators-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Modulus Operator (%)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num1</span> <span class="o">=</span> <span class="mi">20</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num2</span> <span class="o">=</span> <span class="mi">15</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">%</span> <span class="n">num2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">5</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Exponential Operator (**)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num1</span> <span class="o">=</span> <span class="mi">8</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num2</span> <span class="o">=</span> <span class="mi">2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">**</span> <span class="n">num2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">256</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Floor Division (//)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num1</span> <span class="o">=</span> <span class="mi">36</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num2</span> <span class="o">=</span> <span class="mi">6</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">//</span> <span class="n">num2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">6</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 20</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-arthmetic-operator.html">Python-Arthmetic-operator</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/modulus-operator.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/mongo-crud-func.html"><h3 class="article-title">Mongo-Crud-Func</h3></a>
-<h6 class="subheader" title="2025-01-20T00:00:00-05:00">Mon 20 January 2025
+<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
 </h6>
 
 
@@ -91,7 +358,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/mongo-insert-method.html"><h3 class="article-title">Mongo-Insert-Method</h3></a>
-<h6 class="subheader" title="2025-01-20T00:00:00-05:00">Mon 20 January 2025
+<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
 </h6>
 
 
@@ -134,7 +401,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/multipication.html"><h3 class="article-title">Multipication</h3></a>
-<h6 class="subheader" title="2025-01-20T00:00:00-05:00">Mon 20 January 2025
+<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
 </h6>
 
 
@@ -171,7 +438,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/name-generator.html"><h3 class="article-title">Name Generator</h3></a>
-<h6 class="subheader" title="2025-01-20T00:00:00-05:00">Mon 20 January 2025
+<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
 </h6>
 
 
@@ -224,7 +491,7 @@ hasty-orchid-crab-fb050e54
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/numbers-pattern.html"><h3 class="article-title">Numbers-Pattern</h3></a>
-<h6 class="subheader" title="2025-01-20T00:00:00-05:00">Mon 20 January 2025
+<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
 </h6>
 
 
@@ -258,239 +525,6 @@ hasty-orchid-crab-fb050e54
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/numbers-pattern.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/numeric-literals.html"><h3 class="article-title">Numeric-Literals</h3></a>
-<h6 class="subheader" title="2025-01-20T00:00:00-05:00">Mon 20 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Created at 10-01-2025</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># https://www.scientecheasy.com/2022/09/literals-in-python.html</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Integer literal</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">integer_value</span> <span class="o">=</span> <span class="mi">42</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Integer:&quot;</span><span class="p">,</span> <span class="n">integer_value</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">Integer</span><span class="o">:</span><span class="w"> </span><span class="mi">42</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Float literal</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">float_value</span> <span class="o">=</span> <span class="mf">3.14159</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Float:&quot;</span><span class="p">,</span> <span class="n">float_value</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">Float</span><span class="o">:</span><span class="w"> </span><span class="mf">3.14159</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Complex number literal</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">complex_value</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">3</span><span class="n">j</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Complex:&quot;</span><span class="p">,</span> <span class="n">complex_value</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Complex: (4+3j)
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 10</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/numeric-literals.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/numpy-lib.html"><h3 class="article-title">Numpy-Lib</h3></a>
-<h6 class="subheader" title="2025-01-20T00:00:00-05:00">Mon 20 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="p">;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">coin_twist</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">):</span>
-        <span class="n">coin</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">coin</span><span class="p">)</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">coin</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-            <span class="k">return</span> <span class="s2">&quot;heads&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;tails&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">coin_twist</span><span class="p">())</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">0</span>
-<span class="n">heads</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/numpy-lib.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/numpy-using-pandas.html"><h3 class="article-title">Numpy-Using-Pandas</h3></a>
-<h6 class="subheader" title="2025-01-20T00:00:00-05:00">Mon 20 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Handling Missing Data</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Create a DataFrame with missing values</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#np.nan: Represents missing values.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
-    <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">35</span><span class="p">],</span>
-    <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;Chicago&#39;</span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Fill missing values with &#39;Unknown&#39; or …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/numpy-using-pandas.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/occurrences-count.html"><h3 class="article-title">Occurrences-Count</h3></a>
-<h6 class="subheader" title="2025-01-20T00:00:00-05:00">Mon 20 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Write a function to count the occurrences of an item in a list.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">count_occurrences</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Count the occurrences of an item in a list.</span>
-
-<span class="sd">    Parameters:</span>
-<span class="sd">    lst (list): The list to search for occurrences.</span>
-<span class="sd">    item: The item to count occurrences of.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">    int: The number of occurrences of the …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/occurrences-count.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/openpyxl-lib.html"><h3 class="article-title">Openpyxl-Lib</h3></a>
-<h6 class="subheader" title="2025-01-20T00:00:00-05:00">Mon 20 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">openpyxl</span> <span class="kn">import</span> <span class="n">Workbook</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Create a workbook and add data</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">workbook</span>    <span class="o">=</span> <span class="n">Workbook</span><span class="p">()</span>
-<span class="n">sheet</span>       <span class="o">=</span> <span class="n">workbook</span><span class="o">.</span><span class="n">active</span>
-<span class="n">sheet</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Sample Sheet&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Append the datas in the work book</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">sheet</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;City&quot;</span><span class="p">])</span>
-<span class="n">sheet</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;New York&quot;</span><span class="p">])</span>
-<span class="n">sheet</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;Los Angeles&quot;</span><span class="p">])</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#save the datas in …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/openpyxl-lib.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -529,6 +563,8 @@ hasty-orchid-crab-fb050e54
             <li><a href="https://saravana4545.github.io/pynotes/category/misc.html">misc</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/mongo-db.html">Mongo-DB</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-arthmetic-operator.html">Python-Arthmetic-operator</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-assignment-operator.html">Python-Assignment Operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-buildin-datatype.html">Python-BuildIn-Datatype</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-escape-sequence.html">python-Escape-Sequence</a></li>
@@ -536,6 +572,7 @@ hasty-orchid-crab-fb050e54
             <li><a href="https://saravana4545.github.io/pynotes/category/python-identifiers.html">Python-Identifiers</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-keywords.html">Python-keywords</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-memory-management.html">Python-Memory-Management</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
