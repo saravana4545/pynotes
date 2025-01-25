@@ -1,6 +1,6 @@
 ---
 title: Float-Type
-date: 2025-01-21
+date: 2025-01-25
 author: Your Name
 cell_count: 8
 score: 5

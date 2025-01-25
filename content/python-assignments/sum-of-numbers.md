@@ -1,6 +1,6 @@
 ---
 title: Sum-Of-Numbers
-date: 2025-01-21
+date: 2025-01-25
 author: Your Name
 cell_count: 6
 score: 5

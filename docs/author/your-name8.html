@@ -47,8 +47,232 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/error-handling.html"><h3 class="article-title">Error-Handling</h3></a>
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You entered:&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That&#39;s not a valid number!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter a number:  saro
+
+
+That&#39;s not a valid number!
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/error-handling.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/factorial.html"><h3 class="article-title">Factorial</h3></a>
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#https://stackoverflow.com/questions/76722924/calculate-the-factorial-of-a-number</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Write a function to calculate the factorial of a number.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the factorial of a number.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    n (int): The number to calculate the factorial for.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    int: The factorial of the given number.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/factorial.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/fake-pattern-.html"><h3 class="article-title">Fake-Pattern(-)</h3></a>
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#connect the faker </span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called address_pat()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">address_pat</span><span class="p">():</span>
+    <span class="n">fak_address</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">()</span>
+    <span class="n">address</span> <span class="o">=</span> <span class="n">fak_address</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">address</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#set the range</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">address_pat</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">881</span><span class="o">-</span><span class="n">Cynthia</span><span class="o">-</span><span class="n">Summit</span>
+<span class="n">Port</span><span class="o">-</span><span class="n">Paulabury</span><span class="p">,</span><span class="o">-</span><span class="ow">OR</span><span class="o">-</span><span class="mf">66193</span>
+<span class="mf">34627</span><span class="o">-</span><span class="n">Thompson</span><span class="o">-</span><span class="n">Glen</span><span class="o">-</span><span class="n">Suite</span><span class="o">-</span><span class="mf">767</span>
+<span class="n">Hayleystad …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/faker.html">Faker</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/fake-pattern-.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/faker.html"><h3 class="article-title">Faker</h3></a>
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import the faker module</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#call the Faker module using variable</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called fake_detailes</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">fake_details</span><span class="p">():</span>
+    <span class="nb">list</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span>    <span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">(),</span>
+        <span class="s2">&quot;address&quot;</span> <span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">(),</span>
+        <span class="s2">&quot;emali&quot;</span>   <span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">email</span><span class="p">()</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nb">list</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fake_details</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">startpy</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="err">&#39;</span><span class="nx">name</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">Rebecca</span><span class="w"> </span><span class="nx">Soto</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">address</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">24033</span><span class="w"> </span><span class="nx">Matthew</span><span class="w"> </span><span class="nx">Canyon …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/faker.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/faker-pattern.html"><h3 class="article-title">Faker-Pattern</h3></a>
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#connect the faker </span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called address_pat()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">address_pat</span><span class="p">():</span>
+    <span class="n">fak_address</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">()</span>
+    <span class="n">address</span> <span class="o">=</span> <span class="n">fak_address</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">address</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#set the range</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">address_pat</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">3946</span><span class="o">/</span><span class="n">Braun</span><span class="o">/</span><span class="n">Hill</span><span class="o">/</span><span class="n">Apt</span><span class="mf">.</span><span class="o">/</span><span class="mf">495</span>
+<span class="n">North</span><span class="o">/</span><span class="n">Kathleen</span><span class="p">,</span><span class="o">/</span><span class="n">LA</span><span class="o">/</span><span class="mf">91986</span>
+<span class="mf">05851</span><span class="o">/</span><span class="n">Maria</span><span class="o">/</span><span class="n">Lodge</span><span class="o">/</span><span class="n">Suite …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/faker.html">Faker</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/faker-pattern.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/fastapi-basic.html"><h3 class="article-title">Fastapi-Basic</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -101,7 +325,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/fastapi-using-class.html"><h3 class="article-title">Fastapi-Using-Class</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -147,7 +371,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/fastapi-with-nest-asyncio.html"><h3 class="article-title">Fastapi-With-Nest Asyncio</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -199,7 +423,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/fibonacci-nums.html"><h3 class="article-title">Fibonacci-Nums</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -231,7 +455,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/file-handling.html"><h3 class="article-title">File-Handling</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -263,208 +487,9 @@
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/filehandling-error.html"><h3 class="article-title">Filehandling-Error</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># File Handling Inside a Method</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">read_file</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-    <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Error: File &#39;</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">&#39; not found.&quot;</span>
-    <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Error: You don&#39;t have permission to read the file &#39;</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">&#39;.&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Example Usage</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># File exists</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">read_file</span><span class="p">(</span><span class="s2">&quot;example.txt …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/filehandling-error.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/filehandling-try-except.html"><h3 class="article-title">Filehandling-Try-Except</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#File Handling with Error Management</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#A common scenario with try-except is managing file operations.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;nonexistent_file.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-        <span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-<span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File does not exist. Please check the file name.&quot;</span><span class="p">)</span>
-<span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You don&#39;t have permission to read this …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/filehandling-try-except.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/filtering-and-querying-pd.html"><h3 class="article-title">Filtering-And-Querying-Pd</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Filtering and Querying</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">],</span>
-    <span class="s1">&#39;Salary&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50000</span><span class="p">,</span> <span class="mi">60000</span><span class="p">,</span> <span class="mi">70000</span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Querying the DataFrame</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">filtered</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;Age &gt; 28 and Salary &gt; 55000&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">filtered</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>      Name  Age  Salary
-1      Bob   30   60000
-2  Charlie   35   70000
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Filtering with …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/pandas-work.html">pandas-work</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/filtering-and-querying-pd.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/find-cls-id-bs4.html"><h3 class="article-title">Find-Cls-Id-Bs4</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#8. Class and ID-Based Selection</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Extract content using specific classes or IDs from a webpage.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Example HTML content</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">html_content</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;html&gt;</span>
-<span class="s2">    &lt;body&gt;</span>
-<span class="s2">        &lt;div id=&quot;main&quot;&gt;</span>
-<span class="s2">            &lt;h1&gt;Main Header&lt;/h1&gt;</span>
-<span class="s2">            &lt;p class=&quot;description&quot;&gt;This is the main content description.&lt;/p&gt;</span>
-<span class="s2">        &lt;/div&gt;</span>
-<span class="s2">        &lt;div class=&quot;sidebar&quot;&gt;</span>
-<span class="s2">            &lt;h2&gt;Sidebar Header&lt;/h2 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-cls-id-bs4.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/find-index.html"><h3 class="article-title">Find-Index</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">find_index</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">lst</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function finds the index of an item in a list.</span>
-
-<span class="sd">    Parameters:</span>
-<span class="sd">    item (any): The item to find in the list.</span>
-<span class="sd">    lst (list): The list to search for the item.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">    int: The index of the item in the list, or -1 if the item is …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-index.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 8 of 19</h6>
+<h6 class="subheader">Page 8 of 21</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/author/your-name7.html">&laquo; Prev</a>
@@ -500,14 +525,21 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/python-arthmetic-operator.html">Python-Arthmetic-operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-assignment-operator.html">Python-Assignment Operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-bitwise.html">Python-Bitwise</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-buildin-datatype.html">Python-BuildIn-Datatype</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-comparison-operator.html">Python-Comparison-Operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-escape-sequence.html">python-Escape-Sequence</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-globalvariables.html">Python-GlobalVariables</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-identifiers.html">Python-Identifiers</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-identity-operator.html">python-identity-Operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-keywords.html">Python-keywords</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-logical-operator.html">python-Logical-Operator</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-membership-operator.html">Python-Membership-Operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-memory-management.html">Python-Memory-Management</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-operator-precedence.html">Python-Operator-Precedence</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-tenary.html">Python-Tenary</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>

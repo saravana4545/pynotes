@@ -1,6 +1,6 @@
 ---
 title: Fastapi-Using-Class
-date: 2025-01-21
+date: 2025-01-25
 author: Your Name
 cell_count: 15
 score: 15

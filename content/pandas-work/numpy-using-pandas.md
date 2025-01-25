@@ -1,6 +1,6 @@
 ---
 title: Numpy-Using-Pandas
-date: 2025-01-21
+date: 2025-01-25
 author: Your Name
 cell_count: 35
 score: 35

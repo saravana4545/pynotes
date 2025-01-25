@@ -47,8 +47,135 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/argparse-lib.html"><h3 class="article-title">Argparse-Lib</h3></a>
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccessery libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">argparse</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sys</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method called main</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;SoundScrape. Scrape an artist from SoundCloud.</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;artist_url&#39;</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;An artist</span><span class="se">\&#39;</span><span class="s1">s SoundCloud username or URL&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-n&#39;</span><span class="p">,</span> <span class="s1">&#39;--num-tracks&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">maxsize …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/argparse-lib.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/arthmatic.html"><h3 class="article-title">Arthmatic</h3></a>
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sum:&quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Sum</span><span class="o">:</span><span class="w"> </span><span class="mi">15</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Difference:&quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Difference</span><span class="o">:</span><span class="w"> </span><span class="mi">5</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Product:&quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Product</span><span class="o">:</span><span class="w"> </span><span class="mi">50</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Division:&quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Division</span><span class="o">:</span><span class="w"> </span><span class="mf">2.0</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/arthmatic.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/arthmetic-error.html"><h3 class="article-title">Arthmetic-Error</h3></a>
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># ArithmeticError</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">x</span> <span class="o">**</span> <span class="n">y</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">except</span> <span class="ne">OverflowError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;OverflowError occurred: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">my_function</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/arthmetic-error.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/ascii-sequence.html"><h3 class="article-title">Ascii-Sequence</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -94,7 +221,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign1-even.html"><h3 class="article-title">Assign1-Even</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -133,7 +260,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign10-divisible.html"><h3 class="article-title">Assign10-Divisible</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -161,7 +288,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign2-leapyear.html"><h3 class="article-title">Assign2-Leapyear</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -196,7 +323,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign3-maxnum.html"><h3 class="article-title">Assign3-Maxnum</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -246,7 +373,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign4-countwors.html"><h3 class="article-title">Assign4-Countwors</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -289,7 +416,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign5-checkprime.html"><h3 class="article-title">Assign5-Checkprime</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
 
 
@@ -320,145 +447,9 @@
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/assign6-reverse.html"><h3 class="article-title">Assign6-Reverse</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Reverse the given list</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#create a method called reverse()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">reverse</span><span class="p">():</span>
-    <span class="nb">list</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
-    <span class="n">rev_str</span> <span class="o">=</span> <span class="nb">list</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">rev_str</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#And call the method</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">reverse</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>&#39;!dlroW olleH&#39;
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign6-reverse.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/assign7-calculate.html"><h3 class="article-title">Assign7-Calculate</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Calculates the sum of its digits.Prints the result.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#create method called sum_of_digits()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">sum_of_digits</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="n">digit_sum</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">digit_sum</span> <span class="o">+=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">10</span>
-        <span class="n">num</span> <span class="o">//=</span> <span class="mi">10</span>
-    <span class="k">return</span> <span class="n">digit_sum</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#create a variable and put the value for num</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">list</span> <span class="o">=</span> <span class="mi">4545</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sum_of_digits</span><span class="p">(</span><span class="nb">list</span><span class="p">))</span> 
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">18</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign7-calculate.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/assign8-small-largenum.html"><h3 class="article-title">Assign8-Small-Largenum</h3></a>
-<h6 class="subheader" title="2025-01-21T00:00:00-05:00">Tue 21 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#Finds and prints the smallest and largest numbers in the list.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#create a method called large_and_small_nums()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">large_and_small_nums</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="n">max_num</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-    <span class="n">min_num</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">max_num</span><span class="p">,</span> <span class="n">min_num</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#create a variable and put the value for num</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">list</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">24</span><span class="p">)</span>
-<span class="n">large_and_small_nums</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>(50, 10)
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign8-small-largenum.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 2 of 19</h6>
+<h6 class="subheader">Page 2 of 21</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/index.html">&laquo; Prev</a>
@@ -494,14 +485,21 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/python-arthmetic-operator.html">Python-Arthmetic-operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-assignment-operator.html">Python-Assignment Operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-bitwise.html">Python-Bitwise</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-buildin-datatype.html">Python-BuildIn-Datatype</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-comparison-operator.html">Python-Comparison-Operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-escape-sequence.html">python-Escape-Sequence</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-globalvariables.html">Python-GlobalVariables</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-identifiers.html">Python-Identifiers</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-identity-operator.html">python-identity-Operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-keywords.html">Python-keywords</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-logical-operator.html">python-Logical-Operator</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-membership-operator.html">Python-Membership-Operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-memory-management.html">Python-Memory-Management</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-operator-precedence.html">Python-Operator-Precedence</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-tenary.html">Python-Tenary</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>
