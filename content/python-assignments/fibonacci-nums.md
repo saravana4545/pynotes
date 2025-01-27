@@ -1,6 +1,6 @@
 ---
 title: Fibonacci-Nums
-date: 2025-01-25
+date: 2025-01-27
 author: Your Name
 cell_count: 2
 score: 0
