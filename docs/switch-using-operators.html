@@ -4,7 +4,7 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>For-Loop</title>
+    <title>Switch-Using-Operators</title>
 
     <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/normalize.css" />
     <link rel="stylesheet" href="https://saravana4545.github.io/pynotes/theme/css/foundation.min.css" />
@@ -44,38 +44,73 @@
     <div class="large-9 columns">
 <article>
     <header>
-        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/for-loop.html" rel="bookmark"
-        title="Permalink to For-Loop">For-Loop</a></h3>
+        <h3 class="article-title"><a href="https://saravana4545.github.io/pynotes/switch-using-operators.html" rel="bookmark"
+        title="Permalink to Switch-Using-Operators">Switch-Using-Operators</a></h3>
     </header>
 
-<h6 class="subheader" title="2025-01-27T00:00:00-05:00">Mon 27 January 2025
+<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="c1">#create a variable put some values inside.</span>
+    <div class="highlight"><pre><span></span><code><span class="c1"># Created at 27-01-2025</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># https://www.scientecheasy.com/2022/11/switch-statement-in-python.html/</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#In for loop the output comes line by line</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Switch Statement</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>apple
-banana
-cherry
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span> 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">default_case</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s2">&quot;Invalid operation&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">operation_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;add&#39;</span><span class="p">:</span> <span class="n">add</span><span class="p">,</span>
+    <span class="s1">&#39;subtract&#39;</span><span class="p">:</span> <span class="n">subtract</span><span class="p">,</span>
+    <span class="s1">&#39;multiply&#39;</span><span class="p">:</span> <span class="n">multiply</span><span class="p">,</span>
+    <span class="s1">&#39;divide&#39;</span><span class="p">:</span> <span class="n">divide</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">perform_operation</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">operation_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">perform_operation</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">perform_operation</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>  
+<span class="nb">print</span><span class="p">(</span><span class="n">perform_operation</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">50</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">perform_operation</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span> 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">3</span>
+<span class="mf">3</span>
+<span class="mf">50</span>
+<span class="mf">5</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 5</strong></p>
-<p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
+<p><strong>Score: 10</strong></p>
+<p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-switch-statement.html">Python-Switch-Statement</a>
 
 </p>
 
@@ -117,13 +152,19 @@ cherry
             <li><a href="https://saravana4545.github.io/pynotes/category/python-globalvariables.html">Python-GlobalVariables</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-identifiers.html">Python-Identifiers</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-identity-operator.html">python-identity-Operator</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-ifstatement.html">Python-Ifstatement</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-infinite-loop.html">Python-Infinite-Loop</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-keywords.html">Python-keywords</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-literals.html">Python-Literals</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-logical-operator.html">python-Logical-Operator</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-loop.html">Python-Loop</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-membership-operator.html">Python-Membership-Operator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-memory-management.html">Python-Memory-Management</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-nested-loop.html">Python-Nested-Loop</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-operator-precedence.html">Python-Operator-Precedence</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-pass.html">Python-Pass</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-switch-statement.html">Python-Switch-Statement</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-tenary.html">Python-Tenary</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>

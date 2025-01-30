@@ -1,6 +1,6 @@
 ---
 title: Pivot-Table-Using-Pandas
-date: 2025-01-27
+date: 2025-01-30
 author: Your Name
 cell_count: 17
 score: 15
@@ -150,11 +150,11 @@ df
 ```python
 pivot = pd.pivot_table(
     df, 
-    values='Values', 
-    index='Category', 
-    columns='Subcategory', 
-    aggfunc='sum', 
-    fill_value=0
+    values     ='Values', 
+    index      ='Category', 
+    columns    ='Subcategory', 
+    aggfunc    ='sum', 
+    fill_value =0
 )
 ```
 
