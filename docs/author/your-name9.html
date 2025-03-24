@@ -47,8 +47,92 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/fastapi-with-nest-asyncio.html"><h3 class="article-title">Fastapi-With-Nest Asyncio</h3></a>
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Import required modules</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span><span class="p">,</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Path</span><span class="p">,</span> <span class="n">Depends</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+<span class="kn">import</span> <span class="nn">nest_asyncio</span>
+<span class="kn">from</span> <span class="nn">uvicorn</span> <span class="kn">import</span> <span class="n">Config</span><span class="p">,</span> <span class="n">Server</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Enable nested event loops</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">nest_asyncio</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Initialize FastAPI app</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Simulated database</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fake_db</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Book Model</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">title</span><span class="p">:</span> <span class="nb">str …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/fastapi-with-nest-asyncio.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/fibonacci-nums.html"><h3 class="article-title">Fibonacci-Nums</h3></a>
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#21 - Write a function to return the first n Fibonacci numbers.</span>
+
+<span class="k">def</span> <span class="nf">fibonacci_numbers</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Problem: Write a function to return the first n Fibonacci numbers.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    n (int): Number of Fibonacci numbers to return</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    list: List of the first n Fibonacci numbers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Initialize the list to store Fibonacci numbers …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/fibonacci-nums.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/file-handling.html"><h3 class="article-title">File-Handling</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -85,7 +169,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/filehandling-error.html"><h3 class="article-title">Filehandling-Error</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -129,7 +213,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/filehandling-try-except.html"><h3 class="article-title">Filehandling-Try-Except</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -161,7 +245,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/filtering-and-querying-pd.html"><h3 class="article-title">Filtering-And-Querying-Pd</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -217,7 +301,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/find-cls-id-bs4.html"><h3 class="article-title">Find-Cls-Id-Bs4</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -256,7 +340,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/find-index.html"><h3 class="article-title">Find-Index</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -284,7 +368,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/find-len-list.html"><h3 class="article-title">Find-Len-List</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -319,7 +403,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/find-list-is-empty.html"><h3 class="article-title">Find-List-Is-Empty</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -362,95 +446,9 @@
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/find-max-num.html"><h3 class="article-title">Find-Max-Num</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">find_max_number</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function finds the maximum number in a list.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">    nums (list): A list of numbers.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">    int: The maximum number in the list.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="n">max_num</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">max_num</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Sample test cases</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">find_max_number</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]))</span> <span class="c1"># Expected output: 5</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">5</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">find_max_number</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-max-num.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/find-pattern-with-re.html"><h3 class="article-title">Find-Pattern-With-Re</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Email me at example@gmail.com or support@example.org.&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Found email:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">Found</span><span class="w"> </span><span class="nl">email</span><span class="p">:</span><span class="w"> </span><span class="n">example</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span>
-<span class="k">Found</span><span class="w"> </span><span class="nl">email</span><span class="p">:</span><span class="w"> </span><span class="n">support</span><span class="nv">@example</span><span class="p">.</span><span class="n">org</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/find-pattern-with-re.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 9 of 22</h6>
+<h6 class="subheader">Page 9 of 23</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/author/your-name8.html">&laquo; Prev</a>
@@ -477,6 +475,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/decorator.html">Decorator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/faker.html">Faker</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a></li>
@@ -507,6 +506,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-switch-statement.html">Python-Switch-Statement</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-tenary.html">Python-Tenary</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-typing-module.html">Python-typing module</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>

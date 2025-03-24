@@ -48,7 +48,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign6-reverse.html"><h3 class="article-title">Assign6-Reverse</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -92,7 +92,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign7-calculate.html"><h3 class="article-title">Assign7-Calculate</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -139,7 +139,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign8-small-largenum.html"><h3 class="article-title">Assign8-Small-Largenum</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -184,7 +184,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assign9-swap-var.html"><h3 class="article-title">Assign9-Swap-Var</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -222,7 +222,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/assignment-expression.html"><h3 class="article-title">Assignment-Expression</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -272,7 +272,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/bank-details.html"><h3 class="article-title">Bank-Details</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -305,7 +305,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/base64-lib.html"><h3 class="article-title">Base64-Lib</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -343,8 +343,57 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/basic-decorator.html"><h3 class="article-title">Basic Decorator</h3></a>
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Created at 24-03-2025</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Basic Decorator</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">decorator</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Before function call&quot;</span><span class="p">)</span>
+        <span class="n">func</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After function call&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nd">@decorator</span>
+<span class="k">def</span> <span class="nf">say_hello</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+
+<span class="n">say_hello</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Before function call
+Hello, World!
+After function call
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/decorator.html">Decorator</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/basic-decorator.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/basic-hashlib.html"><h3 class="article-title">Basic-Hashlib</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -398,7 +447,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/basic-json.html"><h3 class="article-title">Basic-Json</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
+<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
 </h6>
 
 
@@ -440,49 +489,9 @@
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/basic-regex.html"><h3 class="article-title">Basic-Regex</h3></a>
-<h6 class="subheader" title="2025-01-30T00:00:00-05:00">Thu 30 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">regex</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nx">Requirement</span><span class="w"> </span><span class="nx">already</span><span class="w"> </span><span class="nx">satisfied</span><span class="p">:</span><span class="w"> </span><span class="nx">regex</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">/</span><span class="nx">home</span><span class="o">/</span><span class="nx">saravanakumar</span><span class="o">/</span><span class="nx">miniconda3</span><span class="o">/</span><span class="nx">envs</span><span class="o">/</span><span class="nx">py12</span><span class="o">/</span><span class="nx">lib</span><span class="o">/</span><span class="nx">python3</span><span class="m m-Double">.12</span><span class="o">/</span><span class="nx">site</span><span class="o">-</span><span class="nx">packages</span><span class="w"> </span><span class="p">(</span><span class="m m-Double">2024.11.6</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#import neccessary libraries</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;The price is $20.&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Search for a dollar amount</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\$\d+&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># r&#39;\$&#39; matches the dollar symbol, &#39;\d+&#39; matches one …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/basic-regex.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 3 of 22</h6>
+<h6 class="subheader">Page 3 of 23</h6>
 
 <p>
             <a href="https://saravana4545.github.io/pynotes/index2.html">&laquo; Prev</a>
@@ -509,6 +518,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/beautiful-soup.html">Beautiful-soup</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/class.html">Class</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/decorator.html">Decorator</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/errorhandling.html">Errorhandling</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/faker.html">Faker</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/fastapi.html">Fastapi</a></li>
@@ -539,6 +549,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/python-patterns.html">python-patterns</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-switch-statement.html">Python-Switch-Statement</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/python-tenary.html">Python-Tenary</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/python-typing-module.html">Python-typing module</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/seaborn.html">seaborn</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>
