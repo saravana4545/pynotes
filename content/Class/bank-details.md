@@ -1,6 +1,6 @@
 ---
 title: Bank-Details
-date: 2025-03-24
+date: 2025-03-25
 author: Your Name
 cell_count: 4
 score: 0

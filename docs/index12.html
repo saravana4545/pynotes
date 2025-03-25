@@ -47,8 +47,66 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/hexa-color-assign.html"><h3 class="article-title">Hexa-Color-Assign</h3></a>
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#import neccesary libraries</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">request</span>
+<span class="kn">from</span> <span class="nn">pymongo</span> <span class="kn">import</span> <span class="n">MongoClient</span>
+<span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+<span class="kn">import</span> <span class="nn">webcolors</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Load environment variables</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">load_dotenv</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Initialize Flask app</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Connect to MongoDB</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">client</span>     <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;MONGO_URL&quot;</span><span class="p">])</span>
+<span class="n">db</span>         <span class="o">=</span> <span class="n">client</span><span class="p">[</span><span class="s1">&#39;DB_NAME&#39;</span><span class="p">]</span>
+<span class="n">collection</span> <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="s1">&#39;DB_COLLECTION&#39;</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#create a method and …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/hexa-color-assign.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/histogram-matplotlib.html"><h3 class="article-title">Histogram-Matplotlib</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -86,7 +144,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/html-lib.html"><h3 class="article-title">Html-Lib</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -123,7 +181,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/identifiers-variable.html"><h3 class="article-title">Identifiers-Variable</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -185,7 +243,7 @@ Bob
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/if-cond.html"><h3 class="article-title">If-Cond</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -223,7 +281,7 @@ Bob
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/if-condition.html"><h3 class="article-title">If-Condition</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -279,7 +337,7 @@ Bob
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/if-else-condition.html"><h3 class="article-title">If-Else-Condition</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -331,7 +389,7 @@ Bob
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/in-kw.html"><h3 class="article-title">In-Kw</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -375,7 +433,7 @@ Bob
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/in-operator.html"><h3 class="article-title">In-Operator</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -428,7 +486,7 @@ Bob
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/in-out-localvar.html"><h3 class="article-title">In-Out-Localvar</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -471,58 +529,6 @@ Bob
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/in-out-localvar.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/infinite-loop.html"><h3 class="article-title">Infinite-Loop</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Created at 27-01-2025</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># https://www.scientecheasy.com/2022/11/infinite-loop-in-python.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Infinte Loop</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Basic Infinte Loop</span>
-
-<span class="c1"># while True:</span>
-    <span class="c1">#print(&quot;This is an infinite loop!&quot;)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Break Statement</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">count</span> <span class="o">=</span> <span class="mi">5</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Loop running...&quot;</span><span class="p">)</span>
-    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">if</span> <span class="n">count</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Stopping the loop.&quot;</span><span class="p">)</span>
-        <span class="k">break</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter &#39;stop&#39; to …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-infinite-loop.html">Python-Infinite-Loop</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/infinite-loop.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -591,6 +597,7 @@ Bob
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/streamlit.html">streamlit</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/threading.html">Threading</a></li>
    
         </ul>
 

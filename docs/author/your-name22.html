@@ -47,8 +47,156 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/typing-typeddict.html"><h3 class="article-title">Typing-Typeddict</h3></a>
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Created at 19-03-2025</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># https://stevejoe1412.gitbook.io/ssn/python-subtopics/1.-typing-module - referance</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># TypedDict method</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">TypedDict</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">age</span><span class="p">:</span> <span class="nb">int</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">display_person</span><span class="p">(</span><span class="n">person</span><span class="p">:</span> <span class="n">Person</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Name: </span><span class="si">{</span><span class="n">person</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, Age: </span><span class="si">{</span><span class="n">person</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">person</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
+<span class="n">display_person</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Name</span><span class="o">:</span><span class="w"> </span><span class="n">Alice</span><span class="o">,</span><span class="w"> </span><span class="n">Age</span><span class="o">:</span><span class="w"> </span><span class="mi">25</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score …</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-typing-module.html">Python-typing module</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/typing-typeddict.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/typing-union.html"><h3 class="article-title">Typing-Union</h3></a>
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Created at 19-03-2025</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#https://stevejoe1412.gitbook.io/ssn/python-subtopics/1.-typing-module - referance</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Union method</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">calculate</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">calculate</span><span class="p">(</span><span class="mf">4.5</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">6</span>
+<span class="mf">9.0</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-typing-module.html">Python-typing module</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/typing-union.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://saravana4545.github.io/pynotes/unique-id.html"><h3 class="article-title">Unique-Id</h3></a>
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Created at 20-01-2025</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># https://www.scientecheasy.com/2022/09/memory-management-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Python Memory Management Example.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num2</span> <span class="o">=</span> <span class="mi">20</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">9767048</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">9767368</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-memory-management.html">Python-Memory-Management</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/unique-id.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/update-cityname.html"><h3 class="article-title">Update-Cityname</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -79,7 +227,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/while-break-continue.html"><h3 class="article-title">While-Break-Continue</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -151,7 +299,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/while-kw.html"><h3 class="article-title">While-Kw</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -195,7 +343,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/zero-type-erroe.html"><h3 class="article-title">Zero-Type-Erroe</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -248,7 +396,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/zerodiv-errorhandling.html"><h3 class="article-title">Zerodiv-Errorhandling</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -339,123 +487,6 @@
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/yaml-lib.html"><h3 class="article-title">Yaml-Lib</h3></a>
-<h6 class="subheader" title="2024-11-23T00:00:00-05:00">Sat 23 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">yaml</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Read YAML</span>
-<span class="n">yaml_data</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">name: Alice</span>
-<span class="s2">age: 25</span>
-<span class="s2">skills:</span>
-<span class="s2">  - Python</span>
-<span class="s2">  - Machine Learning</span>
-<span class="s2">&quot;&quot;&quot;</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">yaml_data</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-
-<span class="c1"># Write YAML</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output.yaml&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-    <span class="n">yaml</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>{&#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 25, &#39;skills&#39;: [&#39;Python&#39;, &#39;Machine Learning&#39;]}
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/yaml-lib.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/assign1.html"><h3 class="article-title">Assign1</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;ENTER THE NUMBER:&quot;</span><span class="p">))</span>
-<span class="k">def</span> <span class="nf">even_or_odd</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">number</span><span class="o">%</span><span class="mi">2</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s a odd number...&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s a even number...&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>ENTER THE NUMBER: 25
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">even_or_odd</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>It&#39;s a odd number...
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign1.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/assign2.html"><h3 class="article-title">Assign2</h3></a>
-<h6 class="subheader" title="2024-11-20T00:00:00-05:00">Wed 20 November 2024
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">leap_year</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is a leap year.&quot;</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is not a leap year.&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">2020</span><span class="p">,</span><span class="mi">2025</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">leap_year</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">2020</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leap</span><span class="w"> </span><span class="n">year</span><span class="mf">.</span>
-<span class="mf">2021</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leap</span><span class="w"> </span><span class="n">year</span><span class="mf">.</span>
-<span class="mf">2022</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="ow">not …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/assignments.html">assignments</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/assign2.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
 <h6 class="subheader">Page 22 of 23</h6>
@@ -521,6 +552,7 @@
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/streamlit.html">streamlit</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/threading.html">Threading</a></li>
    
         </ul>
 

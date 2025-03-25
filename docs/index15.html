@@ -47,8 +47,41 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/merge-dictionaries.html"><h3 class="article-title">Merge-Dictionaries</h3></a>
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#Write a function to merge two dictionaries.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">merge_dicts</span><span class="p">(</span><span class="n">dict1</span><span class="p">,</span> <span class="n">dict2</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Merge two dictionaries into one.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    dict1 (dict): The first dictionary to be merged.</span>
+<span class="sd">    dict2 (dict): The second dictionary to be merged.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    dict: A new dictionary containing the merged key-value pairs from dict1 and dict2.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Loop through dict1 …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-assignments.html">python-assignments</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/merge-dictionaries.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/mergeing-list.html"><h3 class="article-title">Mergeing-List</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -98,7 +131,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/modulus-operator.html"><h3 class="article-title">Modulus-Operator</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -190,7 +223,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/mongo-crud-func.html"><h3 class="article-title">Mongo-Crud-Func</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -233,7 +266,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/mongo-insert-method.html"><h3 class="article-title">Mongo-Insert-Method</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -276,7 +309,7 @@
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/multipication.html"><h3 class="article-title">Multipication</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -312,8 +345,48 @@
 
 
             <article>
+                <a href="https://saravana4545.github.io/pynotes/multiprocessing.html"><h3 class="article-title">Multiprocessing</h3></a>
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Created at 25-03-2025</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Using multiprocessing to Run Functions in Parallel</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">multiprocessing</span>
+<span class="kn">import</span> <span class="nn">time</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">worker</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Worker </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> started&quot;</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Worker </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> finished&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">processes</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">multiprocessing</span><span class="o">.</span><span class="n">Process</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">worker</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="p">,))</span>
+        <span class="n">processes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="n">p …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/threading.html">Threading</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/multiprocessing.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://saravana4545.github.io/pynotes/name-generator.html"><h3 class="article-title">Name Generator</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -366,7 +439,7 @@ hasty-orchid-crab-fb050e54
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/nested-loop.html"><h3 class="article-title">Nested-Loop</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -400,7 +473,7 @@ hasty-orchid-crab-fb050e54
 
             <article>
                 <a href="https://saravana4545.github.io/pynotes/nested-statement.html"><h3 class="article-title">Nested-Statement</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
+<h6 class="subheader" title="2025-03-25T00:00:00-04:00">Tue 25 March 2025
 </h6>
 
 
@@ -445,91 +518,6 @@ hasty-orchid-crab-fb050e54
 
 
                 <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/nested-statement.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/not.html"><h3 class="article-title">Not</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Created at 21-01-2025</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># https://www.scientecheasy.com/2022/10/identity-operators-in-python.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Identity Is not operator (is not).</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">not_operator</span><span class="p">():</span>
-    <span class="n">num1</span> <span class="o">=</span> <span class="nb">id</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-    <span class="n">num2</span> <span class="o">=</span> <span class="nb">id</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">num1</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">num2</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;num1 &amp; num2 have the same id-&quot;</span><span class="p">,</span><span class="n">result</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;num1 &amp; num2 is not same id.&quot;</span><span class="p">,</span> <span class="n">result …</span></code></pre></div><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-identity-operator.html">python-identity-Operator</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/not.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://saravana4545.github.io/pynotes/not-op.html"><h3 class="article-title">Not-Op</h3></a>
-<h6 class="subheader" title="2025-03-24T00:00:00-04:00">Mon 24 March 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Created at 25-01-2025</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># https://www.scientecheasy.com/2022/10/membership-operators-in-python.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># NOT IN Operator</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Example with a string</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">sentence</span> <span class="o">=</span> <span class="s2">&quot;Python is fun&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Java&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sentence</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>True
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fun&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sentence</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>False
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://saravana4545.github.io/pynotes/category/python-membership-operator.html">Python-Membership-Operator</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://saravana4545.github.io/pynotes/not-op.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -598,6 +586,7 @@ hasty-orchid-crab-fb050e54
             <li><a href="https://saravana4545.github.io/pynotes/category/snippets.html">snippets</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/sql-crud.html">sql-crud</a></li>
             <li><a href="https://saravana4545.github.io/pynotes/category/streamlit.html">streamlit</a></li>
+            <li><a href="https://saravana4545.github.io/pynotes/category/threading.html">Threading</a></li>
    
         </ul>
 
