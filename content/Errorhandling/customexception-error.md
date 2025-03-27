@@ -1,8 +1,8 @@
 ---
 title: Customexception-Error
-date: 2025-03-25
+date: 2025-03-27
 author: Your Name
-cell_count: 14
+cell_count: 13
 score: 10
 ---
 
@@ -78,11 +78,6 @@ print(validate_positive_number(10))  # Valid
 
 ```python
 print(validate_positive_number(-5)) 
-```
-
-
-```python
-
 ```
 
 

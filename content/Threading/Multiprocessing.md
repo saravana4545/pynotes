@@ -1,6 +1,6 @@
 ---
 title: Multiprocessing
-date: 2025-03-25
+date: 2025-03-27
 author: Your Name
 cell_count: 5
 score: 5
@@ -39,7 +39,7 @@ if __name__ == "__main__":
         p.start()
     for p in processes:
         p.join()
-
+6
     print("All workers completed.")
 ```
 

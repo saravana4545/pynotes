@@ -1,10 +1,15 @@
 ---
 title: Alphabet Pattern
-date: 2025-03-25
+date: 2025-03-27
 author: Your Name
-cell_count: 3
+cell_count: 4
 score: 0
 ---
+
+```python
+# Created at 27-05-2025
+```
+
 
 ```python
 def alphabet_pattern():

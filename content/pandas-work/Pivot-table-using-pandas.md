@@ -1,6 +1,6 @@
 ---
 title: Pivot-Table-Using-Pandas
-date: 2025-03-25
+date: 2025-03-27
 author: Your Name
 cell_count: 17
 score: 15
